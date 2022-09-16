@@ -85,13 +85,14 @@ header {
     gap: 2rem;
 
     > a {
+      transition: all 300ms;
       height: inherit;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       gap: 1.2rem;
       font-weight: bold;
-      font-size: 1.5em;
+      font-size: 1.8em;
       text-decoration: none;
       color: black;
 
@@ -185,15 +186,19 @@ header {
   > article {
     height: 60px;
 
-    > a img {
-      height: 44px;
+    > a {
+      font-size: 1.5em;
+
+      img {
+        height: 44px;
+      }
     }
 
     > nav {
       height: inherit;
 
       a {
-        padding: 1rem;
+        padding: 1rem 1.2rem;
       }
     }
   }
