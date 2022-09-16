@@ -91,7 +91,7 @@
         <h3>Bracelets thérapeutiques</h3>
       </router-link>
     </section>
-    <section>
+    <!--<section>
       <Splide :options="pierres" aria-label="Pierres">
         <SplideSlide>
           <router-link to="/">
@@ -104,7 +104,7 @@
           </router-link>
         </SplideSlide>
       </Splide>
-    </section>
+    </section>-->
   </article>
 
   <article class="content" id="a-propos">
@@ -289,7 +289,7 @@ export default {
     align-items: center;
     justify-items: stretch;
     gap: 4rem;
-    margin-bottom: 4rem;
+    //margin-bottom: 4rem;
 
     a {
       aspect-ratio: 1/1;
