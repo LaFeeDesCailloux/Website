@@ -529,6 +529,12 @@ export default {
       color: black;
       text-decoration: none;
       font-weight: bold;
+      transform: scale(1);
+      transition: transform 250ms;
+
+      &:hover {
+        transform: scale(1.06);
+      }
     }
   }
 }
