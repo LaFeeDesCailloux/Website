@@ -52,11 +52,11 @@
       </router-link>
       <router-link to="/">
         <img
-          src="@/assets/realisations/pendentifs_et_colliers.webp"
-          alt="Pendentifs et colliers"
+          src="@/assets/realisations/bracelets_therapeutiques.webp"
+          alt="Bracelets thérapeutiques"
           loading="lazy"
         />
-        <h3>Pendentifs et colliers</h3>
+        <h3>Bracelets thérapeutiques</h3>
       </router-link>
       <router-link :to="{ name: 'pendules' }">
         <img
@@ -65,6 +65,14 @@
           loading="lazy"
         />
         <h3>Pendules</h3>
+      </router-link>
+      <router-link to="/">
+        <img
+          src="@/assets/realisations/pendentifs_et_colliers.webp"
+          alt="Pendentifs et colliers"
+          loading="lazy"
+        />
+        <h3>Pendentifs et colliers</h3>
       </router-link>
       <router-link to="/">
         <img
@@ -81,14 +89,6 @@
           loading="lazy"
         />
         <h3>Pierres roulées</h3>
-      </router-link>
-      <router-link to="/">
-        <img
-          src="@/assets/realisations/bracelets_therapeutiques.webp"
-          alt="Bracelets thérapeutiques"
-          loading="lazy"
-        />
-        <h3>Bracelets thérapeutiques</h3>
       </router-link>
     </section>
     <!--<section>
