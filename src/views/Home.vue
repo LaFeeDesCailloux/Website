@@ -236,7 +236,7 @@ export default {
   height: 400px;
   background-image: url("@/assets/banner.webp");
   background-size: cover;
-  background-position: right -40px;
+  background-position: right;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
