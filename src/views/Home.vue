@@ -156,24 +156,35 @@
   <article id="avis">
     <section class="content">
       <h2>Avis</h2>
-      <Splide :options="avis" aria-label="Avis">
-        <SplideSlide>
-          <section>
-            <h3>Mathis S.M.</h3>
-            <div>
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-solid fa-star" />
-              <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
-            </div>
-          </section>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-            arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed
-            tempus justo vehicula malesuada.
-          </p>
-        </SplideSlide>
+      <Splide :options="avis" :has-track="false" aria-label="Avis">
+        <SplideTrack>
+          <SplideSlide>
+            <section>
+              <h3>Mathis S.M.</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
+              </div>
+            </section>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+              arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed
+              tempus justo vehicula malesuada.
+            </p>
+          </SplideSlide>
+        </SplideTrack>
+
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <font-awesome-icon icon="fa-solid fa-chevron-right" />
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <font-awesome-icon icon="fa-solid fa-chevron-right" />
+          </button>
+        </div>
       </Splide>
     </section>
   </article>
@@ -182,6 +193,7 @@
 </template>
 
 <script>
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
 import Contact from "@/components/Contact";
 
@@ -214,7 +226,7 @@ export default {
         cover: true,
         arrows: true,
         pagination: false,
-        gap: "4rem",
+        gap: "2.5rem",
       },
     };
   },
@@ -393,6 +405,7 @@ export default {
     gap: 3rem;
 
     > div {
+      height: 400px;
       text-align: right;
       display: flex;
       flex-flow: column nowrap;
@@ -419,7 +432,7 @@ export default {
         font-size: 1.5em;
 
         a {
-          padding: 1rem;
+          padding: 0.6rem 1rem 0;
           color: black;
           text-decoration: none;
           transform: scale(1.01);
@@ -506,6 +519,15 @@ export default {
           right: -0.2rem;
         }
       }
+    }
+
+    .splide__arrow {
+      height: 100%;
+      border-radius: unset;
+      color: black;
+      font-size: 1.1em;
+      padding: 0 1rem;
+      background-color: transparent;
     }
   }
 }
