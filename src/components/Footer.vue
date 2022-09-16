@@ -19,7 +19,7 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.9em;
+  font-size: 0.8em;
 
   a {
     text-decoration: none;
