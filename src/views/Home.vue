@@ -112,20 +112,29 @@
     <section>
       <div>
         <div>
+          <p>Bonjour à tous,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-            arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed
-            tempus justo vehicula malesuada. Aenean erat lorem, porta eu purus
-            vitae, pellentesque vulputate lacus. Etiam luctus arcu sed eleifend
-            convallis. Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit
-            nisi quis congue efficitur.
+            Passionnée par les pierres et leurs nombreuses vertus, je suis
+            praticienne en lithothérapie depuis de nombreuses années.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-            arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed
-            tempus justo vehicula malesuada. Aenean erat lorem, porta eu purus
-            vitae, pellentesque vulputate lacus. Etiam luctus arcu sed eleifend
-            convallis.
+            Afin de vous apporter ma connaissance sur le sujet, je souhaite
+            aider toute personne qui en fera la demande car il n’y a pas de
+            hasard. Si vous faite la démarche, c’est que le moment est venu pour
+            vous.
+          </p>
+          <p>
+            Je confectionne des chemins de vie et des bracelets thérapeutiques,
+            avec tout mon cœur et amour, en portant particulièrement attention à
+            la place de chaque pierre dans le bracelet, car elles ne sont pas
+            toutes compatibles entre elles et peuvent même se neutraliser.
+          </p>
+          <p>
+            Si toutefois vous souhaitez posséder une création personnalisée,
+            n’hésitez pas... prenez contact avec moi.
+          </p>
+          <p>
+            <strong>Alors ?... Prêt pour l’aventure ?</strong>
           </p>
         </div>
         <div>
@@ -393,13 +402,18 @@ export default {
       flex-flow: column nowrap;
       align-items: flex-end;
       justify-content: space-between;
-      gap: 2.5rem;
+      gap: 1.5rem;
 
       > div:first-of-type {
         display: flex;
         flex-flow: column nowrap;
-        gap: 1rem;
+        gap: 0.5rem;
         font-size: 1.06em;
+
+        p:last-of-type {
+          margin-top: 0.75rem;
+          font-size: 1.05em;
+        }
       }
 
       > div:last-of-type {
