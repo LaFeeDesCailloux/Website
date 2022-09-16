@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import VueSplide from "@splidejs/vue-splide";
 import titleMixin from "./titleMixin";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -12,6 +11,8 @@ import {
   faStar,
   faWandMagicSparkles,
   faChevronDown,
+  faChevronLeft,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
 
@@ -22,12 +23,13 @@ library.add(
   faStar,
   faStarHalfStroke,
   faWandMagicSparkles,
-  faChevronDown
+  faChevronDown,
+  faChevronLeft,
+  faChevronRight
 );
 
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
   .use(router)
-  .use(VueSplide)
   .mixin(titleMixin)
   .mount("#app");
