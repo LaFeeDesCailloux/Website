@@ -1,14 +1,31 @@
 <template>
   <header>
     <article>
-      <router-link to="/">
+      <router-link :to="{ name: 'home' }">
         <img alt="Vue logo" src="@/assets/logo.webp" />
         La Fée Des Cailloux
       </router-link>
       <nav>
-        <router-link to="/" class="current">Accueil</router-link>
-        <router-link to="/">Mes réalisations</router-link>
-        <router-link to="/">Pierres</router-link>
+        <router-link
+          :to="{ name: 'home' }"
+          :class="$route.name === 'home' ? 'current' : ''"
+        >
+          Accueil
+        </router-link>
+        <a
+          id="realisations"
+          :class="$route.path.startsWith('/realisations/') ? 'current' : ''"
+        >
+          Mes réalisations <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          <div>
+            <router-link to="/">Chemins de vie</router-link>
+            <router-link to="/">Bracelets thérapeutiques</router-link>
+            <router-link :to="{ name: 'pendules' }">Pendules</router-link>
+            <router-link to="/">Pendentifs et colliers</router-link>
+            <router-link to="/">Druses et Géodes</router-link>
+            <router-link to="/">Pierres roulées</router-link>
+          </div>
+        </a>
         <router-link to="/">Contact</router-link>
       </nav>
     </article>
@@ -90,12 +107,74 @@ header {
       align-items: center;
 
       a {
+        transition: all 300ms;
         padding: 1.6rem;
         text-decoration: none;
         color: black;
 
         &:last-of-type {
           padding-right: 0;
+        }
+      }
+
+      #realisations {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        position: relative;
+        cursor: pointer;
+
+        svg {
+          font-size: 0.7em;
+        }
+
+        &:hover div {
+          opacity: 1;
+          pointer-events: auto;
+          top: 100%;
+
+          a {
+            animation: dropdown-link-appear 150ms;
+            animation-fill-mode: both;
+          }
+
+          @for $i from 1 through 6 {
+            a:nth-child(#{$i}n) {
+              animation-delay: #{$i * 30}ms;
+            }
+          }
+        }
+
+        div {
+          transition: all 250ms;
+          opacity: 0;
+          cursor: auto;
+          display: flex;
+          position: absolute;
+          top: 88%;
+          right: 0;
+          width: max-content;
+          flex-flow: column nowrap;
+          background-color: #dcdcdc;
+          border-radius: 6px;
+          padding: 0.8rem;
+          pointer-events: none;
+
+          a {
+            padding: 0.5rem;
+            font-weight: normal;
+          }
+        }
+
+        @keyframes dropdown-link-appear {
+          from {
+            transform: translateX(-10px);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
         }
       }
     }
@@ -112,7 +191,10 @@ header {
 
     > nav {
       height: inherit;
-      overflow: hidden;
+
+      a {
+        padding: 1rem;
+      }
     }
   }
 }

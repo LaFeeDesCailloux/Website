@@ -11,6 +11,7 @@ import {
   faEnvelope,
   faStar,
   faWandMagicSparkles,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
 
@@ -20,7 +21,8 @@ library.add(
   faEnvelope,
   faStar,
   faStarHalfStroke,
-  faWandMagicSparkles
+  faWandMagicSparkles,
+  faChevronDown
 );
 
 createApp(App)
