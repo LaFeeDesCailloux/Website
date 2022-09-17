@@ -255,31 +255,44 @@ export default {
   }
 }
 
-#lithotherapie section {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 3.62rem;
+#lithotherapie {
+  position: relative;
 
-  img {
-    width: 430px;
-    height: 550px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-      rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+  h2 {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em;
   }
 
-  div {
-    h2 {
-      font-size: 2em;
-      margin-bottom: 3rem;
+  section {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 3.62rem;
+
+    img {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
+        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
     }
 
-    p {
-      margin-bottom: 1rem;
+    div p {
       font-size: 1.1em;
       text-align: justify;
+      margin-bottom: 1rem;
+
+      &:first-of-type {
+        margin-top: 2rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }
