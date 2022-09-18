@@ -158,6 +158,8 @@ export default {
     position: relative;
     border-radius: 6px;
     overflow: hidden;
+    width: min(100%, 1200px);
+    margin-inline: auto;
 
     &:last-of-type {
       flex-direction: row-reverse;
@@ -169,7 +171,7 @@ export default {
 
       i {
         left: 50%;
-        right: calc(20% - 1px);
+        right: calc(30% - 1px);
         transform: rotate(180deg);
       }
     }
@@ -191,7 +193,7 @@ export default {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: calc(20% - 1px);
+      left: calc(30% - 1px);
       right: 50%;
       background: rgb(255, 255, 255);
       background: -moz-linear-gradient(
@@ -214,9 +216,8 @@ export default {
 
     img {
       object-fit: cover;
-      width: 80%;
-      max-height: 600px;
-      border-radius: 6px;
+      width: 70%;
+      max-height: 500px;
     }
   }
 }
@@ -244,6 +245,8 @@ export default {
       align-items: center;
       gap: 1rem;
       text-align: center;
+      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
+        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
       svg {
         font-size: 1.7em;
