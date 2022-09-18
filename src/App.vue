@@ -56,7 +56,6 @@ export default {
 }
 
 body {
-  //background-color: black;
   user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
