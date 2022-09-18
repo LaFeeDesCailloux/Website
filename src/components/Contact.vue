@@ -43,7 +43,6 @@ export default {
       text-align: center;
       padding: 0.7rem 1.8rem;
       border: 2px solid black;
-      background-color: white;
       border-radius: 6px;
       font-size: 0.9em;
       color: black;
