@@ -6,6 +6,7 @@
       alt="Pendule"
       loading="lazy"
     />
+    <i />
   </article>
 
   <article class="content" id="description">
@@ -22,7 +23,12 @@
         ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
         nisi.
       </div>
-      <img src="@/assets/lithotherapie.webp" alt="Pendule" loading="lazy" />
+      <i />
+      <img
+        src="@/assets/realisations/pendules/DSC06813.jpg"
+        alt="Pendule"
+        loading="lazy"
+      />
     </section>
     <section>
       <div>
@@ -37,44 +43,46 @@
         ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
         nisi.
       </div>
+      <i />
       <img src="@/assets/lithotherapie.webp" alt="Pendule" loading="lazy" />
     </section>
   </article>
 
-  <!--<article class="content" id="plus">
-    <hr />
-    <h2>Les plus</h2>
-    <section>
+  <article id="plus">
+    <section class="content">
+      <h2>Les plus</h2>
       <div>
-        <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-          arcu ac risus laoreet sodales.
-        </p>
-      </div>
-      <div>
-        <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-          arcu ac risus laoreet sodales.
-        </p>
-      </div>
-      <div>
-        <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-          arcu ac risus laoreet sodales.
-        </p>
-      </div>
-      <div>
-        <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-          arcu ac risus laoreet sodales.
-        </p>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+            arcu ac risus laoreet sodales.
+          </p>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+            arcu ac risus laoreet sodales.
+          </p>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+            arcu ac risus laoreet sodales.
+          </p>
+        </div>
+        <div>
+          <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
+            arcu ac risus laoreet sodales.
+          </p>
+        </div>
       </div>
     </section>
-  </article>-->
+  </article>
 </template>
 
 <script>
@@ -110,12 +118,37 @@ export default {
     height: 100%;
     object-fit: cover;
   }
+
+  i {
+    position: absolute;
+    top: 95%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  }
 }
 
 #description {
   display: flex;
   flex-flow: column nowrap;
-  gap: 3rem;
+  gap: 5rem 3rem;
 
   section {
     display: flex;
@@ -133,22 +166,88 @@ export default {
         left: unset;
         right: 0;
       }
+
+      i {
+        left: 50%;
+        right: calc(20% - 1px);
+        transform: rotate(180deg);
+      }
     }
 
     div {
+      z-index: 1;
       position: absolute;
       left: 0;
       background-color: rgba(0, 0, 0, 0.1);
       border-radius: 6px;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(16px);
       padding: 2rem;
-      max-width: 550px;
+      max-width: 450px;
       text-align: justify;
       font-size: 1.05em;
     }
 
+    i {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(20% - 1px);
+      right: 50%;
+      background: rgb(255, 255, 255);
+      background: -moz-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    }
+
     img {
       object-fit: cover;
+      width: 80%;
+      max-height: 600px;
+      border-radius: 6px;
+    }
+  }
+}
+
+#plus {
+  background-color: rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  section > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    > div {
+      padding: 1.3rem;
+      background-color: white;
+      border-radius: 6px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+
+      svg {
+        font-size: 1.7em;
+      }
     }
   }
 }
