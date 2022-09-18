@@ -83,13 +83,46 @@
       </div>
     </section>
   </article>
+
+  <article id="galerie">
+    <section class="content">
+      <h2>Galerie</h2>
+      <Gallery :dossier="dossier" :images="images" />
+    </section>
+  </article>
+
+  <Contact />
 </template>
 
 <script>
+import Gallery from "@/components/Gallery";
+import Contact from "@/components/Contact";
+
 export default {
   name: "pendulesView",
   title() {
     return "Pendules";
+  },
+  components: {
+    Gallery,
+    Contact,
+  },
+  data() {
+    return {
+      dossier: "realisations/pendules/",
+      images: [
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06813.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "header_pendule.webp",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -252,6 +285,14 @@ export default {
         font-size: 1.7em;
       }
     }
+  }
+}
+
+#galerie {
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 }
 </style>
