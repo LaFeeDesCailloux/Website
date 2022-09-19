@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../views/home.vue";
 
 const routes = [
   {
@@ -12,7 +12,7 @@ const routes = [
     name: "pendules",
     component: () =>
       import(
-        /* webpackChunkName: "pendules" */ "../views/realisations/Pendules.vue"
+        /* webpackChunkName: "pendules" */ "../views/realisations/pendules.vue"
       ),
   },
   /*{
