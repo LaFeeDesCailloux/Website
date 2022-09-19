@@ -13,6 +13,7 @@ import {
   faChevronDown,
   faChevronLeft,
   faChevronRight,
+  faInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
 
@@ -25,7 +26,8 @@ library.add(
   faWandMagicSparkles,
   faChevronDown,
   faChevronLeft,
-  faChevronRight
+  faChevronRight,
+  faInfo
 );
 
 createApp(App)
