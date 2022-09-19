@@ -195,7 +195,7 @@
 <script>
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
-import Contact from "@/components/Contact";
+import Contact from "@/components/global/contact";
 
 export default {
   name: "homeView",
