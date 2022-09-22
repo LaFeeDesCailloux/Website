@@ -50,7 +50,7 @@ article {
       border-radius: 6px;
       backdrop-filter: blur(16px);
       padding: 2rem;
-      max-width: 450px;
+      max-width: 420px;
       text-align: justify;
       font-size: 1.05em;
     }
@@ -83,7 +83,7 @@ article {
     img {
       object-fit: cover;
       width: 70%;
-      max-height: 500px;
+      max-height: 600px;
     }
   }
 }
