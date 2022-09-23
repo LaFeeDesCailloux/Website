@@ -18,15 +18,30 @@
         >
           Mes réalisations <font-awesome-icon icon="fa-solid fa-chevron-down" />
           <div>
-            <router-link to="/">Chemins de vie</router-link>
-            <router-link to="/">Bracelets thérapeutiques</router-link>
+            <router-link :to="{ name: 'chemins-de-vie' }">
+              Chemins de vie
+            </router-link>
+            <router-link :to="{ name: 'bracelets-therapeutiques' }">
+              Bracelets thérapeutiques
+            </router-link>
             <router-link :to="{ name: 'pendules' }">Pendules</router-link>
-            <router-link to="/">Pendentifs et colliers</router-link>
-            <router-link to="/">Druses et Géodes</router-link>
-            <router-link to="/">Pierres roulées</router-link>
+            <router-link :to="{ name: 'pendentifs-et-colliers' }">
+              Pendentifs et colliers
+            </router-link>
+            <router-link :to="{ name: 'druses-et-geodes' }">
+              Druses et Géodes
+            </router-link>
+            <router-link :to="{ name: 'pierres-roulees' }">
+              Pierres roulées
+            </router-link>
           </div>
         </a>
-        <router-link to="/">Contact</router-link>
+        <router-link
+          :to="{ name: 'contact' }"
+          :class="$route.name === 'contact' ? 'current' : ''"
+        >
+          Contact
+        </router-link>
       </nav>
     </article>
   </header>
