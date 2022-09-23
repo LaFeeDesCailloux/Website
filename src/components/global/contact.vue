@@ -8,7 +8,7 @@
         N'hésitez pas à me contacter par téléphone, mail ou avec le formulaire
         disponible sur la page de contact.
       </p>
-      <router-link to="/">Contacter</router-link>
+      <router-link :to="{ name: 'contact' }">Contacter</router-link>
     </section>
   </article>
 </template>

@@ -42,15 +42,15 @@
   <article class="content" id="realisations">
     <h2>Mes réalisations</h2>
     <section>
-      <router-link :to="{ name: 'chemins-de-vie' }">
+      <router-link to="/">
         <img
           src="@/assets/realisations/chemin_de_vie.webp"
           alt="Chemin de vie"
           loading="lazy"
         />
-        <h3>Chemins de vie</h3>
+        <h3>Chemin de vie</h3>
       </router-link>
-      <router-link :to="{ name: 'bracelets-therapeutiques' }">
+      <router-link to="/">
         <img
           src="@/assets/realisations/bracelets_therapeutiques.webp"
           alt="Bracelets thérapeutiques"
@@ -66,7 +66,7 @@
         />
         <h3>Pendules</h3>
       </router-link>
-      <router-link :to="{ name: 'pendentifs-et-colliers' }">
+      <router-link to="/">
         <img
           src="@/assets/realisations/pendentifs_et_colliers.webp"
           alt="Pendentifs et colliers"
@@ -74,7 +74,7 @@
         />
         <h3>Pendentifs et colliers</h3>
       </router-link>
-      <router-link :to="{ name: 'druses-et-geodes' }">
+      <router-link to="/">
         <img
           src="@/assets/realisations/druses_et_geodes.webp"
           alt="Druses et Géodes"
@@ -82,7 +82,7 @@
         />
         <h3>Druses et Géodes</h3>
       </router-link>
-      <router-link :to="{ name: 'pierres-roulees' }">
+      <router-link to="/">
         <img
           src="@/assets/realisations/pierres_roulees.webp"
           alt="Pierres roulées"
@@ -198,9 +198,9 @@ import "@splidejs/vue-splide/css";
 import Contact from "@/components/global/contact";
 
 export default {
-  name: "homeView",
+  name: "contactView",
   title() {
-    return "Accueil";
+    return "Me contacter";
   },
   data() {
     return {

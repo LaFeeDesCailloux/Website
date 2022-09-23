@@ -8,6 +8,22 @@ const routes = [
     component: Home,
   },
   {
+    path: "/realisations/chemins-de-vie",
+    name: "chemins-de-vie",
+    component: () =>
+      import(
+        /* webpackChunkName: "chemins-de-vie" */ "../views/realisations/cheminsDeVie.vue"
+      ),
+  },
+  {
+    path: "/realisations/bracelets-therapeutiques",
+    name: "bracelets-therapeutiques",
+    component: () =>
+      import(
+        /* webpackChunkName: "bracelets-therapeutiques" */ "../views/realisations/braceletsTherapeutiques.vue"
+      ),
+  },
+  {
     path: "/realisations/pendules",
     name: "pendules",
     component: () =>
@@ -15,15 +31,36 @@ const routes = [
         /* webpackChunkName: "pendules" */ "../views/realisations/pendules.vue"
       ),
   },
-  /*{
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+  {
+    path: "/realisations/pendentifs-et-colliers",
+    name: "pendentifs-et-colliers",
     component: () =>
-      import(/!* webpackChunkName: "about" *!/ "../views/AboutView.vue"),
-  },*/
+      import(
+        /* webpackChunkName: "pendentifs-et-colliers" */ "../views/realisations/pendentifsEtColliers.vue"
+      ),
+  },
+  {
+    path: "/realisations/druses-et-geodes",
+    name: "druses-et-geodes",
+    component: () =>
+      import(
+        /* webpackChunkName: "druses-et-geodes" */ "../views/realisations/drusesEtGeodes.vue"
+      ),
+  },
+  {
+    path: "/realisations/pierres-roulees",
+    name: "pierres-roulees",
+    component: () =>
+      import(
+        /* webpackChunkName: "pierres-roulees" */ "../views/realisations/pierresRoulees.vue"
+      ),
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () =>
+      import(/* webpackChunkName: "contact" */ "../views/contact.vue"),
+  },
 ];
 
 const router = createRouter({
