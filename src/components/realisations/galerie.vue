@@ -13,7 +13,7 @@
           />
           <div>
             <h3>{{ image.titre }}</h3>
-            <font-awesome-icon icon="fa-solid fa-info" fixed-width />
+            <font-awesome-icon icon="fa-solid fa-info" />
           </div>
         </div>
       </div>
