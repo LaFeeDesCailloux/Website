@@ -424,6 +424,7 @@ export default {
       flex-flow: column nowrap;
       align-items: flex-end;
       justify-content: space-between;
+      padding: 0.4rem 0;
       gap: 1.5rem;
 
       > div:first-of-type {
