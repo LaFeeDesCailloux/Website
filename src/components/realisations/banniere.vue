@@ -1,6 +1,7 @@
 <template>
   <article>
     <h1>{{ titre }}</h1>
+    <p>{{ titre }}</p>
     <img
       :src="require('@/assets/realisations/' + image)"
       :alt="titre"
@@ -23,7 +24,10 @@ article {
   background-color: #070707;
   position: relative;
 
-  h1 {
+  h1,
+  p {
+    margin-inline: auto;
+    width: min(100%, 1200px);
     z-index: -1;
     text-align: center;
     font-size: 8em;
@@ -32,6 +36,32 @@ article {
     top: 3rem;
     left: 0;
     right: 0;
+    font-weight: bold;
+    animation: move 6s alternate infinite ease-in-out;
+    animation-fill-mode: both;
+    user-select: none;
+
+    @keyframes move {
+      from {
+        transform: translateY(-5px);
+      }
+      to {
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  p {
+    display: none;
+  }
+
+  @supports (-webkit-text-stroke: 1px black) {
+    p {
+      display: unset;
+      z-index: 1;
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   img {
