@@ -149,7 +149,7 @@
           </a>
         </div>
       </div>
-      <img src="@/assets/lithotherapie.webp" alt="A propos" />
+      <img src="@/assets/a-propos.webp" alt="A propos" />
     </section>
   </article>
 
