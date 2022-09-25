@@ -145,22 +145,22 @@ export default {
   }
 
   button {
-    font-size: 1em;
-    font-family: var(--font-family);
-    transition: all 250ms;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border: 2px solid #685641;
+    display: inline-flex;
+    align-self: center;
+    text-align: center;
+    padding: 0.7rem 1.8rem;
+    border: 2px solid black;
     border-radius: 6px;
-    color: #685641;
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transform: scale(1);
+    transition: transform 400ms;
     background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    margin-inline: auto;
 
     &:hover {
-      background-color: #685641;
-      color: white;
+      transform: scale(1.04);
     }
   }
 }
