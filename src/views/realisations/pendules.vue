@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/DSC06813.jpg"
+        src="@/assets/realisations/pendules/pendule.webp"
         alt="Pendule"
         loading="lazy"
       />
@@ -101,7 +101,7 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "DSC06813.jpg",
+          chemin: "pendule.webp",
         },
         {
           titre: "Titre",
