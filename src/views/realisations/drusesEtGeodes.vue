@@ -1,5 +1,5 @@
 <template>
-  <Banniere titre="Druses et Géodes" image="pendules/header_pendule.webp" />
+  <Banniere titre="Druses et Géodes" image="druses_et_geodes/DSC06732_1.jpg" />
 
   <Description>
     <section>
@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/pendule.webp"
+        src="@/assets/realisations/druses_et_geodes/DSC06738.jpg"
         alt="Druse"
         loading="lazy"
       />
@@ -36,7 +36,11 @@
         nisi.
       </div>
       <i />
-      <img src="@/assets/lithotherapie.webp" alt="Géode" loading="lazy" />
+      <img
+        src="@/assets/realisations/druses_et_geodes/DSC06730.jpg"
+        alt="Géode"
+        loading="lazy"
+      />
     </section>
   </Description>
 

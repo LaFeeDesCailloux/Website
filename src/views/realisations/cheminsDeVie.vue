@@ -1,5 +1,5 @@
 <template>
-  <Banniere titre="Chemins de vie" image="pendules/header_pendule.webp" />
+  <Banniere titre="Chemins de vie" image="chemins_de_vie/DSC06762.png" />
 
   <Description>
     <section>
@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/pendule.webp"
+        src="@/assets/realisations/chemins_de_vie/DSC06769.jpg"
         alt="Chemin de vie"
         loading="lazy"
       />
@@ -37,7 +37,7 @@
       </div>
       <i />
       <img
-        src="@/assets/lithotherapie.webp"
+        src="@/assets/realisations/chemins_de_vie/DSC03817.jpg"
         alt="Chemin de vie"
         loading="lazy"
       />

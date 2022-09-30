@@ -1,7 +1,7 @@
 <template>
   <Banniere
     titre="Bracelets thérapeutiques"
-    image="pendules/header_pendule.webp"
+    image="bracelets_therapeutiques/DSC03823.jpg"
   />
 
   <Description>
@@ -20,7 +20,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/pendule.webp"
+        src="@/assets/realisations/bracelets_therapeutiques/IMG_20211024_143716.jpg"
         alt="Bracelet thérapeutique"
         loading="lazy"
       />
@@ -40,7 +40,7 @@
       </div>
       <i />
       <img
-        src="@/assets/lithotherapie.webp"
+        src="@/assets/realisations/bracelets_therapeutiques/IMG_20211024_152513.jpg"
         alt="Bracelet thérapeutique"
         loading="lazy"
       />
