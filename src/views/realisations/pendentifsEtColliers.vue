@@ -1,7 +1,7 @@
 <template>
   <Banniere
     titre="Pendentifs et Colliers"
-    image="pendules/header_pendule.webp"
+    image="pendentifs_et_colliers/DSC06786.jpg"
   />
 
   <Description>
@@ -20,7 +20,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/pendule.webp"
+        src="@/assets/realisations/pendentifs_et_colliers/IMG_20211024_152752.jpg"
         alt="Pendentif"
         loading="lazy"
       />
@@ -39,7 +39,11 @@
         nisi.
       </div>
       <i />
-      <img src="@/assets/lithotherapie.webp" alt="Collier" loading="lazy" />
+      <img
+        src="@/assets/realisations/pendentifs_et_colliers/DSC06795.jpg"
+        alt="Collier"
+        loading="lazy"
+      />
     </section>
   </Description>
 

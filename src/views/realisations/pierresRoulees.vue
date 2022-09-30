@@ -1,5 +1,5 @@
 <template>
-  <Banniere titre="Pierres roulées" image="pendules/header_pendule.webp" />
+  <Banniere titre="Pierres roulées" image="pierres_roulees/DSC06750.jpg" />
 
   <Description>
     <section>
@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/pendule.webp"
+        src="@/assets/realisations/pierres_roulees/IMG_20211024_155853.jpg"
         alt="Pierre roulée"
         loading="lazy"
       />
@@ -37,7 +37,7 @@
       </div>
       <i />
       <img
-        src="@/assets/lithotherapie.webp"
+        src="@/assets/realisations/pierres_roulees/IMG_20211023_180755.jpg"
         alt="Pierre roulée"
         loading="lazy"
       />

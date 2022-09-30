@@ -8,7 +8,7 @@
   <article class="content" id="lithotherapie">
     <section>
       <img
-        src="@/assets/lithotherapie.webp"
+        src="@/assets/DSC06757.jpg"
         alt="Pierres utilisées avec la lithothérapie"
         loading="lazy"
       />
@@ -52,7 +52,7 @@
       </router-link>
       <router-link :to="{ name: 'bracelets-therapeutiques' }">
         <img
-          src="@/assets/realisations/bracelets_therapeutiques.webp"
+          src="@/assets/lithotherapie.webp"
           alt="Bracelets thérapeutiques"
           loading="lazy"
         />
@@ -69,14 +69,14 @@
       <router-link :to="{ name: 'pendentifs-et-colliers' }">
         <img
           src="@/assets/realisations/pendentifs_et_colliers.webp"
-          alt="Pendentifs et colliers"
+          alt="Pendentifs et Colliers"
           loading="lazy"
         />
-        <h3>Pendentifs et colliers</h3>
+        <h3>Pendentifs et Colliers</h3>
       </router-link>
       <router-link :to="{ name: 'druses-et-geodes' }">
         <img
-          src="@/assets/realisations/druses_et_geodes.webp"
+          src="@/assets/realisations/DSC06735.jpg"
           alt="Druses et Géodes"
           loading="lazy"
         />
@@ -84,27 +84,13 @@
       </router-link>
       <router-link :to="{ name: 'pierres-roulees' }">
         <img
-          src="@/assets/realisations/pierres_roulees.webp"
+          src="@/assets/realisations/IMG_20211024_155908.jpg"
           alt="Pierres roulées"
           loading="lazy"
         />
         <h3>Pierres roulées</h3>
       </router-link>
     </section>
-    <!--<section>
-      <Splide :options="pierres" aria-label="Pierres">
-        <SplideSlide>
-          <router-link to="/">
-            <img
-              src="@/assets/pierres/pierre.webp"
-              alt="Pierre"
-              loading="lazy"
-            />
-            <p>Pierre</p>
-          </router-link>
-        </SplideSlide>
-      </Splide>
-    </section>-->
   </article>
 
   <article class="content" id="a-propos">
@@ -149,7 +135,7 @@
           </a>
         </div>
       </div>
-      <img src="@/assets/a-propos.webp" alt="A propos" />
+      <img src="@/assets/DSC03825.jpg" alt="A propos" />
     </section>
   </article>
 
@@ -204,19 +190,6 @@ export default {
   },
   data() {
     return {
-      pierres: {
-        drag: "free",
-        type: "loop",
-        focus: "center",
-        perPage: 5.5,
-        rewind: true,
-        rewindByDrag: true,
-        keyboard: true,
-        cover: true,
-        arrows: true,
-        pagination: false,
-        gap: "2rem",
-      },
       avis: {
         type: "loop",
         perPage: 2,
@@ -242,7 +215,7 @@ export default {
 <style scoped lang="scss">
 #banner {
   height: 400px;
-  background-image: url("@/assets/banner.webp");
+  background-image: url("@/assets/DSC06774.jpg");
   background-size: cover;
   background-position: right;
   display: flex;
@@ -275,6 +248,7 @@ export default {
 
     img {
       height: 500px;
+      width: 450px;
       object-fit: cover;
       border-radius: 6px;
       box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
@@ -461,7 +435,7 @@ export default {
 
     img {
       height: 400px;
-      width: 320px;
+      width: 400px;
       object-fit: cover;
       border-radius: 6px;
       box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,

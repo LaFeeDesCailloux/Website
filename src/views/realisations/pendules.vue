@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/pendule.webp"
+        src="@/assets/realisations/pendules/DSC06816.jpg"
         alt="Pendule"
         loading="lazy"
       />
@@ -36,18 +36,15 @@
         nisi.
       </div>
       <i />
-      <img src="@/assets/lithotherapie.webp" alt="Pendule" loading="lazy" />
+      <img
+        src="@/assets/realisations/pendules/DSC06828.jpg"
+        alt="Pendule"
+        loading="lazy"
+      />
     </section>
   </Description>
 
   <Specificites>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
     <div>
       <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
       <p>
