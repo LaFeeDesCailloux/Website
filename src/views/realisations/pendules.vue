@@ -1,5 +1,5 @@
 <template>
-  <Banniere titre="Pendules" image="pendules/header_pendule.webp" />
+  <Banniere titre="Pendules" image="pendules/banner.webp" />
 
   <Description>
     <section>
@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/DSC06816.jpg"
+        src="@/assets/pendules/description_1.webp"
         alt="Pendule"
         loading="lazy"
       />
@@ -37,7 +37,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendules/DSC06828.jpg"
+        src="@/assets/pendules/description_2.webp"
         alt="Pendule"
         loading="lazy"
       />
@@ -68,7 +68,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="realisations/pendules/" :images="images" />
+  <Galerie dossier="old/" :images="images" />
 
   <Contact />
 </template>
@@ -98,12 +98,7 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "pendule.webp",
-        },
-        {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "header_pendule.webp",
+          chemin: "banner.webp",
         },
       ],
     };

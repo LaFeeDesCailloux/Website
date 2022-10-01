@@ -1,43 +1,51 @@
 <template>
-  <Banniere titre="Pierres roulées" image="pierres_roulees/DSC06750.jpg" />
+  <Banniere titre="Pierres roulées" image="pierres_roulees/banner.webp" />
 
   <Description>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Pierres à glisser dans sa poche ou à placer dans votre entrée pour
+          protéger votre maison.
+        </p>
+        <p>
+          Tout aussi efficaces qu’un pendentif elles vous apportent tous les
+          bienfaits énergétiques que peut vous délivrer le minéral choisi.
+        </p>
+        <p>Plus la pierre est grosse, plus elle est chargée énergétiquement.</p>
+        <p>
+          Pour la choisir, faites-vous confiance surtout si vous êtes attirée
+          par cette pierre sinon demandez conseil pour orienter votre choix.
+        </p>
       </div>
       <i />
       <img
-        src="@/assets/realisations/pierres_roulees/IMG_20211024_155853.jpg"
+        src="@/assets/pierres_roulees/description_1.webp"
         alt="Pierre roulée"
         loading="lazy"
       />
     </section>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>Petits exemples de leurs utilisations :</p>
+        <ul>
+          <li>
+            Protéger votre maison en plaçant un œil de tigre au-dessus de votre
+            porte d’entrée.
+          </li>
+          <li>
+            Vous avez des hémorroïdes, glissez une hématite dans la poche
+            arrière de votre pantalon.
+          </li>
+          <li>
+            Vous manquez d’argent, attirez l’abondance en glissant une citrine
+            dans votre porte-monnaie.
+          </li>
+        </ul>
       </div>
       <i />
       <img
-        src="@/assets/realisations/pierres_roulees/IMG_20211023_180755.jpg"
+        src="@/assets/pierres_roulees/description_2.webp"
         alt="Pierre roulée"
         loading="lazy"
       />
@@ -75,7 +83,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="realisations/pendules/" :images="images" />
+  <Galerie dossier="old/" :images="images" />
 
   <Contact />
 </template>
@@ -105,12 +113,7 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "pendule.webp",
-        },
-        {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "header_pendule.webp",
+          chemin: "banner.webp",
         },
       ],
     };

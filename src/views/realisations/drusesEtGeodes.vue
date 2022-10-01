@@ -1,43 +1,56 @@
 <template>
-  <Banniere titre="Druses et Géodes" image="druses_et_geodes/DSC06732_1.jpg" />
+  <Banniere titre="Druses et Géodes" image="druses_et_geodes/banner.webp" />
 
   <Description>
     <section>
-      <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+      <div id="description">
+        <p>
+          Outre leurs beautés, les géodes et les druses sont également bien
+          utiles.
+        </p>
+        <p>
+          Elles vous permettent de recharger après quelques heures vos pierres
+          quelles qu’elles soient :
+        </p>
+        <ul>
+          <li>Vos bracelets ;</li>
+          <li>Vos pierres roulées ;</li>
+          <li>Pendules ;</li>
+          <li>Pendentifs...</li>
+        </ul>
+        <p>Il suffit d’y déposer vos minéraux.</p>
       </div>
       <i />
       <img
-        src="@/assets/realisations/druses_et_geodes/DSC06738.jpg"
+        src="@/assets/druses_et_geodes/description_1.webp"
         alt="Druse"
         loading="lazy"
       />
     </section>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Les Géodes sont creuses et peuvent recevoir vos bracelets et pierres
+          tout comme les druses.<br />
+          Cependant, ces dernières sont quant à elles tapissées de cristaux sur
+          leur dessus.
+        </p>
+        <h2>Exemples :</h2>
+        <ul>
+          <li>
+            Une druse en améthyste permet d’apporter de la sérénité à la pièce
+            dans laquelle elle est exposée.
+          </li>
+          <li>
+            Les géodes en cristal de roche peuvent aussi bien purifier que
+            recharger vos différentes pierres. Elles permettent également de
+            purifier un lieu.
+          </li>
+        </ul>
       </div>
       <i />
       <img
-        src="@/assets/realisations/druses_et_geodes/DSC06730.jpg"
+        src="@/assets/druses_et_geodes/description_2.webp"
         alt="Géode"
         loading="lazy"
       />
@@ -75,7 +88,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="realisations/pendules/" :images="images" />
+  <Galerie dossier="old/" :images="images" />
 
   <Contact />
 </template>
@@ -105,15 +118,22 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "pendule.webp",
-        },
-        {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "header_pendule.webp",
+          chemin: "banner.webp",
         },
       ],
     };
   },
 };
 </script>
+
+<style scoped lang="scss">
+#description {
+  p:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  p:last-of-type {
+    margin-top: 1rem;
+  }
+}
+</style>

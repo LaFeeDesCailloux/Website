@@ -1,26 +1,23 @@
 <template>
   <Banniere
     titre="Pendentifs et Colliers"
-    image="pendentifs_et_colliers/DSC06786.jpg"
+    image="pendentifs_et_colliers/banner.webp"
+    text_color="black"
+    background_color="#faf6f5"
   />
 
   <Description>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Le pendentif apporte autant de bienfaits qu'une pierre roulée tout en
+          étant en permanence à votre contact. Il devra être purifié ou rechargé
+          à la lune ou au soleil en fonction de la pierre.
+        </p>
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendentifs_et_colliers/IMG_20211024_152752.jpg"
+        src="@/assets/pendentifs_et_colliers/description_1.webp"
         alt="Pendentif"
         loading="lazy"
       />
@@ -40,7 +37,7 @@
       </div>
       <i />
       <img
-        src="@/assets/realisations/pendentifs_et_colliers/DSC06795.jpg"
+        src="@/assets/pendentifs_et_colliers/description_2.webp"
         alt="Collier"
         loading="lazy"
       />
@@ -78,7 +75,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="realisations/pendules/" :images="images" />
+  <Galerie dossier="old/" :images="images" />
 
   <Contact />
 </template>
@@ -108,12 +105,7 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "pendule.webp",
-        },
-        {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "header_pendule.webp",
+          chemin: "banner.webp",
         },
       ],
     };
