@@ -79,7 +79,7 @@ article {
     gap: 2rem;
 
     > div {
-      flex: 1 1 33%;
+      flex: 1 1 calc(100% / 3 - 2rem);
       border-radius: 6px;
       overflow: hidden;
       position: relative;

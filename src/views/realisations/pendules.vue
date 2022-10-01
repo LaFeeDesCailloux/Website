@@ -68,7 +68,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="old/" :images="images" />
+  <Galerie dossier="pendules/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -98,7 +98,57 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "banner.webp",
+          chemin: "DSC06800.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06804.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06814.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06822.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06829.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06834.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_140940.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_140946.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_140950.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_141245.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_141814.jpg",
         },
       ],
     };

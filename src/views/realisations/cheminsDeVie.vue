@@ -150,7 +150,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="old/" :images="images" />
+  <Galerie dossier="chemins_de_vie/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -178,9 +178,19 @@ export default {
     return {
       images: [
         {
-          titre: "Titre",
+          titre: "Chemin de vie",
           description: "Lorem ipsum",
-          chemin: "banner.webp",
+          chemin: "DSC03820.jpg",
+        },
+        {
+          titre: "Chemin de vie",
+          description: "Lorem ipsum",
+          chemin: "DSC06771.jpg",
+        },
+        {
+          titre: "Chemin de vie",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_151752.jpg",
         },
       ],
     };

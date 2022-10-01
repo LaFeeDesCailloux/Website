@@ -83,7 +83,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="old/" :images="images" />
+  <Galerie dossier="pierres_roulees/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -111,9 +111,14 @@ export default {
     return {
       images: [
         {
-          titre: "Titre",
+          titre: "Pierre",
           description: "Lorem ipsum",
-          chemin: "banner.webp",
+          chemin: "DSC06714.jpg",
+        },
+        {
+          titre: "Pierre",
+          description: "Lorem ipsum",
+          chemin: "DSC06728.jpg",
         },
       ],
     };
