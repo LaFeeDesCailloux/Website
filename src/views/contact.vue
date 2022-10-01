@@ -1,7 +1,20 @@
 <template>
   <article id="title" class="content">
     <h1>Me contacter</h1>
-    <p>Ouais, c'est pas une science exacte.</p>
+    <p>Merci de me contacter de préférence en semaine entre 17h et 20h.</p>
+    <p>
+      Si vous souhaitez commander un chemin de vie, n'oubliez pas de me
+      communiquer les informations suivantes :<!--<br />
+      Le nom du père, le nom de jeune fille de la mère, tous les prénoms,<br />
+      la date de naissance ainsi que le tour de poignet.-->
+    </p>
+    <ul>
+      <li>Nom du père ;</li>
+      <li>Nom de jeune fille de la mère ;</li>
+      <li>Tous les prénoms ;</li>
+      <li>La date de naissance ;</li>
+      <li>Le tour du poignet.</li>
+    </ul>
   </article>
 
   <article id="links" class="content">
@@ -84,6 +97,25 @@ export default {
     margin-top: 1rem;
     text-align: center;
     font-size: 1.1em;
+
+    &:last-of-type {
+      margin-top: 0.6rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.4rem;
+    gap: 0.6rem;
+
+    li {
+      flex: 0 1 30%;
+      text-align: center;
+      list-style: none;
+    }
   }
 }
 
