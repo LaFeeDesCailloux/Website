@@ -88,7 +88,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="old/" :images="images" />
+  <Galerie dossier="druses_et_geodes/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -118,7 +118,32 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "banner.webp",
+          chemin: "DSC06737.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_174234.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_180852.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_150807.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_151152.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_153524.jpg",
         },
       ],
     };

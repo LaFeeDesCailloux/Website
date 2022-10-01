@@ -90,7 +90,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="old/" :images="images" />
+  <Galerie dossier="bracelets_therapeutiques/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -118,9 +118,219 @@ export default {
     return {
       images: [
         {
-          titre: "Titre",
+          titre: "Bracelet",
           description: "Lorem ipsum",
-          chemin: "banner.webp",
+          chemin: "DSC03822.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "DSC03823.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "DSC03831.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_175535.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_175812.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_175931.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_180044.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211023_180601.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_150525.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_152214.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_152600.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_153315.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_153438.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_153821.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154502.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154509.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154515.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154548.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154622.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154715.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154740.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154802.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154833.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154839.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155007.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155020.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155109.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155120.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155131.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155203.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155215.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155302.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155356.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155426.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155439.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155444.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155522.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155530.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155535.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155658.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155702.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155716.jpg",
+        },
+        {
+          titre: "Bracelet",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_155727.jpg",
         },
       ],
     };

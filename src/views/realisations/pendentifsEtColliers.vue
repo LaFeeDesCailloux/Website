@@ -75,7 +75,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="old/" :images="images" />
+  <Galerie dossier="pendentifs_et_colliers/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -105,7 +105,127 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "banner.webp",
+          chemin: "DSC06704.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06712.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06773.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06788.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06789.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "DSC06790.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_134130.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_152913.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_152952.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154153.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154209.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154219.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154227.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154324.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154404.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20211024_154422.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_094249.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_112526.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_112540.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_112554.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_112607.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_112740.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_113003.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220226_113413.jpg",
+        },
+        {
+          titre: "Titre",
+          description: "Lorem ipsum",
+          chemin: "IMG_20220331_190046.jpg",
         },
       ],
     };
