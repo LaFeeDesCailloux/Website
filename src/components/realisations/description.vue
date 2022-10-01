@@ -50,9 +50,27 @@ article {
       border-radius: 6px;
       backdrop-filter: blur(16px);
       padding: 2rem;
-      max-width: 420px;
+      max-width: 500px;
       text-align: justify;
       font-size: 1.05em;
+
+      h2 {
+        font-size: 1.1em;
+        margin-top: 1.6rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      li {
+        text-align: start;
+        margin: 0.4rem 0 0.4rem 1rem;
+      }
     }
 
     i {

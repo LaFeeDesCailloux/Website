@@ -1,12 +1,8 @@
 <template>
-  <article>
+  <article id="banner">
     <h1>{{ titre }}</h1>
     <p>{{ titre }}</p>
-    <img
-      :src="require('@/assets/realisations/' + image)"
-      :alt="titre"
-      loading="lazy"
-    />
+    <img :src="require('@/assets/' + image)" :alt="titre" loading="lazy" />
     <i />
   </article>
 </template>
@@ -14,7 +10,19 @@
 <script>
 export default {
   name: "banniereComponent",
-  props: ["titre", "image"],
+  props: ["titre", "image", "background_color", "text_color"],
+  mounted() {
+    let banner = document.getElementById("banner");
+    if (this.background_color) {
+      banner.style.backgroundColor = this.background_color;
+    }
+    if (this.text_color) {
+      banner.children[0].style.color =
+        banner.children[1].style.color =
+        banner.children[1].style.webkitTextStrokeColor =
+          this.text_color;
+    }
+  },
 };
 </script>
 
@@ -70,6 +78,7 @@ article {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 600px;
   }
 
   i {

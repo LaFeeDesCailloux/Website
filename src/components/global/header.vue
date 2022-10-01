@@ -2,8 +2,8 @@
   <header>
     <article>
       <router-link :to="{ name: 'home' }">
-        <img alt="Vue logo" src="@/assets/logo.webp" />
-        La Fée Des Cailloux
+        <img alt="Logo La Fée des Cailloux" src="@/assets/logo.webp" />
+        <img alt="La Fée des Cailloux" src="@/assets/logo-title.svg" />
       </router-link>
       <nav>
         <router-link
@@ -114,6 +114,10 @@ header {
       img {
         transition: all 300ms;
         height: 70px;
+
+        &:last-of-type {
+          height: 50px;
+        }
       }
     }
 
@@ -206,6 +210,10 @@ header {
 
       img {
         height: 44px;
+
+        &:last-of-type {
+          height: 34px;
+        }
       }
     }
 

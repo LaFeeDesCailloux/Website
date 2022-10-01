@@ -1,46 +1,58 @@
 <template>
   <Banniere
     titre="Bracelets thérapeutiques"
-    image="bracelets_therapeutiques/DSC03823.jpg"
+    image="bracelets_therapeutiques/banner.webp"
+    background_color="#8497eb"
   />
 
   <Description>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Le bracelet thérapeutique est différent du chemin de vie.<br />
+          Il est confectionné selon votre demande et, bien entendu, selon vos
+          besoins ou pathologies.
+        </p>
+        <p>Quelques exemples :</p>
+        <ul>
+          <li>Vous souhaitez arrêter de fumer ;</li>
+          <li>Vous avez de l’eczéma ;</li>
+          <li>Vous avez une épine calcanéenne ;</li>
+          <li>Vous voulez prendre confiance en vous ;</li>
+          <li>
+            Vous désirez vous protéger des énergies négatives d’une personne ;
+          </li>
+          <li>Vous avez du mal à dormir ;</li>
+          <li>Vous avez des bouffées de chaleur.</li>
+        </ul>
       </div>
       <i />
       <img
-        src="@/assets/realisations/bracelets_therapeutiques/IMG_20211024_143716.jpg"
+        src="@/assets/bracelets_therapeutiques/description_1.webp"
         alt="Bracelet thérapeutique"
         loading="lazy"
       />
     </section>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Faites-en la demande par téléphone, SMS ou par le biais de la page de
+          contact et je vous confectionnerai votre bracelet.
+        </p>
+        <p>
+          Beaucoup de pathologies sont déclenchées par l’inconscient, il y a
+          toujours une raison cachée. Nous étudierons cela ensemble lors de
+          notre échange.
+        </p>
+        <p>
+          <strong>
+            Prenez soin de votre bracelet, il prendra soin de vous.
+          </strong>
+        </p>
       </div>
       <i />
       <img
-        src="@/assets/realisations/bracelets_therapeutiques/IMG_20211024_152513.jpg"
+        src="@/assets/bracelets_therapeutiques/description_2.webp"
         alt="Bracelet thérapeutique"
         loading="lazy"
       />
@@ -78,7 +90,7 @@
     </div>
   </Specificites>
 
-  <Galerie dossier="realisations/pendules/" :images="images" />
+  <Galerie dossier="old/" :images="images" />
 
   <Contact />
 </template>
@@ -108,12 +120,7 @@ export default {
         {
           titre: "Titre",
           description: "Lorem ipsum",
-          chemin: "pendule.webp",
-        },
-        {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "header_pendule.webp",
+          chemin: "banner.webp",
         },
       ],
     };

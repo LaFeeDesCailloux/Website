@@ -8,33 +8,33 @@
   <article class="content" id="lithotherapie">
     <section>
       <img
-        src="@/assets/DSC06757.jpg"
+        src="@/assets/lithotherapie.webp"
         alt="Pierres utilisées avec la lithothérapie"
         loading="lazy"
       />
       <div>
         <h2>Lithothérapie</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-          arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-          justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-          pellentesque vulputate lacus. Etiam luctus arcu sed eleifend
-          convallis. Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit
-          nisi quis congue efficitur. Maecenas ultrices metus eu mi facilisis
-          consectetur. Aliquam molestie iaculis tellus convallis eleifend. Etiam
-          eu massa enim. Sed vehicula ante sem, nec bibendum purus aliquam quis.
-          Vivamus tincidunt, ipsum id tempus gravida, leo leo elementum mi, nec
-          iaculis quam sapien a nisi.
+          Lithothérapie vient du Grec "<span>Lithos</span>" qui signifie Pierre
+          et "<span>Thérapeia</span>" thérapie ou cure ; thérapie par les
+          pierres.<br />
+          De nombreuses civilisations très anciennes utilisaient les pierres
+          pour leurs nombreuses vertues.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-          arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-          justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-          pellentesque vulputate lacus. Etiam luctus arcu sed eleifend
-          convallis. Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit
-          nisi quis congue efficitur. Maecenas ultrices metus eu mi facilisis
-          consectetur.
+          Ces pierres et cristaux agissent sur nos organismes par les vibrations
+          qu'elles dégagent. Elles agissent tant sur le plan physique, mental,
+          émotionnel ou encore spirituel.<br />
+          Tout est question de rééquilibrage et d'harmonisation des énergies
+          vibratoires.<br />
+          Chaque minéral a ses propres caractéristiques en fonction de sa
+          composition.
         </p>
+        <p>
+          Peu importe que vous croyez ou non à leurs vertus, les pierres vous
+          apporteront tous leurs bienfaits.
+        </p>
+        <p><strong>Fiez-vous à votre intuition.</strong></p>
       </div>
     </section>
   </article>
@@ -44,7 +44,7 @@
     <section>
       <router-link :to="{ name: 'chemins-de-vie' }">
         <img
-          src="@/assets/realisations/chemin_de_vie.webp"
+          src="@/assets/chemins_de_vie/main.webp"
           alt="Chemin de vie"
           loading="lazy"
         />
@@ -52,23 +52,19 @@
       </router-link>
       <router-link :to="{ name: 'bracelets-therapeutiques' }">
         <img
-          src="@/assets/lithotherapie.webp"
+          src="@/assets/bracelets_therapeutiques/main.webp"
           alt="Bracelets thérapeutiques"
           loading="lazy"
         />
         <h3>Bracelets thérapeutiques</h3>
       </router-link>
       <router-link :to="{ name: 'pendules' }">
-        <img
-          src="@/assets/realisations/pendules.webp"
-          alt="Pendules"
-          loading="lazy"
-        />
+        <img src="@/assets/pendules/main.webp" alt="Pendules" loading="lazy" />
         <h3>Pendules</h3>
       </router-link>
       <router-link :to="{ name: 'pendentifs-et-colliers' }">
         <img
-          src="@/assets/realisations/pendentifs_et_colliers.webp"
+          src="@/assets/pendentifs_et_colliers/main.webp"
           alt="Pendentifs et Colliers"
           loading="lazy"
         />
@@ -76,7 +72,7 @@
       </router-link>
       <router-link :to="{ name: 'druses-et-geodes' }">
         <img
-          src="@/assets/realisations/DSC06735.jpg"
+          src="@/assets/druses_et_geodes/main.webp"
           alt="Druses et Géodes"
           loading="lazy"
         />
@@ -84,7 +80,7 @@
       </router-link>
       <router-link :to="{ name: 'pierres-roulees' }">
         <img
-          src="@/assets/realisations/IMG_20211024_155908.jpg"
+          src="@/assets/pierres_roulees/main.webp"
           alt="Pierres roulées"
           loading="lazy"
         />
@@ -112,8 +108,9 @@
           <p>
             Je confectionne des chemins de vie et des bracelets thérapeutiques,
             avec tout mon cœur et amour, en portant particulièrement attention à
-            la place de chaque pierre dans le bracelet, car elles ne sont pas
-            toutes compatibles entre elles et peuvent même se neutraliser.
+            la place de chaque pierre dans le bracelet car détail très
+            important, elles ne sont pas toutes compatibles entre elles et
+            peuvent même se neutraliser.
           </p>
           <p>
             Si toutefois vous souhaitez posséder une création personnalisée,
@@ -135,7 +132,7 @@
           </a>
         </div>
       </div>
-      <img src="@/assets/DSC03825.jpg" alt="A propos" />
+      <img src="@/assets/a-propos.webp" alt="A propos" />
     </section>
   </article>
 
@@ -215,9 +212,10 @@ export default {
 <style scoped lang="scss">
 #banner {
   height: 400px;
-  background-image: url("@/assets/DSC06774.jpg");
+  background-image: url("@/assets/banner.webp");
   background-size: cover;
   background-position: right;
+  background-color: #eeeff1;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -225,6 +223,7 @@ export default {
   h1 {
     max-width: 900px;
     font-size: 4em;
+    text-shadow: 0 0 20px white;
   }
 }
 
@@ -260,6 +259,10 @@ export default {
       text-align: justify;
       margin-bottom: 1rem;
 
+      span {
+        font-style: oblique;
+      }
+
       &:first-of-type {
         margin-top: 2rem;
       }
@@ -284,7 +287,6 @@ export default {
     align-items: center;
     justify-items: stretch;
     gap: 4rem;
-    //margin-bottom: 4rem;
 
     a {
       aspect-ratio: 1/1;
@@ -333,47 +335,6 @@ export default {
       }
     }
   }
-
-  > section:last-of-type .splide__slide {
-    height: 140px;
-    border-radius: 6px;
-    overflow: hidden;
-
-    a {
-      position: relative;
-      width: 100%;
-      height: 100%;
-
-      img {
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      p {
-        transition: bottom 250ms;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.8rem;
-        height: 40px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -40px;
-        color: white;
-        font-size: 1.1em;
-        font-weight: 500;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(6px);
-      }
-
-      &:hover p {
-        bottom: 0;
-      }
-    }
-  }
 }
 
 #a-propos {
@@ -385,7 +346,7 @@ export default {
 
   section {
     margin-inline: auto;
-    max-width: 1000px;
+    max-width: 1100px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
