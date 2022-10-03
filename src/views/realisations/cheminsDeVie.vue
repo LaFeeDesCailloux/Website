@@ -9,35 +9,38 @@
           Il vous est propre car personnalisé et ne doit en aucun cas être prêté
           ou donné.
         </p>
-        <p>Il est composé de 8 pierres parmi 33 :</p>
+        <p>
+          Il est composé de 8 pierres parmi 33, définit en fonction de critères
+          prédéterminés principalement par votre état civil :
+        </p>
         <ul>
-          <li><strong>La pierre de base</strong> représente nos racines ;</li>
+          <li><strong>La pierre de base</strong> représente vos racines ;</li>
           <li>
-            <strong>La pierre de sommet</strong> représente notre réalisation
+            <strong>La pierre de sommet</strong> représente votre réalisation
             spirituelle ;
           </li>
           <li>
-            <strong>Le chemin de vie</strong> fait sauter les verrous et donne
-            la piste à suivre ;
+            <strong>Le chemin de vie</strong> fait sauter vos verrous et vous
+            donne la piste à suivre ;
           </li>
           <li>
-            <strong>La pierre d’appel</strong> nous pousse et nous bouscule
-            symbolisant nos émotions profondes ;
+            <strong>La pierre d’appel</strong> vous pousse et vous bouscule
+            symbolisant vos émotions profondes ;
           </li>
           <li>
-            <strong>La pierre de personnalité</strong> représente le mental,
-            l’intelligence, l’expression, la dualité ;
+            <strong>La pierre de personnalité</strong> représente votre mental,
+            votre intelligence, votre expression et votre dualité ;
           </li>
           <li>
-            <strong>La pierre d’expression</strong> représente la communication
-            ;
+            <strong>La pierre d’expression</strong> représente votre
+            communication ;
           </li>
           <li>
-            <strong>La pierre de touche</strong> représente les possibilités en
+            <strong>La pierre de touche</strong> représente vos possibilités en
             permettant d’ouvrir des portes ;
           </li>
           <li>
-            <strong>La pierre de vœux</strong> représente la sensibilité
+            <strong>La pierre de vœux</strong> représente votre sensibilité
             intérieure de l’être.
           </li>
         </ul>
@@ -52,26 +55,23 @@
     <section>
       <div>
         <p>
+          Les 8 pierres déterminent votre personnalité. Elles permettent des
+          améliorations sur le plan physique, mental et spirituel en vous
+          apportant tout au long de votre vie une aide précieuse.
+        </p>
+        <p>
+          Chaque pierre composée d’oligo-éléments possède des propriétés
+          énergétiques. Les changements se font en douceur, en profondeur et
+          dans la durée. Vous remarquerez petit à petit une évolution efficace
+          sur tous les plans.
+        </p>
+        <p>
           Monté sur un fil élastique, il vous est facile de le porter et le
           retirer à votre aise.
         </p>
         <p>
-          Les 8 pierres déterminent votre personnalité. Elles permettent des
-          améliorations tant sur le plan physique, mental et spirituel tout en
-          vous apportant tout au long de votre vie une aide précieuse en faisant
-          partie de vous.
-        </p>
-        <p>
-          Chaque pierre, composées d’oligo-éléments, possède des propriétés
-          énergétiques. Les changements se feront en douceur, en profondeur et
-          dans la durée. Vous remarquerez petit à petit une évolution efficace
-          sur tous les plans, au point de vue physique, au niveau de vos
-          émotions ou en qualité de vie.
-        </p>
-        <p>
           <strong>
-            Il est très important de bien s’occuper de votre bracelet et
-            celui-ci vous le rendra au centuple.
+            Prenez soin de votre bracelet, il vous le rendra au centuple.
           </strong>
         </p>
       </div>
@@ -85,25 +85,24 @@
     <section>
       <div>
         <p>
-          Le chemin de vie allie numérologie et lithothérapie, il est calculé
-          précisément à l’aide :
+          Le chemin de vie allie numérologie et lithothérapie.<br />
+          Il est calculé précisément à l’aide :
         </p>
         <ul>
           <li>De tous vos prénoms ;</li>
           <li>Du nom de famille de votre père ;</li>
           <li>Du nom de jeune fille de votre mère ;</li>
-          <li>De votre date de naissance ;</li>
-          <li>De votre tour de poignet.</li>
+          <li>De votre date de naissance.</li>
         </ul>
         <p>Il peut faire l’objet d’un cadeau personnalisé, puisque unique.</p>
         <p>
-          Votre chemin de vie peut vous être envoyé par voie postale ou remis en
-          main propre, purifié et rechargé.
+          Votre chemin de vie vous sera adressé par voie postale ou remis en
+          main propre, purifié, rechargé et ajusté à votre tour de poignet.
         </p>
         <p>
           Afin de compléter l’expérience de votre chemin de vie, je vous
-          communiquerai oralement l’interprétation de celui-ci, ce qu’il peut
-          vous apporter, votre caractère ou tout autre ressenti.
+          communiquerai oralement son interprétation, ce qu’il vous apporte,
+          votre caractère ou tout autre ressenti.
         </p>
       </div>
       <i />

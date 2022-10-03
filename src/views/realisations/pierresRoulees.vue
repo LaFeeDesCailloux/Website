@@ -5,17 +5,18 @@
     <section>
       <div>
         <p>
-          Pierres à glisser dans sa poche ou à placer dans votre entrée pour
-          protéger votre maison.
-        </p>
-        <p>
           Tout aussi efficaces qu’un pendentif elles vous apportent tous les
           bienfaits énergétiques que peut vous délivrer le minéral choisi.
         </p>
-        <p>Plus la pierre est grosse, plus elle est chargée énergétiquement.</p>
         <p>
-          Pour la choisir, faites-vous confiance surtout si vous êtes attirée
-          par cette pierre sinon demandez conseil pour orienter votre choix.
+          Les pierres sont à glisser dans sa poche ou à placer dans votre entrée
+          pour protéger votre maison.
+        </p>
+        <p>
+          Faites-vous confiance pour le choix. Si une pierre vous attire, elle
+          est pour vous, sinon demandez conseil pour orienter votre choix. Il va
+          de soit que plus la pierre est volumineuse, plus elle est chargée
+          énergétiquement.
         </p>
       </div>
       <i />
@@ -27,20 +28,21 @@
     </section>
     <section>
       <div>
-        <p>Petits exemples de leurs utilisations :</p>
+        <p>Quelques exemples de leurs utilisations :</p>
         <ul>
           <li>
             Protéger votre maison en plaçant un œil de tigre au-dessus de votre
-            porte d’entrée.
+            porte d’entrée ;
           </li>
           <li>
             Vous avez des hémorroïdes, glissez une hématite dans la poche
-            arrière de votre pantalon.
+            arrière de votre pantalon ;
           </li>
           <li>
             Vous manquez d’argent, attirez l’abondance en glissant une citrine
-            dans votre porte-monnaie.
+            dans votre porte-monnaie ;
           </li>
+          <li>Etc.</li>
         </ul>
       </div>
       <i />

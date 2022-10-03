@@ -11,9 +11,8 @@
         <p>
           Le bracelet thérapeutique est différent du chemin de vie.<br />
           Il est confectionné selon votre demande et, bien entendu, selon vos
-          besoins ou pathologies.
+          besoins ou pathologies :
         </p>
-        <p>Quelques exemples :</p>
         <ul>
           <li>Vous souhaitez arrêter de fumer ;</li>
           <li>Vous avez de l’eczéma ;</li>
@@ -23,7 +22,8 @@
             Vous désirez vous protéger des énergies négatives d’une personne ;
           </li>
           <li>Vous avez du mal à dormir ;</li>
-          <li>Vous avez des bouffées de chaleur.</li>
+          <li>Vous avez des bouffées de chaleur ;</li>
+          <li>Etc.</li>
         </ul>
       </div>
       <i />
@@ -36,13 +36,13 @@
     <section>
       <div>
         <p>
-          Faites-en la demande par téléphone, SMS ou par le biais de la page de
-          contact et je vous confectionnerai votre bracelet.
-        </p>
-        <p>
           Beaucoup de pathologies sont déclenchées par l’inconscient, il y a
           toujours une raison cachée. Nous étudierons cela ensemble lors de
           notre échange.
+        </p>
+        <p>
+          Faites-en la demande par téléphone, SMS ou par le biais de la page de
+          contact et je vous confectionnerai votre bracelet.
         </p>
         <p>
           <strong>
