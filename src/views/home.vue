@@ -48,7 +48,13 @@
           alt="Chemin de vie"
           loading="lazy"
         />
-        <h3>Chemins de vie</h3>
+        <div>
+          <h3>Chemins de vie</h3>
+          <p>
+            A partir de 38€<br />
+            jusqu'à 62€
+          </p>
+        </div>
       </router-link>
       <router-link :to="{ name: 'bracelets-therapeutiques' }">
         <img
@@ -56,11 +62,17 @@
           alt="Bracelets thérapeutiques"
           loading="lazy"
         />
-        <h3>Bracelets thérapeutiques</h3>
+        <div>
+          <h3>Bracelets thérapeutiques</h3>
+          <p>A partir de 18€</p>
+        </div>
       </router-link>
       <router-link :to="{ name: 'pendules' }">
         <img src="@/assets/pendules/main.webp" alt="Pendules" loading="lazy" />
-        <h3>Pendules</h3>
+        <div>
+          <h3>Pendules</h3>
+          <p>A partir de 22€</p>
+        </div>
       </router-link>
       <router-link :to="{ name: 'pendentifs-et-colliers' }">
         <img
@@ -68,7 +80,10 @@
           alt="Pendentifs et Colliers"
           loading="lazy"
         />
-        <h3>Pendentifs et Colliers</h3>
+        <div>
+          <h3>Pendentifs et Colliers</h3>
+          <p>A partir de 8€</p>
+        </div>
       </router-link>
       <router-link :to="{ name: 'druses-et-geodes' }">
         <img
@@ -76,7 +91,10 @@
           alt="Druses et Géodes"
           loading="lazy"
         />
-        <h3>Druses et Géodes</h3>
+        <div>
+          <h3>Druses et Géodes</h3>
+          <p>A partir de 35€</p>
+        </div>
       </router-link>
       <router-link :to="{ name: 'pierres-roulees' }">
         <img
@@ -84,7 +102,10 @@
           alt="Pierres roulées"
           loading="lazy"
         />
-        <h3>Pierres roulées</h3>
+        <div>
+          <h3>Pierres roulées</h3>
+          <p>A partir de 5€</p>
+        </div>
       </router-link>
     </section>
   </article>
@@ -137,7 +158,7 @@
 
   <article id="avis">
     <section class="content">
-      <h2>Avis</h2>
+      <h2>Ils me font confiance</h2>
       <Splide :options="avis" :has-track="false" aria-label="Avis">
         <SplideTrack>
           <SplideSlide>
@@ -295,32 +316,44 @@ export default {
       box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
         rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
-      img,
-      h3 {
+      img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-      }
-
-      img {
         object-fit: cover;
         object-position: center center;
         transform: scale(1.005);
         transition: transform 250ms;
       }
 
-      h3 {
+      div {
         opacity: 0;
         transition: opacity 250ms;
-        background-color: rgba(255, 255, 255, 0.55);
         backdrop-filter: blur(6px);
-        display: inline-flex;
+        padding: 1rem;
+        display: flex;
+        flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        font-size: 1.5em;
+        gap: 0.6rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.55);
         color: black;
+        text-align: center;
+
+        h3 {
+          font-size: 1.6em;
+        }
+
+        p {
+          font-size: 1.22em;
+        }
       }
 
       &:hover {
@@ -328,7 +361,7 @@ export default {
           transform: scale(1.03);
         }
 
-        h3 {
+        div {
           opacity: 1;
         }
       }
