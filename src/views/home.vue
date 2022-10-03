@@ -31,7 +31,7 @@
           composition.
         </p>
         <p>
-          Peu importe que vous croyez ou non à leurs vertus, les pierres vous
+          Peu importe vos croyances en leurs vertus, les pierres vous
           apporteront tous leurs bienfaits.
         </p>
         <p><strong>Fiez-vous à votre intuition.</strong></p>
@@ -94,21 +94,20 @@
     <section>
       <div>
         <div>
-          <p>Bonjour à tous,</p>
+          <p><strong>Bienvenue,</strong></p>
           <p>
-            Passionnée par les pierres et leurs nombreuses vertus, je suis
+            Passionnée par les pierres et leurs innombrables vertus, je suis
             praticienne en lithothérapie depuis de nombreuses années.
           </p>
           <p>
             Afin de vous apporter ma connaissance sur le sujet, je souhaite
             aider toute personne qui en fera la demande car il n’y a pas de
-            hasard. Si vous faite la démarche, c’est que le moment est venu pour
-            vous.
+            hasard. Si vous faites la démarche, le moment est venu pour vous.
           </p>
           <p>
-            Je confectionne des chemins de vie et des bracelets thérapeutiques,
+            Je confectionne les chemins de vie et les bracelets thérapeutiques,
             avec tout mon cœur et amour, en portant particulièrement attention à
-            la place de chaque pierre dans le bracelet car détail très
+            la place de chaque pierre dans le bracelet car, détail très
             important, elles ne sont pas toutes compatibles entre elles et
             peuvent même se neutraliser.
           </p>

@@ -11,7 +11,7 @@
       <div>
         <p>
           Le pendentif apporte autant de bienfaits qu'une pierre roulée tout en
-          étant en permanence à votre contact. Il devra être purifié ou rechargé
+          étant en permanence à votre contact. Il doit être purifié ou rechargé
           à la lune ou au soleil en fonction de la pierre.
         </p>
       </div>

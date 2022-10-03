@@ -1,20 +1,10 @@
 <template>
   <article id="title" class="content">
     <h1>Me contacter</h1>
-    <p>Merci de me contacter de préférence en semaine entre 17h et 20h.</p>
     <p>
-      Si vous souhaitez commander un chemin de vie, n'oubliez pas de me
-      communiquer les informations suivantes :<!--<br />
-      Le nom du père, le nom de jeune fille de la mère, tous les prénoms,<br />
-      la date de naissance ainsi que le tour de poignet.-->
+      Concernant les contacts téléphoniques, merci de bien vouloir me joindre de
+      préférence en semaine.
     </p>
-    <ul>
-      <li>Nom du père ;</li>
-      <li>Nom de jeune fille de la mère ;</li>
-      <li>Tous les prénoms ;</li>
-      <li>La date de naissance ;</li>
-      <li>Le tour du poignet.</li>
-    </ul>
   </article>
 
   <article id="links" class="content">
@@ -33,6 +23,7 @@
   </article>
 
   <article id="form" class="content">
+    <!-- TODO: Faire l'objet de contact avec les champs supplémentaires pour le chemin de vie -->
     <form @submit.prevent="send">
       <label for="name">Votre nom</label>
       <input

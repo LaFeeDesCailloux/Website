@@ -9,14 +9,16 @@
           utiles.
         </p>
         <p>
-          Elles vous permettent de recharger après quelques heures vos pierres
-          quelles qu’elles soient :
+          Elles vous permettent de recharger en quelques heures vos pierres
+          quelques soient leur forme :
         </p>
+        <!-- quelques soient leur : Présentation, usage, forme,  -->
         <ul>
-          <li>Vos bracelets ;</li>
-          <li>Vos pierres roulées ;</li>
+          <li>Bracelets ;</li>
+          <li>Pierres roulées ;</li>
           <li>Pendules ;</li>
-          <li>Pendentifs...</li>
+          <li>Pendentifs ;</li>
+          <li>Etc.</li>
         </ul>
         <p>Il suffit d’y déposer vos minéraux.</p>
       </div>
@@ -32,20 +34,22 @@
         <p>
           Les Géodes sont creuses et peuvent recevoir vos bracelets et pierres
           tout comme les druses.<br />
-          Cependant, ces dernières sont quant à elles tapissées de cristaux sur
-          leur dessus.
+          Cependant, ces dernières sont tapissées de cristaux sur leur dessus.
         </p>
-        <h2>Exemples :</h2>
+        <p>Quelques exemples :</p>
         <ul>
           <li>
             Une druse en améthyste permet d’apporter de la sérénité à la pièce
-            dans laquelle elle est exposée.
+            dans laquelle elle est exposée ;
           </li>
           <li>
-            Les géodes en cristal de roche peuvent aussi bien purifier que
-            recharger vos différentes pierres. Elles permettent également de
-            purifier un lieu.
+            Les géodes en cristal de roche peuvent purifier et recharger vos
+            différentes pierres ;
           </li>
+          <li>
+            Les géodes en cristal de roche peuvent également purifier un lieu ;
+          </li>
+          <li>Etc.</li>
         </ul>
       </div>
       <i />
