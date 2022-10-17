@@ -108,6 +108,18 @@
         </div>
       </router-link>
     </section>
+    <section>
+      <router-link :to="{ name: 'entretenir-ses-pierres' }">
+        <img
+          src="@/assets/pierres_roulees/main.webp"
+          alt="Entretenir ses pierres"
+          loading="lazy"
+        />
+        <div>
+          <h3>Entretenir ses pierres</h3>
+        </div>
+      </router-link>
+    </section>
   </article>
 
   <article class="content" id="a-propos">
@@ -301,12 +313,13 @@ export default {
     margin-bottom: 3rem;
   }
 
-  > section:first-of-type {
+  > section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: stretch;
     gap: 4rem;
+    margin-bottom: 4rem;
 
     a {
       aspect-ratio: 1/1;
@@ -365,6 +378,17 @@ export default {
           opacity: 1;
         }
       }
+    }
+  }
+
+  > section:last-of-type {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: unset;
+
+    a {
+      aspect-ratio: 2.5/1;
     }
   }
 }
