@@ -37,6 +37,12 @@
           </div>
         </a>
         <router-link
+          :to="{ name: 'entretenir-ses-pierres' }"
+          :class="$route.name === 'entretenir-ses-pierres' ? 'current' : ''"
+        >
+          Entretenir ses pierres
+        </router-link>
+        <router-link
           :to="{ name: 'contact' }"
           :class="$route.name === 'contact' ? 'current' : ''"
         >
