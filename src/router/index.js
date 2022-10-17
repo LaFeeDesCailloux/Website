@@ -56,6 +56,14 @@ const routes = [
       ),
   },
   {
+    path: "/entretenir-ses-pierres",
+    name: "entretenir-ses-pierres",
+    component: () =>
+      import(
+        /* webpackChunkName: "entretenir-ses-pierres" */ "../views/entretenirSesPierres.vue"
+      ),
+  },
+  {
     path: "/contact",
     name: "contact",
     component: () =>
