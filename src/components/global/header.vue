@@ -18,20 +18,63 @@
         >
           Mes réalisations <font-awesome-icon icon="fa-solid fa-chevron-down" />
           <div>
-            <router-link :to="{ name: 'chemins-de-vie' }">
+            <router-link
+              :to="{ name: 'chemins-de-vie' }"
+              :class="
+                $route.path.startsWith('/realisations/chemins-de-vie')
+                  ? 'current'
+                  : ''
+              "
+            >
               Chemins de vie
             </router-link>
-            <router-link :to="{ name: 'bracelets-therapeutiques' }">
+            <router-link
+              :to="{ name: 'bracelets-therapeutiques' }"
+              :class="
+                $route.path.startsWith('/realisations/bracelets-therapeutiques')
+                  ? 'current'
+                  : ''
+              "
+            >
               Bracelets thérapeutiques
             </router-link>
-            <router-link :to="{ name: 'pendules' }">Pendules</router-link>
-            <router-link :to="{ name: 'pendentifs-et-colliers' }">
+            <router-link
+              :to="{ name: 'pendules' }"
+              :class="
+                $route.path.startsWith('/realisations/pendules')
+                  ? 'current'
+                  : ''
+              "
+              >Pendules</router-link
+            >
+            <router-link
+              :to="{ name: 'pendentifs-et-colliers' }"
+              :class="
+                $route.path.startsWith('/realisations/pendentifs-et-colliers')
+                  ? 'current'
+                  : ''
+              "
+            >
               Pendentifs et colliers
             </router-link>
-            <router-link :to="{ name: 'druses-et-geodes' }">
+            <router-link
+              :to="{ name: 'druses-et-geodes' }"
+              :class="
+                $route.path.startsWith('/realisations/druses-et-geodes')
+                  ? 'current'
+                  : ''
+              "
+            >
               Druses et Géodes
             </router-link>
-            <router-link :to="{ name: 'pierres-roulees' }">
+            <router-link
+              :to="{ name: 'pierres-roulees' }"
+              :class="
+                $route.path.startsWith('/realisations/pierres-roulees')
+                  ? 'current'
+                  : ''
+              "
+            >
               Pierres roulées
             </router-link>
           </div>
@@ -46,7 +89,7 @@
           :to="{ name: 'contact' }"
           :class="$route.name === 'contact' ? 'current' : ''"
         >
-          Contact
+          Me contacter
         </router-link>
       </nav>
     </article>
@@ -88,8 +131,9 @@ header {
   top: -30px;
   right: 0;
   left: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(var(--blur));
 
   > article {
     transition: all 300ms;
@@ -97,7 +141,7 @@ header {
     right: 0;
     left: 0;
     bottom: 0;
-    width: min(100% - 3rem, 1650px);
+    width: min(100% - 3rem, 100%);
     margin-inline: auto;
     height: inherit;
     display: flex;
@@ -137,9 +181,26 @@ header {
         padding: 1.6rem;
         text-decoration: none;
         color: black;
+        position: relative;
 
-        &:last-of-type {
-          padding-right: 0;
+        &::after {
+          transition: all 300ms;
+          content: "";
+          position: absolute;
+          top: 80%;
+          left: 1.6rem;
+          right: 100%;
+          height: 1px;
+          background-color: black;
+        }
+
+        &:hover::after {
+          right: 1.6rem;
+        }
+
+        &.current::after {
+          left: 1.6rem;
+          right: 1.6rem;
         }
       }
 
@@ -151,7 +212,8 @@ header {
         cursor: pointer;
 
         svg {
-          font-size: 0.7em;
+          font-size: 0.9em;
+          transform: translateY(-1px);
         }
 
         &:hover div {
@@ -162,6 +224,10 @@ header {
           a {
             animation: dropdown-link-appear 150ms;
             animation-fill-mode: both;
+
+            &.current {
+              font-weight: bold;
+            }
           }
 
           @for $i from 1 through 6 {
@@ -189,6 +255,10 @@ header {
           a {
             padding: 0.5rem;
             font-weight: normal;
+
+            &::after {
+              content: none;
+            }
           }
         }
 
@@ -228,6 +298,19 @@ header {
 
       a {
         padding: 1rem 1.2rem;
+
+        &::after {
+          left: 1.2rem;
+        }
+
+        &:hover::after {
+          right: 1.2rem;
+        }
+
+        &.current::after {
+          left: 1.2rem;
+          right: 1.2rem;
+        }
       }
     }
   }
