@@ -61,6 +61,7 @@ Website of La Fée Des Cailloux entreprise presenting all products made by the e
 - [VueJS 3](https://vuejs.org/)
 - [Sass](https://sass-lang.com/)
 - [Vue-router](https://router.vuejs.org/)
+- [SplideJS](https://splidejs.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -113,7 +114,17 @@ A new `dist` folder will appear containing the entire compiled website.
 ## Roadmap
 
 - [x] Create VueJS project
-- [ ] Add template
+- [ ] Add homepage
+- [ ] Add my work pages
+  - [ ] "Chemins de vie"
+  - [ ] "Bracelets thérapeutiques"
+  - [ ] "Pendules"
+  - [ ] "Pendentifs et Colliers"
+  - [ ] "Druses et Géodes"
+  - [ ] "Pierres roulées"
+- [ ] Add "Entretenir ses pierres"
+- [ ] Add contact page
+- [ ] Deploy on [Cloudflare](https://www.cloudflare.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
