@@ -10,7 +10,7 @@ import {
   faEnvelope,
   faStar,
   faWandMagicSparkles,
-  faChevronDown,
+  faSortDown,
   faChevronLeft,
   faChevronRight,
   faInfo,
@@ -24,7 +24,7 @@ library.add(
   faStar,
   faStarHalfStroke,
   faWandMagicSparkles,
-  faChevronDown,
+  faSortDown,
   faChevronLeft,
   faChevronRight,
   faInfo

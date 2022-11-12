@@ -16,7 +16,8 @@
           id="realisations"
           :class="$route.path.startsWith('/realisations/') ? 'current' : ''"
         >
-          Mes réalisations <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          Mes réalisations
+          <font-awesome-icon icon="fa-solid fa-sort-down" />
           <div>
             <router-link
               :to="{ name: 'chemins-de-vie' }"
