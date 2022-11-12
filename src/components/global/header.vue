@@ -95,6 +95,10 @@
       </nav>
     </article>
   </header>
+  <a id="scroll_btn" @click.prevent="scrollToTop">
+    <hr />
+    <font-awesome-icon icon="fa-solid fa-up-long" />
+  </a>
 </template>
 
 <script>
@@ -103,10 +107,12 @@ export default {
   data() {
     return {
       header: {},
+      scroll_btn: {},
     };
   },
   mounted() {
     this.header = document.getElementsByTagName("header")[0];
+    this.scroll_btn = document.getElementById("scroll_btn");
     document.addEventListener("scroll", this.scrollClassToggler);
   },
   beforeUnmount() {
@@ -119,6 +125,14 @@ export default {
       } else {
         this.header.classList.remove("scroll");
       }
+      if (document.documentElement.scrollTop > 550) {
+        this.scroll_btn.classList.add("scroll");
+      } else {
+        this.scroll_btn.classList.remove("scroll");
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
   },
 };
@@ -317,7 +331,45 @@ header {
   }
 }
 
-.current {
-  font-weight: bold;
+#scroll_btn {
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+  user-focus: none;
+  pointer-events: none;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  width: 60px;
+  height: 60px;
+  z-index: 99;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--secondary-bg-color);
+  font-size: 1.4em;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(var(--blur));
+  gap: 3px;
+
+  hr {
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: black;
+    height: 4px;
+    width: 40%;
+  }
+
+  &.scroll {
+    opacity: 1;
+    user-focus: auto;
+    pointer-events: auto;
+    cursor: pointer;
+  }
 }
 </style>

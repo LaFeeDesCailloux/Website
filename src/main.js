@@ -14,6 +14,7 @@ import {
   faChevronLeft,
   faChevronRight,
   faInfo,
+  faUpLong,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
 
@@ -27,7 +28,8 @@ library.add(
   faSortDown,
   faChevronLeft,
   faChevronRight,
-  faInfo
+  faInfo,
+  faUpLong
 );
 
 createApp(App)
