@@ -140,10 +140,10 @@ export default {
 
 <style scoped lang="scss">
 header {
+  transition: all 300ms;
   z-index: 99;
   height: 90px;
-  position: sticky;
-  top: -30px;
+  position: fixed;
   right: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -151,11 +151,6 @@ header {
   backdrop-filter: blur(var(--blur));
 
   > article {
-    transition: all 300ms;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
     width: min(100% - 3rem, 100%);
     margin-inline: auto;
     height: inherit;
@@ -165,16 +160,9 @@ header {
     gap: 2rem;
 
     > a {
-      transition: all 300ms;
-      height: inherit;
       display: flex;
-      flex-flow: row nowrap;
       align-items: center;
       gap: 1.2rem;
-      font-weight: bold;
-      font-size: 1.8em;
-      text-decoration: none;
-      color: black;
 
       img {
         transition: all 300ms;
@@ -188,14 +176,13 @@ header {
 
     > nav {
       display: flex;
-      flex-flow: row nowrap;
       align-items: center;
 
       a {
         transition: all 300ms;
         padding: 1.6rem;
         text-decoration: none;
-        color: black;
+        color: var(--global-text-color);
         position: relative;
 
         &::after {
@@ -206,7 +193,8 @@ header {
           left: 1.6rem;
           right: 100%;
           height: 1px;
-          background-color: black;
+          border-radius: var(--border-radius);
+          background-color: var(--global-text-color);
         }
 
         &:hover::after {
@@ -222,8 +210,7 @@ header {
       #realisations {
         display: inline-flex;
         align-items: center;
-        gap: 0.7rem;
-        position: relative;
+        gap: 0.6rem;
         cursor: pointer;
 
         svg {
@@ -255,7 +242,6 @@ header {
         div {
           transition: all 250ms;
           opacity: 0;
-          cursor: auto;
           display: flex;
           position: absolute;
           top: 88%;
@@ -263,13 +249,12 @@ header {
           width: max-content;
           flex-flow: column nowrap;
           background-color: #dcdcdc;
-          border-radius: 6px;
+          border-radius: calc(var(--border-radius) / 2);
           padding: 0.8rem;
           pointer-events: none;
 
           a {
             padding: 0.5rem;
-            font-weight: normal;
 
             &::after {
               content: none;
@@ -293,9 +278,10 @@ header {
 }
 
 .scroll {
-  > article {
-    height: 60px;
+  transition: all 300ms;
+  height: 60px;
 
+  > article {
     > a {
       font-size: 1.5em;
 
