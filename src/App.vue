@@ -26,7 +26,7 @@ export default {
   --title-font: "Montserrat", "Arial", "Georgia", sans-serif;
 
   --content-max-width: 1400px;
-  --content-spacing: 4rem;
+  --content-spacing: 7rem;
   --border-radius: 12px;
   --blur: 12px;
 
@@ -77,20 +77,21 @@ body {
 }
 
 .content {
-  padding: var(--content-spacing) 0;
+  padding: var(--content-spacing) 0 0;
   width: min(100% - 2rem, var(--content-max-width));
   margin-inline: auto;
+}
 
-  h2 {
-    font-family: var(--title-font);
-    font-size: 2.2em;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+h2 {
+  font-family: var(--title-font);
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .blob {
   border-radius: 100%;
   transition: border-radius 15s;
+  box-shadow: 28px 28px var(--primary-bg-color);
 }
 </style>
