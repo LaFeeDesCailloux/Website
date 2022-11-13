@@ -80,5 +80,17 @@ body {
   padding: var(--content-spacing) 0;
   width: min(100% - 2rem, var(--content-max-width));
   margin-inline: auto;
+
+  h2 {
+    font-family: var(--title-font);
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.blob {
+  border-radius: 100%;
+  transition: border-radius 15s;
 }
 </style>
