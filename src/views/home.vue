@@ -8,6 +8,7 @@
   <article class="content" id="lithotherapie">
     <section>
       <img
+        class="blob"
         src="@/assets/lithotherapie.webp"
         alt="Pierres utilisées avec la lithothérapie"
         loading="lazy"
@@ -219,6 +220,7 @@ export default {
   },
   data() {
     return {
+      interval: null,
       avis: {
         type: "loop",
         perPage: 2,
@@ -237,6 +239,13 @@ export default {
     SplideTrack,
     SplideSlide,
     Contact,
+  },
+  mounted() {
+    this.generateBlobs();
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>

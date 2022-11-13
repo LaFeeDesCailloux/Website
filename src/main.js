@@ -1,7 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import titleMixin from "./titleMixin";
+import pageTitle from "./mixins/pageTitle";
+import blobGenerator from "@/mixins/blobGenerator";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -35,5 +36,6 @@ library.add(
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
   .use(router)
-  .mixin(titleMixin)
+  .mixin(pageTitle)
+  .mixin(blobGenerator)
   .mount("#app");
