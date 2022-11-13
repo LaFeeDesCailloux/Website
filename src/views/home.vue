@@ -6,6 +6,7 @@
   </article>
 
   <article class="content" id="lithotherapie">
+    <h2>Lithothérapie</h2>
     <section>
       <img
         class="blob"
@@ -14,7 +15,6 @@
         loading="lazy"
       />
       <div>
-        <h2>Lithothérapie</h2>
         <p>
           Lithothérapie vient du Grec "<span>Lithos</span>" qui signifie Pierre
           et "<span>Thérapeia</span>" thérapie ou cure ; thérapie par les
@@ -269,30 +269,18 @@ export default {
 }
 
 #lithotherapie {
-  position: relative;
-
-  h2 {
-    position: absolute;
-    top: 6rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 2em;
-  }
-
   section {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 3.62rem;
+    gap: 5rem;
 
     img {
-      height: 500px;
-      width: 450px;
+      border-radius: 71% 29% 27% 73% / 69% 56% 44% 31%;
+      height: 400px;
+      width: 650px;
       object-fit: cover;
-      border-radius: 6px;
-      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+      box-shadow: 28px 28px var(--primary-bg-color);
     }
 
     div p {
@@ -304,11 +292,8 @@ export default {
         font-style: oblique;
       }
 
-      &:first-of-type {
-        margin-top: 2rem;
-      }
-
       &:last-of-type {
+        margin-top: 3rem;
         margin-bottom: 0;
       }
     }
