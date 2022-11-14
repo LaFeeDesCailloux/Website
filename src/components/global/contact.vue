@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#contact {
+article {
   background-color: var(--secondary-bg-color);
 
   section {

@@ -1,6 +1,6 @@
 <template>
   <article>
-    <section class="content">
+    <section class="content" id="avis">
       <h2>Ils me font confiance</h2>
       <Splide :options="avis" :has-track="false" aria-label="Avis">
         <SplideTrack>

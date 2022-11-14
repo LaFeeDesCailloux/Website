@@ -1,6 +1,6 @@
 <template>
   <article>
-    <section class="content">
+    <section class="content" id="a-propos">
       <h2>À propos</h2>
       <section>
         <div>

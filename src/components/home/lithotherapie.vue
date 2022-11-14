@@ -1,5 +1,5 @@
 <template>
-  <article class="content">
+  <article class="content" id="lithotherapie">
     <h2>Lithothérapie</h2>
     <section>
       <img
@@ -42,31 +42,35 @@ export default {
 </script>
 
 <style scoped lang="scss">
-section {
-  display: grid;
-  grid-template-columns: 0.65fr 1.35fr;
-  align-items: center;
-  gap: 5rem;
+article {
+  position: relative;
 
-  img {
-    border-radius: 71% 29% 27% 73% / 69% 56% 44% 31%;
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-  }
+  section {
+    display: grid;
+    grid-template-columns: 0.65fr 1.35fr;
+    align-items: center;
+    gap: 5rem;
 
-  div p {
-    font-size: 1.1em;
-    text-align: justify;
-    margin-bottom: 1rem;
-
-    span {
-      font-style: oblique;
+    img {
+      border-radius: 71% 29% 27% 73% / 69% 56% 44% 31%;
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
     }
 
-    &:last-of-type {
-      margin-top: 3rem;
-      margin-bottom: 0;
+    div p {
+      font-size: 1.1em;
+      text-align: justify;
+      margin-bottom: 1rem;
+
+      span {
+        font-style: oblique;
+      }
+
+      &:last-of-type {
+        margin-top: 3rem;
+        margin-bottom: 0;
+      }
     }
   }
 }
