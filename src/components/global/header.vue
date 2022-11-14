@@ -2,8 +2,8 @@
   <header>
     <article>
       <router-link :to="{ name: 'home' }">
-        <img alt="Logo La Fée des Cailloux" src="@/assets/logo.webp" />
-        <img alt="La Fée des Cailloux" src="@/assets/logo-title.svg" />
+        <img alt="Logo La Fée des Cailloux" src="@/assets/img/logo.webp" />
+        <img alt="La Fée des Cailloux" src="@/assets/svg/logo-title.svg" />
       </router-link>
       <nav>
         <router-link
