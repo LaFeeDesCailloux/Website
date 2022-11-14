@@ -81,6 +81,7 @@ article {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
+        font-size: 1.1em;
 
         p:first-of-type {
           margin-bottom: 1rem;

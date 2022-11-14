@@ -105,6 +105,7 @@ article {
           padding: 0 1.4rem;
           text-align: center;
           position: relative;
+          font-size: 1.1em;
 
           &::before,
           &::after {
