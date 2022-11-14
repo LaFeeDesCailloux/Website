@@ -60,6 +60,7 @@
         <button class="button" type="submit">Envoyer</button>
       </form>
     </section>
+    <img src="@/assets/svg/cristaux.svg" alt="Cristaux" />
   </article>
 </template>
 
@@ -89,6 +90,8 @@ export default {
 <style scoped lang="scss">
 article {
   padding-top: var(--content-margin);
+  position: relative;
+  overflow: hidden;
 
   .content {
     margin: 2rem auto;
@@ -146,7 +149,6 @@ article {
       input,
       textarea {
         margin-bottom: 1.6rem;
-        background-color: transparent;
         padding: 0.5rem 0.6rem;
         font-size: 0.94em;
         border: 2px solid black;
@@ -156,6 +158,7 @@ article {
         outline: none;
         position: relative;
         transition: border 250ms;
+        background-color: var(--global-bg-color);
       }
 
       textarea {
@@ -185,6 +188,18 @@ article {
         }
       }
     }
+  }
+
+  img {
+    z-index: -1;
+    opacity: 0.2;
+    height: 800px;
+    margin-inline: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -180px;
+    filter: saturate(0.6);
   }
 }
 </style>
