@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/pendentifs_et_colliers/description_1.webp"
+        src="@/assets/img/pendentifs_et_colliers/description_1.webp"
         alt="Pendentif"
         loading="lazy"
       />
@@ -37,7 +37,7 @@
       </div>
       <i />
       <img
-        src="@/assets/pendentifs_et_colliers/description_2.webp"
+        src="@/assets/img/pendentifs_et_colliers/description_2.webp"
         alt="Collier"
         loading="lazy"
       />

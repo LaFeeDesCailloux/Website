@@ -21,7 +21,7 @@
       </div>
       <i />
       <img
-        src="@/assets/pierres_roulees/description_1.webp"
+        src="@/assets/img/pierres_roulees/description_1.webp"
         alt="Pierre roulée"
         loading="lazy"
       />
@@ -47,7 +47,7 @@
       </div>
       <i />
       <img
-        src="@/assets/pierres_roulees/description_2.webp"
+        src="@/assets/img/pierres_roulees/description_2.webp"
         alt="Pierre roulée"
         loading="lazy"
       />

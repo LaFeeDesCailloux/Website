@@ -7,7 +7,7 @@
           <img
             loading="lazy"
             @click="showLightbox(image.chemin)"
-            :src="require('@/assets/' + dossier + image.chemin)"
+            :src="require('@/assets/img/' + dossier + image.chemin)"
             :alt="image.description"
             :title="image.titre"
           />

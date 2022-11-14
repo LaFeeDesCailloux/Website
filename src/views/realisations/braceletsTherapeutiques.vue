@@ -28,7 +28,7 @@
       </div>
       <i />
       <img
-        src="@/assets/bracelets_therapeutiques/description_1.webp"
+        src="@/assets/img/bracelets_therapeutiques/description_1.webp"
         alt="Bracelet thérapeutique"
         loading="lazy"
       />
@@ -52,7 +52,7 @@
       </div>
       <i />
       <img
-        src="@/assets/bracelets_therapeutiques/description_2.webp"
+        src="@/assets/img/bracelets_therapeutiques/description_2.webp"
         alt="Bracelet thérapeutique"
         loading="lazy"
       />

@@ -2,7 +2,7 @@
   <article id="banner">
     <h1>{{ titre }}</h1>
     <p>{{ titre }}</p>
-    <img :src="require('@/assets/' + image)" :alt="titre" loading="lazy" />
+    <img :src="require('@/assets/img/' + image)" :alt="titre" loading="lazy" />
     <i />
   </article>
 </template>

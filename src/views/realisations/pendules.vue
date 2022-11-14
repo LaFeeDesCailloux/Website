@@ -17,7 +17,7 @@
       </div>
       <i />
       <img
-        src="@/assets/pendules/description_1.webp"
+        src="@/assets/img/pendules/description_1.webp"
         alt="Pendule"
         loading="lazy"
       />
@@ -37,7 +37,7 @@
       </div>
       <i />
       <img
-        src="@/assets/pendules/description_2.webp"
+        src="@/assets/img/pendules/description_2.webp"
         alt="Pendule"
         loading="lazy"
       />

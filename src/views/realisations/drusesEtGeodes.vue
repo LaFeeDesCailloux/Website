@@ -24,7 +24,7 @@
       </div>
       <i />
       <img
-        src="@/assets/druses_et_geodes/description_1.webp"
+        src="@/assets/img/druses_et_geodes/description_1.webp"
         alt="Druse"
         loading="lazy"
       />
@@ -54,7 +54,7 @@
       </div>
       <i />
       <img
-        src="@/assets/druses_et_geodes/description_2.webp"
+        src="@/assets/img/druses_et_geodes/description_2.webp"
         alt="Géode"
         loading="lazy"
       />

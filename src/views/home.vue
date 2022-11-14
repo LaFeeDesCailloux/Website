@@ -10,7 +10,7 @@
     <section>
       <img
         class="blob"
-        src="@/assets/lithotherapie.webp"
+        src="@/assets/img/lithotherapie.webp"
         alt="Pierres utilisées avec la lithothérapie"
         loading="lazy"
       />
@@ -45,7 +45,7 @@
     <section>
       <router-link :to="{ name: 'chemins-de-vie' }">
         <img
-          src="@/assets/chemins_de_vie/main.webp"
+          src="@/assets/img/chemins_de_vie/main.webp"
           alt="Chemin de vie"
           loading="lazy"
         />
@@ -59,7 +59,7 @@
       </router-link>
       <router-link :to="{ name: 'bracelets-therapeutiques' }">
         <img
-          src="@/assets/bracelets_therapeutiques/main.webp"
+          src="@/assets/img/bracelets_therapeutiques/main.webp"
           alt="Bracelets thérapeutiques"
           loading="lazy"
         />
@@ -69,7 +69,11 @@
         </div>
       </router-link>
       <router-link :to="{ name: 'pendules' }">
-        <img src="@/assets/pendules/main.webp" alt="Pendules" loading="lazy" />
+        <img
+          src="@/assets/img/pendules/main.webp"
+          alt="Pendules"
+          loading="lazy"
+        />
         <div>
           <h3>Pendules</h3>
           <p>A partir de 22€</p>
@@ -77,7 +81,7 @@
       </router-link>
       <router-link :to="{ name: 'pendentifs-et-colliers' }">
         <img
-          src="@/assets/pendentifs_et_colliers/main.webp"
+          src="@/assets/img/pendentifs_et_colliers/main.webp"
           alt="Pendentifs et Colliers"
           loading="lazy"
         />
@@ -88,7 +92,7 @@
       </router-link>
       <router-link :to="{ name: 'druses-et-geodes' }">
         <img
-          src="@/assets/druses_et_geodes/main.webp"
+          src="@/assets/img/druses_et_geodes/main.webp"
           alt="Druses et Géodes"
           loading="lazy"
         />
@@ -99,7 +103,7 @@
       </router-link>
       <router-link :to="{ name: 'pierres-roulees' }">
         <img
-          src="@/assets/pierres_roulees/main.webp"
+          src="@/assets/img/pierres_roulees/main.webp"
           alt="Pierres roulées"
           loading="lazy"
         />
@@ -253,7 +257,7 @@ export default {
 <style scoped lang="scss">
 #banner {
   height: 400px;
-  background-image: url("@/assets/banner.webp");
+  background-image: url("@/assets/img/banner.webp");
   background-size: cover;
   background-position: right;
   background-color: #eeeff1;
