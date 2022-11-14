@@ -32,8 +32,8 @@ export default {
   --blur: 12px;
 
   --global-bg-color: #ffffff;
-  --primary-bg-color: rgba(138, 84, 20, 0.15);
-  --secondary-bg-color: rgba(0, 0, 0, 0.15);
+  --primary-bg-color: #eee6dc;
+  --secondary-bg-color: #d9d9d9;
   --global-text-color: #000000;
   --special-text-color: #8a5414;
   --stars-color: #ffb439;
