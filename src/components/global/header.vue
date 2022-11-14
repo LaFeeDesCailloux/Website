@@ -6,12 +6,12 @@
         <img alt="La Fée des Cailloux" src="@/assets/svg/logo-title.svg" />
       </router-link>
       <nav>
-        <router-link
-          :to="{ name: 'home' }"
+        <a
+          @click.prevent="goHome"
           :class="$route.name === 'home' ? 'current' : ''"
         >
           Accueil
-        </router-link>
+        </a>
         <a
           id="realisations"
           :class="$route.path.startsWith('/realisations/') ? 'current' : ''"
@@ -134,6 +134,13 @@ export default {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
+    goHome() {
+      if (this.$route.name === "home") {
+        this.scrollToTop();
+      } else {
+        this.$router.push("/");
+      }
+    },
   },
 };
 </script>
@@ -184,6 +191,7 @@ header {
         text-decoration: none;
         color: var(--global-text-color);
         position: relative;
+        cursor: pointer;
 
         &::after {
           transition: all 300ms;
