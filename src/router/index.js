@@ -60,7 +60,7 @@ const routes = [
     name: "entretenir-ses-pierres",
     component: () =>
       import(
-        /* webpackChunkName: "entretenir-ses-pierres" */ "../views/entretenirSesPierres.vue"
+        /* webpackChunkName: "entretenir-ses-pierres" */ "../views/entretenir-ses-pierres.vue"
       ),
   },
   {
