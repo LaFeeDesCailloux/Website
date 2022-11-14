@@ -29,13 +29,13 @@
             <strong>Alors ?... Prêt pour l’aventure ?</strong>
           </p>
           <div>
-            <a href="#">
+            <a href="https://instagram.com/lafeedescailloux">
               <font-awesome-icon icon="fa-brands fa-instagram" fixed-width />
             </a>
-            <a href="#">
+            <a href="mailto:contact@lafeedescailloux.fr">
               <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
             </a>
-            <a href="#">
+            <a href="tel:0647861284">
               <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
             </a>
           </div>
