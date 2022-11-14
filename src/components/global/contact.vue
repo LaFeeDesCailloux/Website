@@ -53,6 +53,7 @@ export default {
       border: 2px solid black;
       border-radius: var(--border-radius);
       color: black;
+      background-color: var(--secondary-bg-color);
       text-decoration: none;
       font-weight: bold;
       transform: scale(1.005);
