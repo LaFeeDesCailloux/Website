@@ -26,7 +26,8 @@ export default {
   --title-font: "Montserrat", "Arial", "Georgia", sans-serif;
 
   --content-max-width: 1400px;
-  --content-spacing: 7rem;
+  --content-margin: 7rem;
+  --content-padding: 5rem;
   --border-radius: 12px;
   --blur: 12px;
 
@@ -35,7 +36,7 @@ export default {
   --secondary-bg-color: rgba(0, 0, 0, 0.15);
   --global-text-color: #000000;
   --special-text-color: #8a5414;
-  --stars-color: #d0b34c;
+  --stars-color: #ffb439;
 }
 
 ::-webkit-scrollbar {
@@ -77,7 +78,7 @@ body {
 }
 
 .content {
-  padding: var(--content-spacing) 0 0;
+  margin-top: var(--content-margin);
   width: min(100% - 2rem, var(--content-max-width));
   margin-inline: auto;
 }
@@ -89,7 +90,8 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
-.blob {
+.blob,
+.blob-static {
   border-radius: 100%;
   transition: border-radius 15s;
   box-shadow: 28px 28px var(--primary-bg-color);
