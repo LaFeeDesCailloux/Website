@@ -24,7 +24,7 @@
       </div>
       <i />
       <img
-        src="@/assets/entretenir_ses_pierres/description_1.webp"
+        src="@/assets/img/entretenir_ses_pierres/description_1.webp"
         alt="Pierre"
         loading="lazy"
       />
@@ -50,7 +50,7 @@
       </div>
       <i />
       <img
-        src="@/assets/entretenir_ses_pierres/description_2.webp"
+        src="@/assets/img/entretenir_ses_pierres/description_2.webp"
         alt="Pierre"
         loading="lazy"
       />

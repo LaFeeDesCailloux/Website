@@ -47,7 +47,7 @@
       </div>
       <i />
       <img
-        src="@/assets/chemins_de_vie/description_1.webp"
+        src="@/assets/img/chemins_de_vie/description_1.webp"
         alt="Chemin de vie"
         loading="lazy"
       />
@@ -77,7 +77,7 @@
       </div>
       <i />
       <img
-        src="@/assets/chemins_de_vie/description_2.webp"
+        src="@/assets/img/chemins_de_vie/description_2.webp"
         alt="Chemin de vie"
         loading="lazy"
       />
@@ -107,7 +107,7 @@
       </div>
       <i />
       <img
-        src="@/assets/chemins_de_vie/description_3.webp"
+        src="@/assets/img/chemins_de_vie/description_3.webp"
         alt="Chemin de vie"
         loading="lazy"
       />

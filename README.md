@@ -3,7 +3,7 @@
 
 <div align="center">
 <a href="https://github.com/LaFeeDesCailloux/Website">
-    <img src="src/assets/logo.webp" alt="Logo" width="auto" height="80">
+    <img src="src/assets/img/logo.webp" alt="Logo" width="auto" height="80">
 </a>
 
 <h3 align="center">Website</h3>
