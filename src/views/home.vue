@@ -113,24 +113,12 @@
         </div>
       </router-link>
     </section>
-    <section>
-      <router-link :to="{ name: 'entretenir-ses-pierres' }">
-        <img
-          src="@/assets/pierres_roulees/main.webp"
-          alt="Entretenir ses pierres"
-          loading="lazy"
-        />
-        <div>
-          <h3>Entretenir ses pierres</h3>
-        </div>
-      </router-link>
-    </section>
   </article>
 
-  <article class="content" id="a-propos">
-    <h2>À propos</h2>
-    <section>
-      <div>
+  <article id="a-propos">
+    <section class="content">
+      <h2>À propos</h2>
+      <section>
         <div>
           <p><strong>Bienvenue,</strong></p>
           <p>
@@ -156,20 +144,28 @@
           <p>
             <strong>Alors ?... Prêt pour l’aventure ?</strong>
           </p>
+          <div>
+            <a href="#">
+              <font-awesome-icon icon="fa-brands fa-instagram" fixed-width />
+            </a>
+            <a href="#">
+              <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
+            </a>
+            <a href="#">
+              <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
+            </a>
+          </div>
         </div>
         <div>
-          <a href="#">
-            <font-awesome-icon icon="fa-brands fa-instagram" fixed-width />
-          </a>
-          <a href="#">
-            <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
-          </a>
-          <a href="#">
-            <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
-          </a>
+          <img src="@/assets/svg/fée.svg" alt="A propos" />
+          <img src="@/assets/svg/étoiles.svg" alt="A propos" />
+          <img
+            class="blob-static"
+            src="@/assets/img/a-propos.webp"
+            alt="A propos"
+          />
         </div>
-      </div>
-      <img src="@/assets/a-propos.webp" alt="A propos" />
+      </section>
     </section>
   </article>
 
@@ -274,17 +270,16 @@ export default {
 
 #lithotherapie {
   section {
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: 0.65fr 1.35fr;
     align-items: center;
     gap: 5rem;
 
     img {
       border-radius: 71% 29% 27% 73% / 69% 56% 44% 31%;
       height: 400px;
-      width: 650px;
+      width: 100%;
       object-fit: cover;
-      box-shadow: 28px 28px var(--primary-bg-color);
     }
 
     div p {
@@ -305,36 +300,25 @@ export default {
 }
 
 #realisations {
-  h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
   > section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: stretch;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    gap: 3rem;
 
     a {
-      aspect-ratio: 1/1;
-      border-radius: 6px;
+      aspect-ratio: 1.2/1;
+      border-radius: var(--border-radius);
       position: relative;
       overflow: hidden;
       box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
         rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
       img {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center center;
         transform: scale(1.005);
         transition: transform 250ms;
       }
@@ -342,24 +326,25 @@ export default {
       div {
         opacity: 0;
         transition: opacity 250ms;
-        backdrop-filter: blur(6px);
-        padding: 1rem;
+        backdrop-filter: blur(var(--blur));
+        padding: 1.6rem;
         display: flex;
-        flex-flow: column nowrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0.6rem;
+        gap: 0.75rem;
         position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: rgba(255, 255, 255, 0.55);
-        color: black;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: var(--global-text-color);
         text-align: center;
 
         h3 {
           font-size: 1.6em;
+          font-family: var(--title-font);
         }
 
         p {
@@ -378,159 +363,170 @@ export default {
       }
     }
   }
-
-  > section:last-of-type {
-    grid-template-columns: 1fr;
-    max-width: 900px;
-    margin-inline: auto;
-    margin-bottom: unset;
-
-    a {
-      aspect-ratio: 2.5/1;
-    }
-  }
 }
 
 #a-propos {
-  h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+  margin-top: var(--content-margin);
+  padding: var(--content-padding) 0;
+  background-color: var(--primary-bg-color);
 
-  section {
-    margin-inline: auto;
-    max-width: 1100px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 3rem;
+  .content {
+    margin-top: 0;
 
-    > div {
-      height: 400px;
-      text-align: right;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: flex-end;
-      justify-content: space-between;
-      padding: 0.4rem 0;
-      gap: 1.5rem;
+    section {
+      padding: 0 2rem 0 0;
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      align-items: center;
+      gap: 5rem;
 
       > div:first-of-type {
+        text-align: right;
         display: flex;
-        flex-flow: column nowrap;
-        gap: 0.5rem;
-        font-size: 1.06em;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        p:first-of-type {
+          margin-bottom: 1rem;
+          font-size: 1.05em;
+        }
 
         p:last-of-type {
-          margin-top: 0.75rem;
+          margin-top: 1.5rem;
           font-size: 1.05em;
+        }
+
+        div {
+          display: flex;
+          justify-content: flex-end;
+          gap: 2rem;
+          font-size: 1.5em;
+
+          a {
+            padding: 0.6rem;
+            color: black;
+            text-decoration: none;
+            transform: scale(1.01);
+            transition: transform 250ms;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
         }
       }
 
       > div:last-of-type {
-        display: flex;
-        flex-flow: row nowrap;
-        gap: 0.5rem;
-        font-size: 1.5em;
+        position: relative;
+        height: 420px;
 
-        a {
-          padding: 0.6rem 1rem 0;
-          color: black;
-          text-decoration: none;
-          transform: scale(1.01);
-          transition: transform 250ms;
+        img:first-of-type {
+          z-index: 1;
+          position: absolute;
+          transform: scaleX(-1) rotate(15deg);
+          width: 100px;
+          left: 14px;
+        }
 
-          &:hover {
-            transform: scale(1.2);
-          }
+        img:nth-of-type(2) {
+          position: absolute;
+          width: 310px;
+          top: -8%;
+          right: 0;
+        }
+
+        img:last-of-type {
+          z-index: 2;
+          position: absolute;
+          border-radius: 57% 43% 34% 66% / 56% 64% 36% 44%;
+          height: 360px;
+          width: 100%;
+          object-fit: cover;
+          bottom: 0;
         }
       }
-    }
-
-    img {
-      height: 400px;
-      width: 400px;
-      object-fit: cover;
-      border-radius: 6px;
-      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
     }
   }
 }
 
 #avis {
-  background-color: rgba(0, 0, 0, 0.1);
+  padding: var(--content-padding) 0;
 
-  h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+  .content {
+    margin-top: 0;
 
-  .splide {
-    padding: 0 4rem;
+    .splide {
+      padding: 0 3rem;
 
-    .splide__slide {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 6px;
-      overflow: hidden;
-      /*box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;*/
+      .splide__slide {
+        background-color: white;
+        padding: 1.6rem;
+        border-radius: var(--border-radius);
+        border: 2px solid black;
+        /*box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
+          rgba(0, 0, 0, 0.25) 0 25px 50px -12px;*/
 
-      section {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: baseline;
-        justify-content: space-between;
-        font-size: 1.4em;
-        color: black;
-        margin-bottom: 1.5rem;
-
-        div {
+        section {
           display: flex;
           flex-flow: row nowrap;
-          gap: 0.2rem;
-          color: orange;
+          align-items: baseline;
+          justify-content: space-between;
+          font-size: 1.4em;
+          color: black;
+          margin-bottom: 1.6rem;
+
+          div {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0.2rem;
+            color: var(--stars-color);
+          }
+        }
+
+        p {
+          z-index: 0;
+          padding: 0 1.4rem;
+          text-align: center;
+          position: relative;
+
+          &::before,
+          &::after {
+            z-index: -1;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.08);
+            font-size: 5em;
+            line-height: 0;
+            font-family: var(--title-font);
+          }
+          &::before {
+            content: "\201C";
+            top: 1.4rem;
+            left: -0.2rem;
+          }
+          &::after {
+            content: "\201D";
+            bottom: -1rem;
+            right: -0.2rem;
+          }
         }
       }
 
-      p {
-        z-index: 0;
-        padding: 0 1.4rem;
-        text-align: center;
-        position: relative;
+      .splide__arrow {
+        height: 100%;
+        border-radius: unset;
+        font-size: 1.5em;
+        opacity: 1;
+        width: 40px;
+        background-color: transparent;
 
-        &::before,
-        &::after {
-          z-index: -1;
-          position: absolute;
-          color: rgba(0, 0, 0, 0.08);
-          font-size: 5em;
-          font-weight: bold;
-          line-height: 0;
+        &.splide__arrow--prev {
+          left: 0;
         }
-        &::before {
-          content: "\201C";
-          top: 1.4rem;
-          left: -0.2rem;
-        }
-        &::after {
-          content: "\201D";
-          bottom: -1rem;
-          right: -0.2rem;
+
+        &.splide__arrow--next {
+          right: 0;
         }
       }
-    }
-
-    .splide__arrow {
-      height: 100%;
-      border-radius: unset;
-      color: black;
-      font-size: 1.1em;
-      padding: 0 1rem;
-      background-color: transparent;
     }
   }
 }
