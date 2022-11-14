@@ -26,6 +26,7 @@ export default {
   --title-font: "Montserrat", "Arial", "Georgia", sans-serif;
 
   --content-max-width: 1400px;
+  --form-max-width: 600px;
   --content-margin: 7rem;
   --content-padding: 5rem;
   --border-radius: 12px;
@@ -83,6 +84,7 @@ body {
   margin-inline: auto;
 }
 
+h1,
 h2 {
   font-family: var(--title-font);
   font-size: 2.2em;
