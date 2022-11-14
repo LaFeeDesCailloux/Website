@@ -12,7 +12,7 @@ const routes = [
     name: "chemins-de-vie",
     component: () =>
       import(
-        /* webpackChunkName: "chemins-de-vie" */ "../views/realisations/cheminsDeVie.vue"
+        /* webpackChunkName: "chemins-de-vie" */ "../views/realisations/chemins-de-vie.vue"
       ),
   },
   {
@@ -20,7 +20,7 @@ const routes = [
     name: "bracelets-therapeutiques",
     component: () =>
       import(
-        /* webpackChunkName: "bracelets-therapeutiques" */ "../views/realisations/braceletsTherapeutiques.vue"
+        /* webpackChunkName: "bracelets-therapeutiques" */ "../views/realisations/bracelets-therapeutiques.vue"
       ),
   },
   {
@@ -36,7 +36,7 @@ const routes = [
     name: "pendentifs-et-colliers",
     component: () =>
       import(
-        /* webpackChunkName: "pendentifs-et-colliers" */ "../views/realisations/pendentifsEtColliers.vue"
+        /* webpackChunkName: "pendentifs-et-colliers" */ "../views/realisations/pendentifs-et-colliers.vue"
       ),
   },
   {
@@ -44,7 +44,7 @@ const routes = [
     name: "druses-et-geodes",
     component: () =>
       import(
-        /* webpackChunkName: "druses-et-geodes" */ "../views/realisations/drusesEtGeodes.vue"
+        /* webpackChunkName: "druses-et-geodes" */ "../views/realisations/druses-et-geodes.vue"
       ),
   },
   {
@@ -52,7 +52,7 @@ const routes = [
     name: "pierres-roulees",
     component: () =>
       import(
-        /* webpackChunkName: "pierres-roulees" */ "../views/realisations/pierresRoulees.vue"
+        /* webpackChunkName: "pierres-roulees" */ "../views/realisations/pierres-roulees.vue"
       ),
   },
   {
