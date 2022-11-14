@@ -9,6 +9,7 @@
         disponible sur la page de contact.
       </p>
       <router-link :to="{ name: 'contact' }">Contacter</router-link>
+      <img src="@/assets/svg/cristaux.svg" alt="Cristaux" />
     </section>
   </article>
 </template>
@@ -21,39 +22,55 @@ export default {
 
 <style scoped lang="scss">
 #contact {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-bg-color);
 
   section {
+    position: relative;
+    margin-top: 0;
+    padding: var(--content-padding) 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 2rem;
+    gap: 2.2rem;
+    overflow: hidden;
 
     h2 {
-      font-size: 2em;
-      text-align: center;
+      z-index: 1;
+      margin-bottom: 0;
     }
 
     p {
+      z-index: 1;
       text-align: center;
+      font-size: 1.1em;
     }
 
     a {
+      z-index: 1;
       display: block;
       text-align: center;
-      padding: 0.7rem 1.8rem;
+      padding: 0.8rem 2rem;
       border: 2px solid black;
-      border-radius: 6px;
-      font-size: 0.9em;
+      border-radius: var(--border-radius);
       color: black;
       text-decoration: none;
       font-weight: bold;
-      transform: scale(1);
+      transform: scale(1.005);
       transition: transform 400ms;
 
       &:hover {
         transform: scale(1.04);
       }
+    }
+
+    img {
+      opacity: 0.6;
+      position: absolute;
+      left: 4rem;
+      bottom: -260px;
+      transform: rotate(14deg);
+      mix-blend-mode: screen;
+      height: 620px;
     }
   }
 }
