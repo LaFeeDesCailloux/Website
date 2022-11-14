@@ -195,10 +195,10 @@
 
         <div class="splide__arrows">
           <button class="splide__arrow splide__arrow--prev">
-            <font-awesome-icon icon="fa-solid fa-chevron-right" />
+            <font-awesome-icon icon="fa-solid fa-caret-right" />
           </button>
           <button class="splide__arrow splide__arrow--next">
-            <font-awesome-icon icon="fa-solid fa-chevron-right" />
+            <font-awesome-icon icon="fa-solid fa-caret-right" />
           </button>
         </div>
       </Splide>

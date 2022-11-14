@@ -12,8 +12,7 @@ import {
   faStar,
   faWandMagicSparkles,
   faSortDown,
-  faChevronLeft,
-  faChevronRight,
+  faCaretRight,
   faInfo,
   faUpLong,
 } from "@fortawesome/free-solid-svg-icons";
@@ -27,8 +26,7 @@ library.add(
   faStarHalfStroke,
   faWandMagicSparkles,
   faSortDown,
-  faChevronLeft,
-  faChevronRight,
+  faCaretRight,
   faInfo,
   faUpLong
 );
