@@ -328,8 +328,8 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   z-index: 99;
   position: fixed;
   bottom: 2.5rem;
@@ -338,7 +338,7 @@ header {
   margin: 0;
   overflow: hidden;
   background-color: var(--secondary-bg-color);
-  font-size: 1.4em;
+  font-size: 1.3em;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(var(--blur));
   gap: 3px;
@@ -348,7 +348,7 @@ header {
     border: none;
     background-color: black;
     height: 4px;
-    width: 40%;
+    width: 38%;
   }
 
   &.scroll {
