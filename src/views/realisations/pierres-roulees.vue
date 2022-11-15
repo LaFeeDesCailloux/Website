@@ -21,6 +21,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/pierres_roulees/description_1.webp"
         alt="Pierre roulée"
         loading="lazy"
@@ -47,6 +48,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/pierres_roulees/description_2.webp"
         alt="Pierre roulée"
         loading="lazy"
@@ -111,6 +113,7 @@ export default {
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Pierre",
@@ -124,6 +127,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>

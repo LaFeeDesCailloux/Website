@@ -47,6 +47,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/chemins_de_vie/description_1.webp"
         alt="Chemin de vie"
         loading="lazy"
@@ -77,6 +78,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/chemins_de_vie/description_2.webp"
         alt="Chemin de vie"
         loading="lazy"
@@ -107,6 +109,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/chemins_de_vie/description_3.webp"
         alt="Chemin de vie"
         loading="lazy"
@@ -175,6 +178,7 @@ export default {
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Chemin de vie",
@@ -193,6 +197,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>
