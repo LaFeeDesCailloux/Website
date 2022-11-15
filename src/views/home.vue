@@ -39,7 +39,7 @@ export default {
     Contact,
   },
   mounted() {
-    this.generateBlobs();
+    setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
   },
   beforeUnmount() {

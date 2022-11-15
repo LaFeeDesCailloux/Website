@@ -24,6 +24,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/druses_et_geodes/description_1.webp"
         alt="Druse"
         loading="lazy"
@@ -54,6 +55,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/druses_et_geodes/description_2.webp"
         alt="Géode"
         loading="lazy"
@@ -118,6 +120,7 @@ export default {
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Titre",
@@ -151,6 +154,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>

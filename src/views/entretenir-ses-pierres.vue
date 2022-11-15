@@ -22,8 +22,8 @@
           énergétiquement.
         </p>
       </div>
-      <i />
       <img
+        class="blob"
         src="@/assets/img/entretenir_ses_pierres/description_1.webp"
         alt="Pierre"
         loading="lazy"
@@ -48,8 +48,8 @@
           <li>Etc.</li>
         </ul>
       </div>
-      <i />
       <img
+        class="blob"
         src="@/assets/img/entretenir_ses_pierres/description_2.webp"
         alt="Pierre"
         loading="lazy"
@@ -114,6 +114,7 @@ export default {
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Pierre",
@@ -127,6 +128,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>

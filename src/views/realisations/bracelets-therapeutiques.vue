@@ -28,6 +28,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/bracelets_therapeutiques/description_1.webp"
         alt="Bracelet thérapeutique"
         loading="lazy"
@@ -52,6 +53,7 @@
       </div>
       <i />
       <img
+        class="blob"
         src="@/assets/img/bracelets_therapeutiques/description_2.webp"
         alt="Bracelet thérapeutique"
         loading="lazy"
@@ -116,6 +118,7 @@ export default {
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Bracelet",
@@ -334,6 +337,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>
