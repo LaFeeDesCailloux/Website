@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="galerie">
     <section class="content">
       <h2>Galerie</h2>
       <div>
@@ -67,58 +67,58 @@ export default {
 
 <style scoped lang="scss">
 article {
-  h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+  margin: var(--content-margin) 0;
 
-  section > div {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
+  .content {
+    margin-top: 0;
 
     > div {
-      flex: 1 1 calc(100% / 3 - 2rem);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-      max-height: 260px;
-      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
-
-      &:hover div {
-        bottom: 0;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+      display: flex;
+      flex-flow: row wrap;
+      gap: 2rem;
 
       > div {
-        transition: bottom 250ms;
-        height: 50px;
-        position: absolute;
-        bottom: -50px;
-        left: 0;
-        right: 0;
-        padding: 0 1.2rem;
-        background-color: rgba(255, 255, 255, 0.6);
-        backdrop-filter: blur(8px);
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: space-between;
+        flex: 1 1 calc(100% / 3 - 2rem);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        max-height: 260px;
+        box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
+          rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
-        svg {
-          width: 14px;
-          height: 14px;
-          padding: 0.3rem;
-          border-radius: 50%;
-          border: 1px solid black;
+        &:hover div {
+          bottom: 0;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        > div {
+          transition: bottom 250ms;
+          height: 50px;
+          position: absolute;
+          bottom: -50px;
+          left: 0;
+          right: 0;
+          padding: 0 1.2rem;
+          background-color: rgba(255, 255, 255, 0.6);
+          backdrop-filter: blur(8px);
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+
+          svg {
+            width: 14px;
+            height: 14px;
+            padding: 0.3rem;
+            border-radius: 50%;
+            border: 1px solid black;
+          }
         }
       }
     }
