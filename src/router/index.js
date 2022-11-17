@@ -75,21 +75,23 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   scrollBehavior(to, from, SavedPosition) {
     if (to.hash) {
-      let id = window.location.href.split("#")[1];
+      const id = window.location.href.split("#")[1];
       if (id.length) {
-        let yOffset = -100;
-        let element = document.getElementById(id);
+        const yOffset = -100;
+        const element = document.getElementById(id);
         if (element) {
-          let y =
-            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          return { top: y };
+          return {
+            top:
+              element.getBoundingClientRect().top +
+              window.pageYOffset +
+              yOffset,
+          };
         }
       }
     } else if (SavedPosition) {
       return SavedPosition;
-    } else {
-      return { top: 0 };
     }
+    return { top: 0 };
   },
   routes,
 });
