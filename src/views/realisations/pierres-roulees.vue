@@ -56,36 +56,7 @@
     </section>
   </Description>
 
-  <Specificites>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-  </Specificites>
+  <EntretenirPierres />
 
   <Galerie dossier="pierres_roulees/galerie/" :images="images" />
 
@@ -95,7 +66,7 @@
 <script>
 import Banniere from "@/components/realisations/banniere";
 import Description from "@/components/realisations/description";
-import Specificites from "@/components/realisations/specificites";
+import EntretenirPierres from "@/components/realisations/entretenir-pierres";
 import Galerie from "@/components/realisations/galerie";
 import Contact from "@/components/global/contact";
 
@@ -107,7 +78,7 @@ export default {
   components: {
     Banniere,
     Description,
-    Specificites,
+    EntretenirPierres,
     Galerie,
     Contact,
   },
