@@ -67,7 +67,7 @@ export default {
 
 <style scoped lang="scss">
 article {
-  padding: var(--content-padding) 0;
+  margin: var(--content-margin) 0;
 
   .content {
     margin-top: 0;
