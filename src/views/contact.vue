@@ -22,7 +22,7 @@
           @LaFeeDesCailloux
         </a>
       </div>
-      <form @click.prevent="sendMail">
+      <form @submit.prevent="sendMail">
         <label for="name">Votre nom</label>
         <input
           type="text"
@@ -33,7 +33,7 @@
           autocomplete="name"
         />
 
-        <label for="email">Email</label>
+        <label for="email custom-object">Email</label>
         <input
           type="email"
           name="email"
@@ -43,16 +43,36 @@
           autocomplete="email"
         />
 
-        <!-- TODO: Faire l'objet de contact avec les champs supplémentaires pour le chemin de vie -->
         <label for="object">Objet</label>
+        <select name="object" id="object" v-model="object" required>
+          <option value="" selected disabled>Sélectionnez une option</option>
+          <option value="chemin-de-vie">Achat d'un chemin de vie</option>
+          <option value="pierres">Achat de pierres</option>
+          <option value="info">Demande de renseignements</option>
+          <option value="perso">Personnalisé</option>
+        </select>
+
         <input
+          v-if="object === 'perso'"
           type="text"
-          name="object"
-          id="object"
-          v-model="object"
+          name="custom-object"
+          id="custom-object"
           required
-          autocomplete="object"
         />
+
+        <div v-if="object === 'chemin-de-vie'">
+          <label for="cdv-prenoms">Vos prénoms</label>
+          <input type="text" name="cdv-prenoms" id="cdv-prenoms" required />
+
+          <label for="cdv-pere">Nom du père</label>
+          <input type="text" name="cdv-pere" id="cdv-pere" required />
+
+          <label for="cdv-mere">Nom de la mère</label>
+          <input type="text" name="cdv-mere" id="cdv-mere" required />
+
+          <label for="cdv-naissance">Date de naissance</label>
+          <input type="date" name="cdv-naissance" id="cdv-naissance" required />
+        </div>
 
         <label for="message">Message</label>
         <textarea name="message" id="message" v-model="message" required />
@@ -141,12 +161,18 @@ article {
       flex-direction: column;
       width: min(100%, var(--form-max-width));
 
+      > div {
+        display: inherit;
+        flex-direction: inherit;
+      }
+
       label {
         margin: 0 0 8px 8px;
         font-weight: bold;
       }
 
       input,
+      select,
       textarea {
         margin-bottom: 1.6rem;
         padding: 0.5rem 0.6rem;
@@ -193,7 +219,7 @@ article {
   img {
     z-index: -1;
     opacity: 0.2;
-    height: 800px;
+    height: calc(100% - 220px);
     margin-inline: auto;
     position: absolute;
     right: 0;
