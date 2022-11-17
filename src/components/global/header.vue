@@ -7,7 +7,7 @@
       </router-link>
       <nav>
         <a
-          @click.prevent="goHome"
+          @click.prevent="go('home')"
           :class="$route.name === 'home' ? 'current' : ''"
         >
           Accueil
@@ -19,8 +19,8 @@
           Mes réalisations
           <font-awesome-icon icon="fa-solid fa-sort-down" />
           <div>
-            <router-link
-              :to="{ name: 'chemins-de-vie' }"
+            <a
+              @click.prevent="go('chemins-de-vie')"
               :class="
                 $route.path.startsWith('/realisations/chemins-de-vie')
                   ? 'current'
@@ -28,9 +28,9 @@
               "
             >
               Chemins de vie
-            </router-link>
-            <router-link
-              :to="{ name: 'bracelets-therapeutiques' }"
+            </a>
+            <a
+              @click.prevent="go('bracelets-therapeutiques')"
               :class="
                 $route.path.startsWith('/realisations/bracelets-therapeutiques')
                   ? 'current'
@@ -38,18 +38,19 @@
               "
             >
               Bracelets thérapeutiques
-            </router-link>
-            <router-link
-              :to="{ name: 'pendules' }"
+            </a>
+            <a
+              @click.prevent="go('pendules')"
               :class="
                 $route.path.startsWith('/realisations/pendules')
                   ? 'current'
                   : ''
               "
-              >Pendules</router-link
             >
-            <router-link
-              :to="{ name: 'pendentifs-et-colliers' }"
+              Pendules
+            </a>
+            <a
+              @click.prevent="go('pendentifs-et-colliers')"
               :class="
                 $route.path.startsWith('/realisations/pendentifs-et-colliers')
                   ? 'current'
@@ -57,9 +58,9 @@
               "
             >
               Pendentifs et colliers
-            </router-link>
-            <router-link
-              :to="{ name: 'druses-et-geodes' }"
+            </a>
+            <a
+              @click.prevent="go('druses-et-geodes')"
               :class="
                 $route.path.startsWith('/realisations/druses-et-geodes')
                   ? 'current'
@@ -67,9 +68,9 @@
               "
             >
               Druses et Géodes
-            </router-link>
-            <router-link
-              :to="{ name: 'pierres-roulees' }"
+            </a>
+            <a
+              @click.prevent="go('pierres-roulees')"
               :class="
                 $route.path.startsWith('/realisations/pierres-roulees')
                   ? 'current'
@@ -77,21 +78,21 @@
               "
             >
               Pierres roulées
-            </router-link>
+            </a>
           </div>
         </a>
-        <router-link
-          :to="{ name: 'entretenir-ses-pierres' }"
+        <a
+          @click.prevent="go('entretenir-ses-pierres')"
           :class="$route.name === 'entretenir-ses-pierres' ? 'current' : ''"
         >
           Entretenir ses pierres
-        </router-link>
-        <router-link
-          :to="{ name: 'contact' }"
+        </a>
+        <a
+          @click.prevent="go('contact')"
           :class="$route.name === 'contact' ? 'current' : ''"
         >
           Me contacter
-        </router-link>
+        </a>
       </nav>
     </article>
   </header>
@@ -134,11 +135,11 @@ export default {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-    goHome() {
-      if (this.$route.name === "home") {
+    go(page) {
+      if (this.$route.name === page) {
         this.scrollToTop();
       } else {
-        this.$router.push("/");
+        this.$router.push({ name: page });
       }
     },
   },
