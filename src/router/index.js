@@ -77,14 +77,10 @@ const router = createRouter({
     if (to.hash) {
       const id = window.location.href.split("#")[1];
       if (id.length) {
-        const yOffset = -100;
         const element = document.getElementById(id);
         if (element) {
           return {
-            top:
-              element.getBoundingClientRect().top +
-              window.pageYOffset +
-              yOffset,
+            top: element.getBoundingClientRect().top + window.pageYOffset - 100,
           };
         }
       }
