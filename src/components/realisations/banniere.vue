@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="banniere">
     <h1>{{ titre }}</h1>
     <p>{{ titre }}</p>
     <img :src="require('@/assets/img/' + image)" :alt="titre" loading="lazy" />
