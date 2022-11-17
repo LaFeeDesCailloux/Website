@@ -12,7 +12,7 @@ const routes = [
     name: "chemins-de-vie",
     component: () =>
       import(
-        /* webpackChunkName: "chemins-de-vie" */ "../views/realisations/cheminsDeVie.vue"
+        /* webpackChunkName: "chemins-de-vie" */ "../views/realisations/chemins-de-vie.vue"
       ),
   },
   {
@@ -20,7 +20,7 @@ const routes = [
     name: "bracelets-therapeutiques",
     component: () =>
       import(
-        /* webpackChunkName: "bracelets-therapeutiques" */ "../views/realisations/braceletsTherapeutiques.vue"
+        /* webpackChunkName: "bracelets-therapeutiques" */ "../views/realisations/bracelets-therapeutiques.vue"
       ),
   },
   {
@@ -36,7 +36,7 @@ const routes = [
     name: "pendentifs-et-colliers",
     component: () =>
       import(
-        /* webpackChunkName: "pendentifs-et-colliers" */ "../views/realisations/pendentifsEtColliers.vue"
+        /* webpackChunkName: "pendentifs-et-colliers" */ "../views/realisations/pendentifs-et-colliers.vue"
       ),
   },
   {
@@ -44,7 +44,7 @@ const routes = [
     name: "druses-et-geodes",
     component: () =>
       import(
-        /* webpackChunkName: "druses-et-geodes" */ "../views/realisations/drusesEtGeodes.vue"
+        /* webpackChunkName: "druses-et-geodes" */ "../views/realisations/druses-et-geodes.vue"
       ),
   },
   {
@@ -52,7 +52,7 @@ const routes = [
     name: "pierres-roulees",
     component: () =>
       import(
-        /* webpackChunkName: "pierres-roulees" */ "../views/realisations/pierresRoulees.vue"
+        /* webpackChunkName: "pierres-roulees" */ "../views/realisations/pierres-roulees.vue"
       ),
   },
   {
@@ -60,7 +60,7 @@ const routes = [
     name: "entretenir-ses-pierres",
     component: () =>
       import(
-        /* webpackChunkName: "entretenir-ses-pierres" */ "../views/entretenirSesPierres.vue"
+        /* webpackChunkName: "entretenir-ses-pierres" */ "../views/entretenir-ses-pierres.vue"
       ),
   },
   {
@@ -75,21 +75,19 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   scrollBehavior(to, from, SavedPosition) {
     if (to.hash) {
-      let id = window.location.href.split("#")[1];
+      const id = window.location.href.split("#")[1];
       if (id.length) {
-        let yOffset = -90;
-        let element = document.getElementById(id);
+        const element = document.getElementById(id);
         if (element) {
-          let y =
-            element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          return { top: y };
+          return {
+            top: element.getBoundingClientRect().top + window.pageYOffset - 100,
+          };
         }
       }
     } else if (SavedPosition) {
       return SavedPosition;
-    } else {
-      return { top: 0 };
     }
+    return { top: 0 };
   },
   routes,
 });

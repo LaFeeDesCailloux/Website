@@ -14,45 +14,35 @@ export default {
 article {
   display: flex;
   flex-flow: column nowrap;
-  gap: 5rem 3rem;
+  gap: calc(var(--content-padding) / 1.5);
 
   :slotted(section) {
-    display: flex;
-    flex-flow: row nowrap;
+    width: 100%;
+    display: inline-flex;
     align-items: center;
-    justify-content: flex-end;
     position: relative;
-    border-radius: 6px;
-    overflow: hidden;
-    width: min(100%, 1200px);
-    margin-inline: auto;
+    height: 600px;
 
-    &:nth-of-type(even) {
+    &:nth-of-type(odd) {
       flex-direction: row-reverse;
 
-      div {
-        left: unset;
-        right: 0;
-      }
-
-      i {
-        left: 50%;
-        right: calc(30% - 1px);
-        transform: rotate(180deg);
+      img {
+        left: 0;
+        border-radius: 40% 60% / 63% 60% 40% 37%;
       }
     }
 
     div {
       z-index: 1;
-      position: absolute;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 6px;
-      backdrop-filter: blur(16px);
+      background-color: rgba(200, 200, 200, 0.6);
+      border-radius: var(--border-radius);
+      backdrop-filter: blur(var(--blur));
       padding: 2rem;
-      max-width: 500px;
+      width: 800px;
       text-align: justify;
-      font-size: 1.05em;
+      font-size: 1.1em;
+      box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
+        rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
       h2 {
         font-size: 1.1em;
@@ -73,35 +63,13 @@ article {
       }
     }
 
-    i {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: calc(30% - 1px);
-      right: 50%;
-      background: rgb(255, 255, 255);
-      background: -moz-linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      background: -webkit-linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-    }
-
     img {
+      position: absolute;
+      right: 2rem;
       object-fit: cover;
-      width: 70%;
-      max-height: 600px;
+      width: 760px;
+      height: inherit;
+      border-radius: 61% 39% 58% 42% / 75% 58% 42% 25%;
     }
   }
 }

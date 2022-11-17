@@ -1,55 +1,86 @@
 <template>
-  <article id="title" class="content">
-    <h1>Me contacter</h1>
-    <p>
-      Concernant les contacts téléphoniques, merci de bien vouloir me joindre de
-      préférence en semaine.
-    </p>
-  </article>
+  <article class="wrapper">
+    <section class="content">
+      <div>
+        <h1>Me contacter</h1>
+        <p>
+          Concernant les contacts téléphoniques, merci de bien vouloir me
+          joindre de préférence en semaine.
+        </p>
+      </div>
+      <div>
+        <a href="tel:0647861284">
+          <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
+          06 47 86 12 84
+        </a>
+        <a href="mailto:contact@lafeedescailloux.fr">
+          <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
+          contact@lafeedescailloux.fr
+        </a>
+        <a href="https://instagram.com/lafeedescailloux">
+          <font-awesome-icon icon="fa-brands fa-instagram" fixed-width />
+          @LaFeeDesCailloux
+        </a>
+      </div>
+      <form @submit.prevent="sendMail">
+        <label for="name">Votre nom</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          v-model="name"
+          required
+          autocomplete="name"
+        />
 
-  <article id="links" class="content">
-    <a href="tel:0647861284">
-      <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
-      06 47 86 12 84
-    </a>
-    <a href="mailto:contact@lafeedescailloux.fr">
-      <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
-      contact@lafeedescailloux.fr
-    </a>
-    <a href="https://instagram.com/lafeedescailloux">
-      <font-awesome-icon icon="fa-brands fa-instagram" fixed-width />
-      @LaFeeDesCailloux
-    </a>
-  </article>
+        <label for="email custom-object">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          v-model="email"
+          required
+          autocomplete="email"
+        />
 
-  <article id="form" class="content">
-    <!-- TODO: Faire l'objet de contact avec les champs supplémentaires pour le chemin de vie -->
-    <form @submit.prevent="send">
-      <label for="name">Votre nom</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        v-model="name"
-        required
-        autocomplete="name"
-      />
+        <label for="object">Objet</label>
+        <select name="object" id="object" v-model="object" required>
+          <option value="" selected disabled>Sélectionnez une option</option>
+          <option value="chemin-de-vie">Achat d'un chemin de vie</option>
+          <option value="pierres">Achat de pierres</option>
+          <option value="info">Demande de renseignements</option>
+          <option value="perso">Personnalisé</option>
+        </select>
 
-      <label for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        v-model="email"
-        required
-        autocomplete="email"
-      />
+        <input
+          v-if="object === 'perso'"
+          type="text"
+          name="custom-object"
+          id="custom-object"
+          required
+        />
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" v-model="message" required />
+        <div v-if="object === 'chemin-de-vie'">
+          <label for="cdv-prenoms">Vos prénoms</label>
+          <input type="text" name="cdv-prenoms" id="cdv-prenoms" required />
 
-      <button type="submit">Envoyer</button>
-    </form>
+          <label for="cdv-pere">Nom du père</label>
+          <input type="text" name="cdv-pere" id="cdv-pere" required />
+
+          <label for="cdv-mere">Nom de la mère</label>
+          <input type="text" name="cdv-mere" id="cdv-mere" required />
+
+          <label for="cdv-naissance">Date de naissance</label>
+          <input type="date" name="cdv-naissance" id="cdv-naissance" required />
+        </div>
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" v-model="message" required />
+
+        <button class="button" type="submit">Envoyer</button>
+      </form>
+    </section>
+    <img src="@/assets/svg/cristaux.svg" alt="Cristaux" />
   </article>
 </template>
 
@@ -63,11 +94,12 @@ export default {
     return {
       name: "",
       email: "",
+      object: "",
       message: "",
     };
   },
   methods: {
-    send() {
+    sendMail() {
       // TODO: Send email
       console.log("Email sent");
     },
@@ -76,115 +108,124 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#title {
-  padding-bottom: 0;
+article {
+  padding-top: var(--content-margin);
+  position: relative;
+  overflow: hidden;
 
-  h1 {
-    font-size: 4em;
-    text-align: center;
-  }
-
-  p {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 1.1em;
-
-    &:last-of-type {
-      margin-top: 0.6rem;
-    }
-  }
-
-  ul {
+  .content {
+    margin: 2rem auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 0.4rem;
-    gap: 0.6rem;
+    gap: 2.4rem;
 
-    li {
-      flex: 0 1 30%;
+    > div:first-of-type {
+      display: flex;
+      flex-direction: column;
       text-align: center;
-      list-style: none;
+      gap: 0.8rem;
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+      }
+    }
+
+    > div:last-of-type {
+      background-color: var(--primary-bg-color);
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      gap: 2rem;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--global-text-color);
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 1rem;
+
+        svg {
+          font-size: 1.6em;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: min(100%, var(--form-max-width));
+
+      > div {
+        display: inherit;
+        flex-direction: inherit;
+      }
+
+      label {
+        margin: 0 0 8px 8px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        margin-bottom: 1.6rem;
+        padding: 0.5rem 0.6rem;
+        font-size: 0.94em;
+        border: 2px solid black;
+        border-radius: 6px;
+        font-family: "Arial", sans-serif;
+        resize: vertical;
+        outline: none;
+        position: relative;
+        transition: border 250ms;
+        background-color: var(--global-bg-color);
+      }
+
+      textarea {
+        min-height: 206px;
+      }
+
+      button {
+        font-family: var(--global-font);
+        font-size: 1em;
+        margin-inline: auto;
+        z-index: 1;
+        display: block;
+        text-align: center;
+        padding: 0.6rem 2rem;
+        border: 2px solid black;
+        border-radius: var(--border-radius);
+        color: black;
+        background-color: var(--global-bg-color);
+        text-decoration: none;
+        font-weight: bold;
+        transform: scale(1.005);
+        transition: transform 400ms;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.04);
+        }
+      }
     }
   }
-}
 
-#links {
-  padding-bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
-
-  a {
-    padding: 1rem;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 0.6rem;
-    font-size: 1.1em;
-    text-decoration: none;
-    color: black;
-
-    svg {
-      font-size: 1.3em;
-    }
-  }
-}
-
-#form form {
-  display: flex;
-  flex-flow: column nowrap;
-  width: min(100%, 900px);
-  margin-inline: auto;
-
-  label {
-    font-weight: bold;
-    margin: 0 0 0.4rem 0.4rem;
-  }
-
-  input,
-  textarea {
-    margin-bottom: 1.6rem;
-    background-color: transparent;
-    padding: 0.5rem 0.6rem;
-    font-size: 0.94em;
-    border: 2px solid rgba(104, 86, 65, 0.5);
-    border-radius: 6px;
-    font-family: "Arial", sans-serif;
-    resize: vertical;
-    outline: none;
-    position: relative;
-    transition: border 250ms;
-
-    &:focus {
-      border: 2px solid rgba(104, 86, 65, 1);
-    }
-  }
-
-  textarea {
-    min-height: 140px;
-  }
-
-  button {
-    display: inline-flex;
-    align-self: center;
-    text-align: center;
-    padding: 0.7rem 1.8rem;
-    border: 2px solid black;
-    border-radius: 6px;
-    font-size: 0.9em;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    transform: scale(1);
-    transition: transform 400ms;
-    background-color: transparent;
-
-    &:hover {
-      transform: scale(1.04);
-    }
+  img {
+    z-index: -1;
+    opacity: 0.2;
+    height: calc(100% - 220px);
+    margin-inline: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -180px;
+    filter: saturate(0.6);
   }
 }
 </style>

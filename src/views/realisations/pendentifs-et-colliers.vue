@@ -17,7 +17,8 @@
       </div>
       <i />
       <img
-        src="@/assets/pendentifs_et_colliers/description_1.webp"
+        class="blob"
+        src="@/assets/img/pendentifs_et_colliers/description_1.webp"
         alt="Pendentif"
         loading="lazy"
       />
@@ -37,43 +38,15 @@
       </div>
       <i />
       <img
-        src="@/assets/pendentifs_et_colliers/description_2.webp"
+        class="blob"
+        src="@/assets/img/pendentifs_et_colliers/description_2.webp"
         alt="Collier"
         loading="lazy"
       />
     </section>
   </Description>
 
-  <Specificites>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-  </Specificites>
+  <EntretenirPierres />
 
   <Galerie dossier="pendentifs_et_colliers/galerie/" :images="images" />
 
@@ -83,7 +56,7 @@
 <script>
 import Banniere from "@/components/realisations/banniere";
 import Description from "@/components/realisations/description";
-import Specificites from "@/components/realisations/specificites";
+import EntretenirPierres from "@/components/realisations/entretenir-pierres";
 import Galerie from "@/components/realisations/galerie";
 import Contact from "@/components/global/contact";
 
@@ -95,12 +68,13 @@ export default {
   components: {
     Banniere,
     Description,
-    Specificites,
+    EntretenirPierres,
     Galerie,
     Contact,
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Titre",
@@ -229,6 +203,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>
