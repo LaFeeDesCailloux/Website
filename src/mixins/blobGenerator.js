@@ -4,8 +4,8 @@ export default {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     },
     generateBlobs() {
-      let blobs = document.getElementsByClassName("blob");
-      for (let blob of blobs) {
+      const blobs = document.getElementsByClassName("blob");
+      for (const blob of blobs) {
         const percentage1 = this.random(25, 75);
         const percentage2 = this.random(25, 75);
         const percentage3 = this.random(25, 75);
