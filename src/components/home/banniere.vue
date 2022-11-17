@@ -19,9 +19,14 @@ export default {
   name: "banniereComponent",
   methods: {
     scrollToRealisation() {
-      const element = document.getElementById("mes-realisations");
-      const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({ top: y, behavior: "smooth" });
+      window.scrollTo({
+        top:
+          document.getElementById("mes-realisations").getBoundingClientRect()
+            .top +
+          window.pageYOffset -
+          100,
+        behavior: "smooth",
+      });
     },
   },
 };

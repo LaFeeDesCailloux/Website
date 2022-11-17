@@ -11,6 +11,7 @@ export default {
       if (title) {
         return typeof title === "function" ? title.call(vm) : title;
       }
+      return null;
     },
   },
 };
