@@ -1,8 +1,8 @@
 <template>
-  <article id="banner">
+  <article id="banniere">
     <h1>{{ titre }}</h1>
     <p>{{ titre }}</p>
-    <img :src="require('@/assets/' + image)" :alt="titre" loading="lazy" />
+    <img :src="require('@/assets/img/' + image)" :alt="titre" loading="lazy" />
     <i />
   </article>
 </template>
@@ -12,7 +12,7 @@ export default {
   name: "banniereComponent",
   props: ["titre", "image", "background_color", "text_color"],
   mounted() {
-    let banner = document.getElementById("banner");
+    let banner = document.getElementById("banniere");
     if (this.background_color) {
       banner.style.backgroundColor = this.background_color;
     }

@@ -47,7 +47,8 @@
       </div>
       <i />
       <img
-        src="@/assets/chemins_de_vie/description_1.webp"
+        class="blob"
+        src="@/assets/img/chemins_de_vie/description_1.webp"
         alt="Chemin de vie"
         loading="lazy"
       />
@@ -77,7 +78,8 @@
       </div>
       <i />
       <img
-        src="@/assets/chemins_de_vie/description_2.webp"
+        class="blob"
+        src="@/assets/img/chemins_de_vie/description_2.webp"
         alt="Chemin de vie"
         loading="lazy"
       />
@@ -107,7 +109,8 @@
       </div>
       <i />
       <img
-        src="@/assets/chemins_de_vie/description_3.webp"
+        class="blob"
+        src="@/assets/img/chemins_de_vie/description_3.webp"
         alt="Chemin de vie"
         loading="lazy"
       />
@@ -118,36 +121,7 @@
     <strong>Un véritable bijou dans tous les sens du terme.</strong>
   </p>
 
-  <Specificites>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-  </Specificites>
+  <EntretenirPierres />
 
   <Galerie dossier="chemins_de_vie/galerie/" :images="images" />
 
@@ -157,7 +131,7 @@
 <script>
 import Banniere from "@/components/realisations/banniere";
 import Description from "@/components/realisations/description";
-import Specificites from "@/components/realisations/specificites";
+import EntretenirPierres from "@/components/realisations/entretenir-pierres";
 import Galerie from "@/components/realisations/galerie";
 import Contact from "@/components/global/contact";
 
@@ -169,12 +143,13 @@ export default {
   components: {
     Banniere,
     Description,
-    Specificites,
+    EntretenirPierres,
     Galerie,
     Contact,
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Chemin de vie",
@@ -193,6 +168,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>

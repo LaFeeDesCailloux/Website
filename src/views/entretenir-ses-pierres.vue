@@ -22,9 +22,9 @@
           énergétiquement.
         </p>
       </div>
-      <i />
       <img
-        src="@/assets/entretenir_ses_pierres/description_1.webp"
+        class="blob"
+        src="@/assets/img/entretenir_ses_pierres/description_1.webp"
         alt="Pierre"
         loading="lazy"
       />
@@ -48,45 +48,14 @@
           <li>Etc.</li>
         </ul>
       </div>
-      <i />
       <img
-        src="@/assets/entretenir_ses_pierres/description_2.webp"
+        class="blob"
+        src="@/assets/img/entretenir_ses_pierres/description_2.webp"
         alt="Pierre"
         loading="lazy"
       />
     </section>
   </Description>
-
-  <Specificites>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-    <div>
-      <font-awesome-icon icon="fa-solid fa-wand-magic-sparkles" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        ac risus laoreet sodales.
-      </p>
-    </div>
-  </Specificites>
 
   <Galerie dossier="entretenir_ses_pierres/galerie/" :images="images" />
 
@@ -96,7 +65,6 @@
 <script>
 import Banniere from "@/components/realisations/banniere";
 import Description from "@/components/realisations/description";
-import Specificites from "@/components/realisations/specificites";
 import Galerie from "@/components/realisations/galerie";
 import Contact from "@/components/global/contact";
 
@@ -108,12 +76,12 @@ export default {
   components: {
     Banniere,
     Description,
-    Specificites,
     Galerie,
     Contact,
   },
   data() {
     return {
+      interval: null,
       images: [
         {
           titre: "Pierre",
@@ -127,6 +95,13 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    setTimeout(this.generateBlobs, 200);
+    this.interval = setInterval(this.generateBlobs, 12000);
+  },
+  beforeUnmount() {
+    clearInterval(this.interval);
   },
 };
 </script>

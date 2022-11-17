@@ -19,20 +19,26 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  --font-family: "Montserrat", "Georgia", "Arial", sans-serif;
-  --max-width-global: 1300px;
-  --max-width-contact: 900px;
-  --spacing: 4rem;
-  --border-radius: 2px;
+  --global-font: "Plus Jakarta Sans", "Georgia", "Arial", sans-serif;
+  --title-font: "Montserrat", "Arial", "Georgia", sans-serif;
+
+  --content-max-width: 1400px;
+  --form-max-width: 600px;
+  --content-margin: 7rem;
+  --content-padding: 5rem;
+  --border-radius: 12px;
+  --blur: 12px;
+
   --global-bg-color: #ffffff;
-  --primary-bg-color: #cabcab;
-  --secondary-bg-color: #edebe8;
+  --primary-bg-color: #eee6dc;
+  --primary-bg-color-alt: rgba(138, 84, 20, 0.15);
+  --secondary-bg-color: #d9d9d9;
   --global-text-color: #000000;
-  --header-text-color: #ffffff;
-  --primary-text-color: #685641;
+  --special-text-color: #8a5414;
+  --stars-color: #ffb439;
 }
 
 ::-webkit-scrollbar {
@@ -56,13 +62,13 @@ export default {
 }
 
 body {
-  user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   color: var(--global-text-color);
-  font-family: var(--font-family);
+  font-family: var(--global-font);
   overflow: overlay;
+  background-color: var(--global-bg-color);
 
   img {
     -webkit-user-drag: none;
@@ -74,8 +80,23 @@ body {
 }
 
 .content {
-  padding: var(--spacing) 0;
-  width: min(100% - 2rem, var(--max-width-global));
+  margin-top: var(--content-margin);
+  width: min(100% - 2rem, var(--content-max-width));
   margin-inline: auto;
+}
+
+h1,
+h2 {
+  font-family: var(--title-font);
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.blob,
+.blob-static {
+  border-radius: 100%;
+  transition: border-radius 15s;
+  box-shadow: 28px 28px var(--primary-bg-color);
 }
 </style>
