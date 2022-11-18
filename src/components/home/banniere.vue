@@ -1,7 +1,7 @@
 <template>
   <article>
     <img id="stones" src="@/assets/img/banner.webp" alt="Bannière" />
-    <img id="fee" src="@/assets/svg/fée.svg" alt="Fée" />
+    <img id="fee" src="@/assets/svg/fee.svg" alt="Fée" />
     <img id="separator" src="@/assets/svg/main-banner.svg" alt="Séparateur" />
     <section class="content">
       <h1>

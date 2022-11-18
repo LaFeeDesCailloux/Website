@@ -15,7 +15,7 @@
       <router-link :to="{ name: 'entretenir-ses-pierres' }">
         Voir les conseils
       </router-link>
-      <img src="@/assets/svg/fée.svg" alt="Fée" />
+      <img src="@/assets/svg/fee.svg" alt="Fée" />
     </section>
   </article>
 </template>
