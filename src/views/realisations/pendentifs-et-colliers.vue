@@ -2,8 +2,6 @@
   <Banniere
     titre="Pendentifs et Colliers"
     image="pendentifs_et_colliers/banner.webp"
-    text_color="black"
-    background_color="#faf6f5"
   />
 
   <Description>

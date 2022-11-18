@@ -1,8 +1,23 @@
 <template>
   <article id="banniere">
-    <h1>{{ titre }}</h1>
-    <p>{{ titre }}</p>
-    <img :src="require('@/assets/img/' + image)" :alt="titre" loading="lazy" />
+    <section class="content">
+      <div>
+        <h1>{{ titre }}</h1>
+        <p>{{ titre }}</p>
+      </div>
+      <img
+        id="stars"
+        src="@/assets/svg/etoiles-realisations.svg"
+        alt="Étoiles"
+        loading="lazy"
+      />
+      <img
+        id="product"
+        :src="require('@/assets/img/' + image)"
+        :alt="titre"
+        loading="lazy"
+      />
+    </section>
     <i />
   </article>
 </template>
@@ -10,100 +25,82 @@
 <script>
 export default {
   name: "banniereComponent",
-  props: ["titre", "image", "background_color", "text_color"],
-  mounted() {
-    let banner = document.getElementById("banniere");
-    if (this.background_color) {
-      banner.style.backgroundColor = this.background_color;
-    }
-    if (this.text_color) {
-      banner.children[0].style.color =
-        banner.children[1].style.color =
-        banner.children[1].style.webkitTextStrokeColor =
-          this.text_color;
-    }
-  },
+  props: ["titre", "image"],
 };
 </script>
 
 <style scoped lang="scss">
 article {
-  z-index: 0;
-  background-color: #070707;
-  position: relative;
+  padding-top: 5.6rem;
 
-  h1,
-  p {
-    margin-inline: auto;
-    width: min(100%, 1200px);
-    z-index: -1;
-    text-align: center;
-    font-size: 8em;
-    color: white;
-    position: absolute;
-    top: 3rem;
-    left: 0;
-    right: 0;
-    font-weight: bold;
-    animation: move 6s alternate infinite ease-in-out;
-    animation-fill-mode: both;
-    user-select: none;
+  .content {
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @keyframes move {
-      from {
-        transform: translateY(-5px);
+    div {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      right: 0;
+
+      h1,
+      p {
+        z-index: 0;
+        margin-inline: auto;
+        width: min(100%, 1200px);
+        text-align: center;
+        font-size: 8em;
+        color: var(--global-text-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-weight: bold;
+        animation: move 6s alternate infinite ease-in-out;
+        animation-fill-mode: both;
+        user-select: none;
+        font-family: var(--title-font);
+
+        @keyframes move {
+          from {
+            transform: translateY(-5px);
+          }
+          to {
+            transform: translateY(5px);
+          }
+        }
       }
-      to {
-        transform: translateY(5px);
+
+      p {
+        display: none;
+      }
+
+      @supports (-webkit-text-stroke: 1px var(--global-text-color)) {
+        p {
+          z-index: 1;
+          display: unset;
+          -webkit-text-stroke: 1px var(--global-text-color);
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
-  }
 
-  p {
-    display: none;
-  }
-
-  @supports (-webkit-text-stroke: 1px black) {
-    p {
-      display: unset;
-      z-index: 1;
-      -webkit-text-stroke: 1px white;
-      -webkit-text-fill-color: transparent;
+    #product {
+      position: relative;
+      max-height: 450px;
     }
-  }
 
-  img {
-    display: block;
-    padding-top: 8.4rem;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-height: 600px;
-  }
-
-  i {
-    position: absolute;
-    top: 95%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(255, 255, 255);
-    background: -moz-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background: -webkit-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    #stars {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
   }
 }
 </style>
