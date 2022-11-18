@@ -2,7 +2,6 @@
   <Banniere
     titre="Bracelets thérapeutiques"
     image="bracelets_therapeutiques/banner.webp"
-    background_color="#8497eb"
   />
 
   <Description>
