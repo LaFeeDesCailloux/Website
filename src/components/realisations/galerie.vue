@@ -75,15 +75,18 @@ article {
     > div {
       display: flex;
       flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
       gap: 2rem;
 
       > div {
         flex: 1 1 calc(100% / 3 - 2rem);
-        border-radius: 6px;
+        border-radius: var(--border-radius);
         overflow: hidden;
         position: relative;
         cursor: pointer;
-        max-height: 260px;
+        height: 300px;
+        max-width: calc(100% / 3 - 2rem);
         box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
           rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
