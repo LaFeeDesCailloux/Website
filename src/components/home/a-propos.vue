@@ -41,8 +41,8 @@
           </div>
         </div>
         <div>
-          <img src="@/assets/svg/fée.svg" alt="A propos" />
-          <img src="@/assets/svg/étoiles.svg" alt="A propos" />
+          <img src="@/assets/svg/fee.svg" alt="A propos" />
+          <img src="@/assets/svg/etoiles-presentation.svg" alt="A propos" />
           <img
             class="blob-static"
             src="@/assets/img/a-propos.webp"
