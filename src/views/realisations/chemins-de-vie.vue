@@ -194,5 +194,6 @@ p.content {
   padding-top: 0;
   text-align: center;
   font-size: 1.3em;
+  margin-bottom: var(--content-margin);
 }
 </style>
