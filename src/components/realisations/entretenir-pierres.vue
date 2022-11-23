@@ -30,7 +30,6 @@ export default {
 article {
   padding: var(--content-padding) 0;
   position: relative;
-  margin-top: var(--content-margin);
   background-color: var(--primary-bg-color-alt);
   overflow: hidden;
 

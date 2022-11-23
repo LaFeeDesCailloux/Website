@@ -15,6 +15,7 @@ article {
   display: flex;
   flex-flow: column nowrap;
   gap: calc(var(--content-padding) / 1.5);
+  margin-bottom: var(--content-margin);
 
   :slotted(section) {
     width: 100%;
