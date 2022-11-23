@@ -7,10 +7,9 @@
     <section class="content">
       <h2>Entretenir ses pierres</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus.
+        Chaque pierre demande une attention particulière, certaines contraintes
+        sont à respecter. Vous retrouverez sur cette page quelques conseils pour
+        obtenir le meilleur de vos pierres.
       </p>
       <router-link :to="{ name: 'entretenir-ses-pierres' }">
         Voir les conseils
