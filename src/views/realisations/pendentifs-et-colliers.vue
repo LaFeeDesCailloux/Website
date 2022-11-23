@@ -23,21 +23,15 @@
     </section>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Je confectionne également des bracelets de cheville, chemins de vie,
+          bracelets thérapeutiques, pierres de votre choix sur simple demande.
+        </p>
       </div>
       <i />
       <img
         class="blob"
-        src="@/assets/img/pendentifs_et_colliers/description_2.webp"
+        src="@/assets/img/pendentifs_et_colliers/description_2.jpg"
         alt="Collier"
         loading="lazy"
       />

@@ -1,26 +1,30 @@
 <template>
   <Banniere
     titre="Entretenir ses pierres"
-    image="entretenir_ses_pierres/banner.webp"
+    image="entretenir_ses_pierres/banner.jpg"
   />
 
   <Description>
     <section>
       <div>
         <p>
-          Tout aussi efficaces qu’un pendentif elles vous apportent tous les
-          bienfaits énergétiques que peut vous délivrer le minéral choisi.
+          Les minéraux sont extrêmement sensibles à l’environnement et à la
+          personne qui les portent. Ils se chargent d’énergies, bonnes ou
+          mauvaises, il est donc très important de purifier vos pierres
+          régulièrement pour éviter qu’elles ne s’épuisent et continues d’agir
+          pour votre bien de façon optimale.
+        </p>
+        <p>Plusieurs méthodes de purification sont possibles.</p>
+        <p>
+          La méthode la plus classique est la purification par l’eau, il suffit
+          de passer vos pierres quelques secondes sous l’eau du robinet. L’idéal
+          est d’utiliser de l’eau de source.
         </p>
         <p>
-          Les pierres sont à glisser dans sa poche ou à placer dans votre entrée
-          pour protéger votre maison.
+          En laissant vos pierres sur une géode d’améthyste le temps de la
+          purification.
         </p>
-        <p>
-          Faites-vous confiance pour le choix. Si une pierre vous attire, elle
-          est pour vous, sinon demandez conseil pour orienter votre choix. Il va
-          de soit que plus la pierre est volumineuse, plus elle est chargée
-          énergétiquement.
-        </p>
+        <p>Le pendule peut être également utilisé.</p>
       </div>
       <img
         class="blob"
@@ -31,22 +35,38 @@
     </section>
     <section>
       <div>
-        <p>Quelques exemples de leurs utilisations :</p>
+        <p>
+          Une fois purifié de toutes mauvaises énergies, il faut recharger.<br />
+          Cette étape est essentielle pour que les minéraux retrouvent leur
+          puissance.
+        </p>
+        <p>Pour cela plusieurs possibilités s’offrent à vous :</p>
         <ul>
           <li>
-            Protéger votre maison en plaçant un œil de tigre au-dessus de votre
-            porte d’entrée ;
+            <strong>Le soleil : </strong>il ne convient pas à toutes les
+            pierres.<br />
+            Attention, préférez une exposition douce et de préférence le matin.
           </li>
           <li>
-            Vous avez des hémorroïdes, glissez une hématite dans la poche
-            arrière de votre pantalon ;
+            <strong>La lune et bien sûr la pleine lune : </strong>certaines
+            pierres lui sont favorables, laissez son énergie agir en toute
+            tranquillité pendant toute une nuit.
           </li>
           <li>
-            Vous manquez d’argent, attirez l’abondance en glissant une citrine
-            dans votre porte-monnaie ;
+            <strong>Le pendule : </strong>il sera beaucoup plus rapide pour
+            recharger vos minéraux.
           </li>
-          <li>Etc.</li>
+          <li>
+            <strong>La géode ou la druse : </strong>Déposez-y vos bracelets,
+            pendentifs, pierres roulées ou autres pendant quelques heures.<br />
+            Attention, celles-ci doivent être également purifiées.
+          </li>
+          <li>
+            <strong>La fleur de vie : </strong>symbole dégageant une énergie
+            très puissante peut également recharger vos pierres.
+          </li>
         </ul>
+        <p>N'hésitez pas à me demander si vous avez la moindre question.</p>
       </div>
       <img
         class="blob"
@@ -55,9 +75,23 @@
         loading="lazy"
       />
     </section>
+    <section>
+      <div>
+        <p>
+          Si vos pierres ternissent, perdent leur éclat, changent de couleur ou
+          se cassent, c’est qu’elles ne sont pas suffisamment purifiées et
+          rechargées.<br />
+          Je préconise de répéter le plus souvent possible ces opérations.
+        </p>
+      </div>
+      <img
+        class="blob"
+        src="@/assets/img/entretenir_ses_pierres/description_3.jpg"
+        alt="Pierre"
+        loading="lazy"
+      />
+    </section>
   </Description>
-
-  <Galerie dossier="entretenir_ses_pierres/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -65,7 +99,6 @@
 <script>
 import Banniere from "@/components/realisations/banniere";
 import Description from "@/components/realisations/description";
-import Galerie from "@/components/realisations/galerie";
 import Contact from "@/components/global/contact";
 
 export default {
@@ -76,24 +109,11 @@ export default {
   components: {
     Banniere,
     Description,
-    Galerie,
     Contact,
   },
   data() {
     return {
       interval: null,
-      images: [
-        {
-          titre: "Pierre",
-          description: "Lorem ipsum",
-          chemin: "DSC06714.jpg",
-        },
-        {
-          titre: "Pierre",
-          description: "Lorem ipsum",
-          chemin: "DSC06728.jpg",
-        },
-      ],
     };
   },
   mounted() {
