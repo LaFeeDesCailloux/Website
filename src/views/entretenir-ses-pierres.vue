@@ -83,6 +83,13 @@
           rechargées.<br />
           Je préconise de répéter le plus souvent possible ces opérations.
         </p>
+        <p>
+          Pour optimiser au maximum leurs effets, il est fortement recommandé de
+          ne mettre aucun produit en contact avec vos pierres. Aucun parfum,
+          crème, produit vaisselle ou autres.<br />
+          Il est également déconseillé de le garder pour la douche et la
+          baignade.
+        </p>
       </div>
       <img
         class="blob"
