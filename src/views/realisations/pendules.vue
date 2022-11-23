@@ -4,16 +4,21 @@
   <Description>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <p>
+          Le pendule est un objet très personnel. Il ne se prête pas car
+          imprégné de vos vibrations. Il doit être purifié et rechargé le plus
+          souvent possible.
+        </p>
+        <h3>De nombreuses utilisations pour votre pendule.</h3>
+        <ul>
+          <li>Purifier et recharger les pierres ;</li>
+          <li>La radiesthésie ;</li>
+          <li>La géobiologie ;</li>
+          <li>Pratiquer des soins ;</li>
+          <li>Calculer son taux vibratoire et celui d'une maison ;</li>
+          <li>Retrouver un objet perdu ;</li>
+          <li>Connaître le sexe d'un futur bébé.</li>
+        </ul>
       </div>
       <i />
       <img
@@ -25,21 +30,69 @@
     </section>
     <section>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non arcu
-        arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed tempus
-        justo vehicula malesuada. Aenean erat lorem, porta eu purus vitae,
-        pellentesque vulputate lacus. Etiam luctus arcu sed eleifend convallis.
-        Vestibulum vel mi non mi dapibus pulvinar. Nunc blandit nisi quis congue
-        efficitur. Maecenas ultrices metus eu mi facilisis consectetur. Aliquam
-        molestie iaculis tellus convallis eleifend. Etiam eu massa enim. Sed
-        vehicula ante sem, nec bibendum purus aliquam quis. Vivamus tincidunt,
-        ipsum id tempus gravida, leo leo elementum mi, nec iaculis quam sapien a
-        nisi.
+        <h3>Utilisation du pendule</h3>
+        <p>
+          Purifiez et rechargez votre pendule avant la première utilisation.
+          Portez-le le plus souvent possible afin qu'il s'imprègne de vos
+          vibrations et augmenter son efficacité.
+        </p>
+        <p>
+          <strong>
+            Avant chaque utilisation, n'oubliez surtout pas de bien lui demander
+            s'il veut travailler avec vous.
+          </strong>
+          Si ce n'est pas le cas, sollicitez-le plus tard.
+        </p>
+        <p>
+          Pour bien utiliser son pendule, tenez la chaîne entre le pouce et
+          l'index de votre main dominante et laissez la pendre une dizaine de
+          centimètres environ.
+        </p>
       </div>
       <i />
       <img
         class="blob"
         src="@/assets/img/pendules/description_2.webp"
+        alt="Pendule"
+        loading="lazy"
+      />
+    </section>
+    <section>
+      <div>
+        <p>
+          Afin de comprendre les réponses du pendules, vous allez devoir établir
+          un code. Ce code restera immuable. Pour cela, demandez lui de vous
+          indiquer un "oui". Le pendule tournera dans un sens. Un "non" tournera
+          inévitablement dans le sens inverse. S'il ne connaît pas la réponse à
+          votre question ou ne souhaite pas y répondre, il se balancera de
+          manière différente. Vous pouvez poser n'importe quelle question à
+          condition que ce soit une question fermée, ce qui implique une réponse
+          qui sera automatiquement oui, non ou je ne sais pas.<br />
+          Une fois ce code établit, vous pouvez utiliser votre pendule.
+        </p>
+      </div>
+      <i />
+      <img
+        class="blob"
+        src="@/assets/img/pendules/description_3.jpg"
+        alt="Pendule"
+        loading="lazy"
+      />
+    </section>
+    <section>
+      <div>
+        <p>
+          Votre pendule peut servir à purifier et recharger, pour cela placer le
+          au-dessus de votre pierre ou bracelet et demandez lui de purifier.<br />
+          Lorsque le pendule s'arrête de lui-même, demandez-lui alors de
+          recharger. Quand le pendule s'arrête à nouveau, c'est que le travail
+          est terminé et vous pouvez le remercier.
+        </p>
+      </div>
+      <i />
+      <img
+        class="blob"
+        src="@/assets/img/pendules/description_4.jpg"
         alt="Pendule"
         loading="lazy"
       />

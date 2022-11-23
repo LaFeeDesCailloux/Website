@@ -7,6 +7,10 @@
           Concernant les contacts téléphoniques, merci de bien vouloir me
           joindre de préférence en semaine.
         </p>
+        <p>
+          Vous souhaitez acheter un bracelet ? Pensez à renseigner votre tour de
+          poignet lors de votre commande.
+        </p>
       </div>
       <div>
         <a href="tel:0647861284">
@@ -46,14 +50,15 @@
         <label for="object">Objet</label>
         <select name="object" id="object" v-model="object" required>
           <option value="" selected disabled>Sélectionnez une option</option>
-          <option value="chemin-de-vie">Achat d'un chemin de vie</option>
-          <option value="pierres">Achat de pierres</option>
+          <option value="chemin-de-vie">Chemin de vie</option>
+          <option value="bracelet-therapeutique">Bracelet thérapeutique</option>
+          <option value="pierres">Pierres</option>
           <option value="info">Demande de renseignements</option>
-          <option value="perso">Personnalisé</option>
+          <option value="other">Autre</option>
         </select>
 
         <input
-          v-if="object === 'perso'"
+          v-if="object === 'other'"
           type="text"
           name="custom-object"
           id="custom-object"
