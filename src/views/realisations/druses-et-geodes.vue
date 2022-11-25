@@ -22,7 +22,6 @@
         </ul>
         <p>Il suffit d’y déposer vos minéraux.</p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/druses_et_geodes/description_1.webp"
@@ -53,7 +52,6 @@
           <li>Etc.</li>
         </ul>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/druses_et_geodes/description_2.webp"
