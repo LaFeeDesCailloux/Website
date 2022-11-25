@@ -72,7 +72,7 @@
           <label for="cdv-pere">Nom du père</label>
           <input type="text" name="cdv-pere" id="cdv-pere" required />
 
-          <label for="cdv-mere">Nom de la mère</label>
+          <label for="cdv-mere">Nom de jeune fille de la mère</label>
           <input type="text" name="cdv-mere" id="cdv-mere" required />
 
           <label for="cdv-naissance">Date de naissance</label>
