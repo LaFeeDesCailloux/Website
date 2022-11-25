@@ -118,6 +118,10 @@
     <strong>Un véritable bijou dans tous les sens du terme.</strong>
   </p>
 
+  <hr />
+
+  <Calculateur />
+
   <EntretenirPierres />
 
   <Galerie dossier="chemins_de_vie/galerie/" :images="images" />
@@ -128,6 +132,7 @@
 <script>
 import Banniere from "@/components/realisations/banniere";
 import Description from "@/components/realisations/description";
+import Calculateur from "@/components/realisations/calculateur";
 import EntretenirPierres from "@/components/realisations/entretenir-pierres";
 import Galerie from "@/components/realisations/galerie";
 import Contact from "@/components/global/contact";
@@ -140,6 +145,7 @@ export default {
   components: {
     Banniere,
     Description,
+    Calculateur,
     EntretenirPierres,
     Galerie,
     Contact,
@@ -191,6 +197,10 @@ p.content {
   padding-top: 0;
   text-align: center;
   font-size: 1.3em;
-  margin-bottom: var(--content-margin);
+}
+
+hr {
+  width: min(100% - 6rem, var(--content-max-width));
+  margin: var(--content-padding) auto;
 }
 </style>
