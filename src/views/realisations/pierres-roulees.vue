@@ -19,7 +19,6 @@
           énergétiquement.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pierres_roulees/description_1.webp"
@@ -46,7 +45,6 @@
           <li>Etc.</li>
         </ul>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pierres_roulees/description_2.webp"

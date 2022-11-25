@@ -20,7 +20,6 @@
           <li>Connaître le sexe d'un futur bébé.</li>
         </ul>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pendules/description_1.webp"
@@ -49,7 +48,6 @@
           centimètres environ.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pendules/description_2.webp"
@@ -71,7 +69,6 @@
           Une fois ce code établit, vous pouvez utiliser votre pendule.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pendules/description_3.jpg"
@@ -89,7 +86,6 @@
           est terminé et vous pouvez le remercier.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pendules/description_4.jpg"

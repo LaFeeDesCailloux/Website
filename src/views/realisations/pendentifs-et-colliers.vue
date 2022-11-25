@@ -13,7 +13,6 @@
           à la lune ou au soleil en fonction de la pierre.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pendentifs_et_colliers/description_1.webp"
@@ -28,7 +27,6 @@
           bracelets thérapeutiques, pierres de votre choix sur simple demande.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/pendentifs_et_colliers/description_2.jpg"

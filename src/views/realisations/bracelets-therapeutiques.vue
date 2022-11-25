@@ -25,7 +25,6 @@
           <li>Etc.</li>
         </ul>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/bracelets_therapeutiques/description_1.webp"
@@ -50,7 +49,6 @@
           </strong>
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/bracelets_therapeutiques/description_2.webp"

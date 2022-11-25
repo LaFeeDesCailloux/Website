@@ -45,7 +45,6 @@
           </li>
         </ul>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/chemins_de_vie/description_1.webp"
@@ -76,7 +75,6 @@
           </strong>
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/chemins_de_vie/description_2.webp"
@@ -107,7 +105,6 @@
           votre caractère ou tout autre ressenti.
         </p>
       </div>
-      <i />
       <img
         class="blob"
         src="@/assets/img/chemins_de_vie/description_3.webp"
