@@ -6,19 +6,76 @@
         <SplideTrack>
           <SplideSlide>
             <section>
-              <h3>Mathis S.M.</h3>
+              <h3>Nathalie B.</h3>
               <div>
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <!--<font-awesome-icon icon="fa-regular fa-star-half-stroke" />-->
               </div>
             </section>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-              arcu ac risus laoreet sodales. Fusce tincidunt nibh ligula, sed
-              tempus justo vehicula malesuada.
+              Je porte un bracelet et une pierre en collier, depuis plusieurs
+              mois, et ceci font preuve d'une grande efficacité et en plus, sont
+              très jolis à porter.
+              <br />
+              Je vous recommande de vous rapprocher de Cathy qui sera bien vous
+              conseiller.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Nathalie</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              J'ai commandé deux bracelets pour différentes utilisations. J'ai
+              été contente des produits et des explications de Cathy qui est à
+              l'écoute. <br />
+              Je l'ai recommandée à plusieurs personnes, je lui donne 5 étoiles.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Isabelle</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>Personne agréable et à l'écoute.</p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Marie A.</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Ravie de mon chemin de vie, que je porte tous les jours.
+              Confection rapide et sur mesure. <br />
+              Cathy est quelqu'un qui est à l'écoute et professionnelle, qui
+              prend le temps de nous expliquer chaque pierre qui le compose, ses
+              vertus, ses bienfaits et bien sûr son entretien.
+              <br />
+              Ce bracelet me reflète parfaitement et je me sens plus apaisée
+              depuis.
             </p>
           </SplideSlide>
         </SplideTrack>
