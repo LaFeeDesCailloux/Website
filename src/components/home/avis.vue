@@ -19,15 +19,13 @@
             <p>
               Je porte un bracelet et une pierre en collier, depuis plusieurs
               mois, et ceci font preuve d'une grande efficacité et en plus, sont
-              très jolis à porter.
-              <br />
-              Je vous recommande de vous rapprocher de Cathy qui sera bien vous
-              conseiller.
+              très jolis à porter. Je vous recommande de vous rapprocher de
+              Cathy qui sera bien vous conseiller.
             </p>
           </SplideSlide>
           <SplideSlide>
             <section>
-              <h3>Nathalie</h3>
+              <h3>Nathalie J.</h3>
               <div>
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
@@ -39,8 +37,8 @@
             <p>
               J'ai commandé deux bracelets pour différentes utilisations. J'ai
               été contente des produits et des explications de Cathy qui est à
-              l'écoute. <br />
-              Je l'ai recommandée à plusieurs personnes, je lui donne 5 étoiles.
+              l'écoute. Je l'ai recommandée à plusieurs personnes, je lui donne
+              5 étoiles.
             </p>
           </SplideSlide>
           <SplideSlide>
@@ -69,13 +67,45 @@
             </section>
             <p>
               Ravie de mon chemin de vie, que je porte tous les jours.
-              Confection rapide et sur mesure. <br />
-              Cathy est quelqu'un qui est à l'écoute et professionnelle, qui
-              prend le temps de nous expliquer chaque pierre qui le compose, ses
-              vertus, ses bienfaits et bien sûr son entretien.
-              <br />
-              Ce bracelet me reflète parfaitement et je me sens plus apaisée
-              depuis.
+              Confection rapide et sur mesure. Cathy est quelqu'un qui est à
+              l'écoute et professionnelle, qui prend le temps de nous expliquer
+              chaque pierre qui le compose, ses vertus, ses bienfaits et bien
+              sûr son entretien. Ce bracelet me reflète parfaitement et je me
+              sens plus apaisée depuis.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Marie B.</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Cathy est à l écoute, bienveillante. Les pierres et les
+              réalisations des bracelets sont de qualité. Les bienfaits sont
+              arrivés très vite.. Merci beaucoup ! Je recommande.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Laetitia</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Bonjour, ayant acheté à plusieurs reprises des bijoux, j'ai
+              toujours été satisfaite des pierres de très bonne qualité ainsi
+              que du travail et des conseils de Cathy.
             </p>
           </SplideSlide>
         </SplideTrack>
