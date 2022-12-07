@@ -15,6 +15,7 @@ import {
   faCaretRight,
   faInfo,
   faUpLong,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
 
@@ -28,7 +29,8 @@ library.add(
   faSortDown,
   faCaretRight,
   faInfo,
-  faUpLong
+  faUpLong,
+  faBars
 );
 
 createApp(App)
