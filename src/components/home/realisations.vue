@@ -84,13 +84,13 @@ export default {
 <style scoped lang="scss">
 section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-items: stretch;
-  gap: 3rem;
+  gap: 2rem;
 
   a {
-    aspect-ratio: 1.2/1;
+    aspect-ratio: 1.5/1;
     border-radius: var(--border-radius);
     position: relative;
     overflow: hidden;
@@ -106,8 +106,7 @@ section {
     }
 
     div {
-      opacity: 0;
-      transition: opacity 250ms;
+      height: 56px;
       backdrop-filter: blur(var(--blur));
       padding: 1.6rem;
       display: flex;
@@ -116,21 +115,20 @@ section {
       justify-content: center;
       gap: 0.75rem;
       position: absolute;
-      top: 0;
       left: 0;
       bottom: 0;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.5);
-      color: var(--global-text-color);
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
 
       h3 {
-        font-size: 1.6em;
+        font-size: 1.2em;
         font-family: var(--title-font);
       }
 
       p {
-        font-size: 1.22em;
+        display: none;
       }
     }
 
@@ -143,6 +141,40 @@ section {
         opacity: 1;
       }
     }
+  }
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    a {
+      aspect-ratio: 1.2/1;
+    }
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+
+    a div {
+      transition: opacity 250ms;
+      opacity: 0;
+      top: 0;
+      height: unset;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: var(--global-text-color);
+
+      h3 {
+        font-size: 1.6em;
+      }
+
+      p {
+        font-size: 1.22em;
+        display: unset;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    gap: 3rem;
   }
 }
 </style>

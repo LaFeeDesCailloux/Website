@@ -124,7 +124,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="chemins_de_vie/galerie/" :images="images" />
+  <Galerie dossier="assets/img/chemins_de_vie/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -155,18 +155,15 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Chemin de vie",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC03820.jpg",
         },
         {
-          titre: "Chemin de vie",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06771.jpg",
         },
         {
-          titre: "Chemin de vie",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_151752.jpg",
         },
       ],
@@ -175,8 +172,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

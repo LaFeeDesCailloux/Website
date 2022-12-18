@@ -1,5 +1,9 @@
 <template>
   <article>
+    <div>
+      <img src="@/assets/svg/fee.svg" alt="Fée" />
+      <img src="@/assets/svg/etoiles-realisations.svg" alt="Étoiles" />
+    </div>
     <section class="content" id="a-propos">
       <h2>À propos</h2>
       <section>
@@ -65,19 +69,48 @@ article {
   margin-top: var(--content-margin);
   padding: var(--content-padding) 0;
   background-color: var(--primary-bg-color);
+  position: relative;
+
+  > div {
+    position: absolute;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 0;
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+
+    img:first-of-type {
+      transform: scaleX(-1) rotate(20deg);
+      height: 88%;
+      position: absolute;
+      top: 0.6rem;
+      right: -3.5rem;
+    }
+
+    img:last-of-type {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      min-height: 160px;
+      object-fit: cover;
+    }
+  }
 
   .content {
     margin-top: 0;
+    position: relative;
 
     section {
-      padding: 0 2rem 0 0;
-      display: grid;
-      grid-template-columns: 1.35fr 0.65fr;
-      align-items: center;
-      gap: 5rem;
-
       > div:first-of-type {
-        text-align: right;
+        text-align: center;
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
@@ -94,13 +127,15 @@ article {
         }
 
         div {
-          display: flex;
-          justify-content: flex-end;
-          gap: 2rem;
-          font-size: 1.5em;
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.6rem 2rem;
+          margin-top: 1.4rem;
+          font-size: 1.8em;
 
           a {
-            padding: 0.6rem;
+            padding: 1rem;
             color: black;
             text-decoration: none;
             transform: scale(1.01);
@@ -114,6 +149,7 @@ article {
       }
 
       > div:last-of-type {
+        display: none;
         position: relative;
         height: 420px;
 
@@ -127,9 +163,13 @@ article {
 
         img:nth-of-type(2) {
           position: absolute;
-          width: 310px;
-          top: -8%;
+          width: 100%;
+          top: -6%;
           right: 0;
+
+          @media (min-width: 1200px) {
+            top: -10%;
+          }
         }
 
         img:last-of-type {
@@ -140,6 +180,27 @@ article {
           width: 100%;
           object-fit: cover;
           bottom: 0;
+        }
+      }
+
+      @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1.35fr 0.65fr;
+        align-items: center;
+        gap: 5rem;
+        padding: 0 2rem 0 0;
+
+        > div:first-of-type {
+          text-align: right;
+
+          div {
+            justify-content: flex-end;
+            font-size: 1.5em;
+          }
+        }
+
+        > div:last-of-type {
+          display: unset;
         }
       }
     }

@@ -58,10 +58,12 @@ article {
 
     h2 {
       margin-bottom: 0;
+      text-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
     }
 
     p {
       width: min(100% - 2rem, 700px);
+      text-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
     }
 
     a {
@@ -83,12 +85,18 @@ article {
     }
 
     img {
+      opacity: 0.5;
       z-index: -1;
       position: absolute;
       transform: scaleX(-1) rotate(10deg);
-      right: 0;
+      right: -100px;
       bottom: -100px;
       height: 320px;
+
+      @media (min-width: 1200px) {
+        opacity: 1;
+        right: 0;
+      }
     }
   }
 }

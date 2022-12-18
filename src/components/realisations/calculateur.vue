@@ -1,6 +1,6 @@
 <template>
   <article id="calculateur">
-    <h2>Calculateur de Chemin de vie</h2>
+    <h2>Calculateur de chemin de vie</h2>
     <form id="inputs" class="content">
       <section>
         <label for="names">Prénoms (séparé par ",") :</label>
@@ -202,6 +202,16 @@
           <h3>Inconnu</h3>
         </div>
       </section>
+    </article>
+
+    <article id="price" class="content">
+      <div>
+        <p>Prix estimé :</p>
+        <p>
+          <strong>{{ price }} €</strong>
+        </p>
+      </div>
+      <a @click.prevent="goToContact">Commander</a>
     </article>
   </article>
 </template>
@@ -409,9 +419,22 @@ export default {
       voeux_id: [0, 0],
       reduce: [0, 0],
       toggle: false,
+      price: 40,
     };
   },
   methods: {
+    goToContact() {
+      this.$router.push({
+        name: "contact",
+        query: {
+          object: "chemin-de-vie",
+          names: this.names,
+          name_father: this.last_name_father,
+          name_mother: this.last_name_mother,
+          birthdate: this.birthdate,
+        },
+      });
+    },
     resetForm() {
       this.last_name_father =
         this.last_name_mother =
@@ -681,38 +704,72 @@ export default {
 #inputs {
   margin-top: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   align-items: end;
 
   section:nth-of-type(1) {
-    grid-column: 1 / 3;
     grid-row: 1;
   }
 
   section:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 1;
+    grid-row: 4;
   }
 
   section:nth-of-type(3) {
-    grid-column: 1 / 2;
     grid-row: 2;
   }
 
   section:nth-of-type(4) {
-    grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 3;
   }
 
   section:nth-of-type(5) {
-    grid-column: 3 / 4;
-    grid-row: 2;
+    grid-row: 5;
+  }
+
+  @media (min-width: 500px) {
+    section:nth-of-type(1) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    section:nth-of-type(2) {
+      grid-column: 1 / 2;
+      grid-row: 3;
+    }
+
+    section:nth-of-type(3) {
+      grid-column: 1 / 2;
+      grid-row: 2;
+    }
+
+    section:nth-of-type(4) {
+      grid-column: 2 / 3;
+      grid-row: 2;
+    }
+
+    section:nth-of-type(5) {
+      grid-column: 2 / 3;
+      grid-row: 3;
+    }
+  }
+
+  @media (min-width: 900px) {
+    section:nth-of-type(2) {
+      grid-column: 3 / 4;
+      grid-row: 1;
+    }
+
+    section:nth-of-type(5) {
+      grid-column: 3 / 4;
+      grid-row: 2;
+    }
   }
 
   section {
     display: flex;
     flex-direction: column;
+    grid-column: 1 / 1;
   }
 
   label {
@@ -741,65 +798,112 @@ export default {
 
 #results {
   margin-top: var(--content-padding);
-  margin-bottom: var(--content-margin);
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.4rem;
+  flex-flow: row wrap;
+  gap: 2rem;
 
   section {
-    flex: 0 0 21%;
-    display: flex;
-    flex-direction: column;
-    width: 230px;
-    height: 230px;
+    width: 100%;
+    max-width: 300px;
     border: 2px solid black;
     border-radius: var(--border-radius);
     background-color: var(--primary-bg-color);
-  }
 
-  span {
-    width: 100%;
-    height: 140px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-  }
+    span {
+      width: 100%;
+      height: 140px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+    }
 
-  .unknown {
-    font-size: 4.4em;
-    font-weight: 500;
-  }
+    .unknown {
+      font-size: 4.4em;
+      font-weight: 500;
+    }
 
-  img {
-    width: 90px;
-    -webkit-filter: var(--drop-shadow);
-    filter: var(--drop-shadow);
-    transition: all 1s linear;
-  }
+    img {
+      width: 90px;
+      -webkit-filter: drop-shadow(0 16px 10px rgba(0, 0, 0, 0.3));
+      filter: drop-shadow(0 16px 10px rgba(0, 0, 0, 0.3));
+      transition: all 1s linear;
+    }
 
-  p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.2em;
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 1.2em;
+      text-align: center;
 
-    &::before,
-    &::after {
-      border-top: 0.08em solid;
-      content: "";
-      flex: 1;
-      border-radius: var(--border-radius);
+      &::before,
+      &::after {
+        border-top: 0.1em solid;
+        content: "";
+        flex: 1;
+      }
+    }
+
+    h3 {
+      margin: 1rem 0 0;
+      padding: 0 0 1rem;
+      text-align: center;
     }
   }
 
-  h3 {
-    margin: 1rem 0 0;
-    padding: 0;
-    text-align: center;
+  @media (min-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#price {
+  margin-top: calc(var(--content-padding) / 1.8);
+  margin-bottom: var(--content-margin);
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.6rem 2rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+
+    p:first-of-type {
+      font-size: 1.2em;
+    }
+
+    p:last-of-type {
+      font-size: 1.6em;
+    }
+  }
+
+  a {
+    padding: 0.8rem 1.7rem;
+    font-size: 1.1em;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: "Arial", sans-serif;
+    resize: vertical;
+    outline: none;
+    position: relative;
+    background-color: var(--global-bg-color);
+    color: black;
+    text-decoration: none;
+    transition: transform 250ms;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 </style>
