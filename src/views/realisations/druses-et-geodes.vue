@@ -63,7 +63,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="druses_et_geodes/galerie/" :images="images" />
+  <Galerie dossier="assets/img/druses_et_geodes/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -92,33 +92,27 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06737.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211023_174234.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211023_180852.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_150807.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_151152.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_153524.jpg",
         },
       ],
@@ -127,8 +121,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

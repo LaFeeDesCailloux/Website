@@ -97,7 +97,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="pendules/galerie/" :images="images" />
+  <Galerie dossier="assets/img/pendules/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -126,58 +126,47 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06800.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06804.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06814.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06822.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06829.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06834.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_140940.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_140946.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_140950.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_141245.jpg",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "IMG_20211024_141814.jpg",
         },
       ],
@@ -186,8 +175,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

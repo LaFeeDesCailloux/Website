@@ -56,7 +56,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="pierres_roulees/galerie/" :images="images" />
+  <Galerie dossier="assets/img/pierres_roulees/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -85,13 +85,11 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Pierre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06714.jpg",
         },
         {
-          titre: "Pierre",
-          description: "Lorem ipsum",
+          description: "Description",
           chemin: "DSC06728.jpg",
         },
       ],
@@ -100,8 +98,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

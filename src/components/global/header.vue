@@ -481,8 +481,8 @@ header {
   height: 56px;
   z-index: 98;
   position: fixed;
-  bottom: 2.5rem;
-  right: 2.5rem;
+  bottom: 1.6rem;
+  right: 1.6rem;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -491,6 +491,11 @@ header {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(var(--blur));
   gap: 3px;
+
+  @media (min-width: 500px) {
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
 
   hr {
     border-radius: var(--border-radius);

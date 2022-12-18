@@ -2,7 +2,7 @@ export default {
   created() {
     const title = this.getTitle(this);
     if (title) {
-      document.title = `${title} | La Fée Des Cailloux`;
+      document.title = `${title}  -  La Fée Des Cailloux`;
     }
   },
   methods: {
