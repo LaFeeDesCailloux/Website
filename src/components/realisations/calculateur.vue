@@ -205,13 +205,26 @@
     </article>
 
     <article id="price" class="content">
-      <div>
-        <p>Prix estimé :</p>
-        <p>
-          <strong>{{ price }} €</strong>
-        </p>
-      </div>
-      <a @click.prevent="goToContact">Commander</a>
+      <section
+        v-if="
+          stone_base &&
+          stone_personnalite &&
+          stone_voeux &&
+          stone_touche &&
+          stone_expression &&
+          stone_sommet &&
+          stone_appel &&
+          stone_vie
+        "
+      >
+        <div>
+          <p>Prix estimé :</p>
+          <p>
+            <strong>{{ price }} €</strong>
+          </p>
+        </div>
+        <a @click.prevent="goToContact">Commander</a>
+      </section>
     </article>
   </article>
 </template>
@@ -693,9 +706,6 @@ export default {
     stone_voeux() {
       return this.calculateVoeux();
     },
-    reduce_result() {
-      return this.calculateResult();
-    },
   },
 };
 </script>
@@ -864,45 +874,48 @@ export default {
   margin-top: calc(var(--content-padding) / 1.8);
   margin-bottom: var(--content-margin);
   max-width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 1.6rem 2rem;
 
-  div {
+  section {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.4rem;
+    justify-content: space-evenly;
+    gap: 1.6rem 2rem;
 
-    p:first-of-type {
-      font-size: 1.2em;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+
+      p:first-of-type {
+        font-size: 1.2em;
+      }
+
+      p:last-of-type {
+        font-size: 1.6em;
+      }
     }
 
-    p:last-of-type {
-      font-size: 1.6em;
-    }
-  }
+    a {
+      padding: 0.8rem 1.7rem;
+      font-size: 1.1em;
+      border: 2px solid black;
+      border-radius: 6px;
+      font-family: "Arial", sans-serif;
+      resize: vertical;
+      outline: none;
+      position: relative;
+      background-color: var(--global-bg-color);
+      color: black;
+      text-decoration: none;
+      transition: transform 250ms;
+      cursor: pointer;
 
-  a {
-    padding: 0.8rem 1.7rem;
-    font-size: 1.1em;
-    border: 2px solid black;
-    border-radius: 6px;
-    font-family: "Arial", sans-serif;
-    resize: vertical;
-    outline: none;
-    position: relative;
-    background-color: var(--global-bg-color);
-    color: black;
-    text-decoration: none;
-    transition: transform 250ms;
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.03);
+      &:hover {
+        transform: scale(1.03);
+      }
     }
   }
 }
