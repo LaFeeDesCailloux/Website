@@ -124,7 +124,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="assets/img/chemins_de_vie/galerie/" :images="images" />
+  <Galerie dossier="chemins_de_vie/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -155,16 +155,16 @@ export default {
       interval: null,
       images: [
         {
-          description: "Description",
-          chemin: "DSC03820.jpg",
+          src: "DSC03820.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06771.jpg",
+          src: "DSC06771.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_151752.jpg",
+          src: "IMG_20211024_151752.jpg",
+          title: "Description",
         },
       ],
     };

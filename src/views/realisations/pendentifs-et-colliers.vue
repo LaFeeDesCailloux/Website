@@ -38,10 +38,7 @@
 
   <EntretenirPierres />
 
-  <Galerie
-    dossier="assets/img/pendentifs_et_colliers/galerie/"
-    :images="images"
-  />
+  <Galerie dossier="pendentifs_et_colliers/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -70,104 +67,104 @@ export default {
       interval: null,
       images: [
         {
-          description: "Description",
-          chemin: "DSC06704.jpg",
+          src: "DSC06704.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06712.jpg",
+          src: "DSC06712.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06773.jpg",
+          src: "DSC06773.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06788.jpg",
+          src: "DSC06788.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06789.jpg",
+          src: "DSC06789.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06790.jpg",
+          src: "DSC06790.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_134130.jpg",
+          src: "IMG_20211024_134130.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_152913.jpg",
+          src: "IMG_20211024_152913.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_152952.jpg",
+          src: "IMG_20211024_152952.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154153.jpg",
+          src: "IMG_20211024_154153.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154209.jpg",
+          src: "IMG_20211024_154209.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154219.jpg",
+          src: "IMG_20211024_154219.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154227.jpg",
+          src: "IMG_20211024_154227.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154324.jpg",
+          src: "IMG_20211024_154324.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154404.jpg",
+          src: "IMG_20211024_154404.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154422.jpg",
+          src: "IMG_20211024_154422.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_094249.jpg",
+          src: "IMG_20220226_094249.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_112526.jpg",
+          src: "IMG_20220226_112526.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_112540.jpg",
+          src: "IMG_20220226_112540.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_112554.jpg",
+          src: "IMG_20220226_112554.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_112607.jpg",
+          src: "IMG_20220226_112607.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_112740.jpg",
+          src: "IMG_20220226_112740.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_113003.jpg",
+          src: "IMG_20220226_113003.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220226_113413.jpg",
+          src: "IMG_20220226_113413.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20220331_190046.jpg",
+          src: "IMG_20220331_190046.jpg",
+          title: "Description",
         },
       ],
     };

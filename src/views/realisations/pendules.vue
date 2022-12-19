@@ -97,7 +97,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="assets/img/pendules/galerie/" :images="images" />
+  <Galerie dossier="pendules/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -126,48 +126,48 @@ export default {
       interval: null,
       images: [
         {
-          description: "Description",
-          chemin: "DSC06800.jpg",
+          src: "DSC06800.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06804.jpg",
+          src: "DSC06804.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06814.jpg",
+          src: "DSC06814.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06822.jpg",
+          src: "DSC06822.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06829.jpg",
+          src: "DSC06829.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06834.jpg",
+          src: "DSC06834.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_140940.jpg",
+          src: "IMG_20211024_140940.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_140946.jpg",
+          src: "IMG_20211024_140946.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_140950.jpg",
+          src: "IMG_20211024_140950.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_141245.jpg",
+          src: "IMG_20211024_141245.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_141814.jpg",
+          src: "IMG_20211024_141814.jpg",
+          title: "Description",
         },
       ],
     };
