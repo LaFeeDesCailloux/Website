@@ -3,15 +3,14 @@
     <section class="content">
       <h2>Galerie</h2>
       <div>
-        <div v-for="image in images" :key="image.chemin">
-          <img
-            @click="showLightbox(image.chemin)"
-            :src="require('@/' + dossier + image.chemin)"
-            :alt="image.description"
-            :title="image.description"
-          />
+        <div
+          v-for="(image, index) in imgs"
+          :key="index"
+          @click="() => showLightbox(index)"
+        >
+          <img :src="image.src" :alt="image.title" :title="image.title" />
           <div>
-            <h3>{{ image.description }}</h3>
+            <h3>{{ image.title }}</h3>
             <font-awesome-icon icon="fa-solid fa-info" />
           </div>
         </div>
@@ -20,19 +19,15 @@
   </article>
 
   <lightbox
-    id="mylightbox"
-    ref="myLightbox"
-    :images="images"
-    :timeout-duration="1200"
-    :close-on-backdrop-click="true"
-    :current-image-name="currentImage"
-    @on-lightbox-close="onLightboxClose"
+    :visible="visible"
+    :imgs="imgs"
+    :index="current_index"
+    @hide="hideLightbox"
   />
 </template>
 
 <script>
-import Lightbox from "vue-my-photos";
-// import disableScroll from "disable-scroll";
+import Lightbox from "vue-easy-lightbox";
 
 export default {
   name: "galerieComponent",
@@ -42,22 +37,27 @@ export default {
   },
   data() {
     return {
-      body: document.getElementsByTagName("body")[0],
-      currentImage: "",
+      visible: false,
+      current_index: "",
     };
   },
-  methods: {
-    showLightbox(image) {
-      console.log("show " + image);
-      // disableScroll.on();
-      // this.body.style.overflow = "hidden";
-      this.currentImage = image;
+  computed: {
+    imgs() {
+      let array = [];
+      this.images.filter((image) => {
+        image.src = require("@/assets/img/" + this.dossier + image.src);
+        array.push(image);
+      });
+      return array;
     },
-    onLightboxClose(image) {
-      this.currentImage = image;
-      console.log("close");
-      // disableScroll.off();
-      // this.body.style.overflow = "overlay";
+  },
+  methods: {
+    showLightbox(index) {
+      this.current_index = index;
+      this.visible = true;
+    },
+    hideLightbox() {
+      this.visible = false;
     },
   },
 };

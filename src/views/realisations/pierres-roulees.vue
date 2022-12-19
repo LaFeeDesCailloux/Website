@@ -56,7 +56,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="assets/img/pierres_roulees/galerie/" :images="images" />
+  <Galerie dossier="pierres_roulees/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -85,12 +85,12 @@ export default {
       interval: null,
       images: [
         {
-          description: "Description",
-          chemin: "DSC06714.jpg",
+          src: "DSC06714.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC06728.jpg",
+          src: "DSC06728.jpg",
+          title: "Description",
         },
       ],
     };

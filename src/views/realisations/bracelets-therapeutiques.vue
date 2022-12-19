@@ -60,10 +60,7 @@
 
   <EntretenirPierres />
 
-  <Galerie
-    dossier="assets/img/bracelets_therapeutiques/galerie/"
-    :images="images"
-  />
+  <Galerie dossier="bracelets_therapeutiques/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -92,176 +89,176 @@ export default {
       interval: null,
       images: [
         {
-          description: "Description",
-          chemin: "DSC03822.jpg",
+          src: "DSC03822.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC03823.jpg",
+          src: "DSC03823.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "DSC03831.jpg",
+          src: "DSC03831.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_175535.jpg",
+          src: "IMG_20211023_175535.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_175812.jpg",
+          src: "IMG_20211023_175812.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_175931.jpg",
+          src: "IMG_20211023_175931.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_180044.jpg",
+          src: "IMG_20211023_180044.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_180601.jpg",
+          src: "IMG_20211023_180601.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_150525.jpg",
+          src: "IMG_20211024_150525.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_152214.jpg",
+          src: "IMG_20211024_152214.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_152600.jpg",
+          src: "IMG_20211024_152600.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_153315.jpg",
+          src: "IMG_20211024_153315.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_153438.jpg",
+          src: "IMG_20211024_153438.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_153821.jpg",
+          src: "IMG_20211024_153821.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154502.jpg",
+          src: "IMG_20211024_154502.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154509.jpg",
+          src: "IMG_20211024_154509.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154515.jpg",
+          src: "IMG_20211024_154515.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154548.jpg",
+          src: "IMG_20211024_154548.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154622.jpg",
+          src: "IMG_20211024_154622.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154715.jpg",
+          src: "IMG_20211024_154715.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154740.jpg",
+          src: "IMG_20211024_154740.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154802.jpg",
+          src: "IMG_20211024_154802.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154833.jpg",
+          src: "IMG_20211024_154833.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_154839.jpg",
+          src: "IMG_20211024_154839.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155007.jpg",
+          src: "IMG_20211024_155007.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155020.jpg",
+          src: "IMG_20211024_155020.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155109.jpg",
+          src: "IMG_20211024_155109.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155120.jpg",
+          src: "IMG_20211024_155120.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155131.jpg",
+          src: "IMG_20211024_155131.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155203.jpg",
+          src: "IMG_20211024_155203.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155215.jpg",
+          src: "IMG_20211024_155215.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155302.jpg",
+          src: "IMG_20211024_155302.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155356.jpg",
+          src: "IMG_20211024_155356.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155426.jpg",
+          src: "IMG_20211024_155426.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155439.jpg",
+          src: "IMG_20211024_155439.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155444.jpg",
+          src: "IMG_20211024_155444.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155522.jpg",
+          src: "IMG_20211024_155522.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155530.jpg",
+          src: "IMG_20211024_155530.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155535.jpg",
+          src: "IMG_20211024_155535.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155658.jpg",
+          src: "IMG_20211024_155658.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155702.jpg",
+          src: "IMG_20211024_155702.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155716.jpg",
+          src: "IMG_20211024_155716.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_155727.jpg",
+          src: "IMG_20211024_155727.jpg",
+          title: "Description",
         },
       ],
     };

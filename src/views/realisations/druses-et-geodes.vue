@@ -63,7 +63,7 @@
 
   <EntretenirPierres />
 
-  <Galerie dossier="assets/img/druses_et_geodes/galerie/" :images="images" />
+  <Galerie dossier="druses_et_geodes/galerie/" :images="images" />
 
   <Contact />
 </template>
@@ -92,28 +92,28 @@ export default {
       interval: null,
       images: [
         {
-          description: "Description",
-          chemin: "DSC06737.jpg",
+          src: "DSC06737.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_174234.jpg",
+          src: "IMG_20211023_174234.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211023_180852.jpg",
+          src: "IMG_20211023_180852.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_150807.jpg",
+          src: "IMG_20211024_150807.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_151152.jpg",
+          src: "IMG_20211024_151152.jpg",
+          title: "Description",
         },
         {
-          description: "Description",
-          chemin: "IMG_20211024_153524.jpg",
+          src: "IMG_20211024_153524.jpg",
+          title: "Description",
         },
       ],
     };
