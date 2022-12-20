@@ -1,6 +1,23 @@
 {
-  "name": "lafeedescailloux",
+  "name": "website",
+  "description": "Site Web vitrine présentant l'activité et les produits de l'entreprise avec possibilité de la contacter",
+  "author": {
+    "url": "https://github.com/Minarox",
+    "name": "Mathis SERRIERES MANIECKI",
+    "email": "contact@minarox.fr"
+  },
+  "homepage": "https://lafeedescailloux.fr/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaFeeDesCailloux/Website"
+  },
+  "readme": "./README.md",
+  "bugs": {
+    "url": "https://github.com/LaFeeDesCailloux/Website/issues",
+    "email": "contact@minarox.fr"
+  },
   "version": "1.0.0",
+  "license": "LGPL-3.0-only",
   "private": true,
   "scripts": {
     "lint": "vue-cli-service lint",
@@ -33,5 +50,9 @@
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0"
-  }
+  },
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "engineStrict": false
 }
