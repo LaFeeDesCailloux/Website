@@ -25,6 +25,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@cloudflare/pages-plugin-mailchannels": "^0.1.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
