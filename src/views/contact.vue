@@ -145,9 +145,55 @@ export default {
     }
   },
   methods: {
-    sendMail() {
-      // TODO: Send email
-      console.log("Email sent");
+    async sendMail() {
+      let select = document.getElementById("object");
+      let object = "";
+      if (this.object === "other") {
+        object = this.custom_object;
+      } else {
+        object = select.option[select.selectedIndex].text;
+      }
+
+      let message = "";
+      if (this.object === "chemin-de-vie") {
+        message =
+          "Information du chemin de vie :\n" +
+          `Prénoms : ${this.cdv.names}\n` +
+          `Nom du père : ${this.cdv.father}\n` +
+          `Nom de la mère : ${this.cdv.mother}\n` +
+          `Date de naissance : ${this.cdv.birthdate}\n\n\n` +
+          this.message;
+      } else {
+        message = this.message;
+      }
+
+      await fetch("https://api.mailchannels.net/tx/v1/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          personalizations: [
+            {
+              to: [{ email: "mathis.sema@gmail.com", name: "Contact" }],
+            },
+          ],
+          from: {
+            email: this.email,
+            name: this.name,
+          },
+          subject: object,
+          content: [
+            {
+              type: "text/plain",
+              value: message,
+            },
+          ],
+        }),
+      }).then((response) => {
+        console.log(response.status, response.statusText);
+        console.log(response.json());
+      });
     },
   },
 };
