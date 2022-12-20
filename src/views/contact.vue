@@ -168,8 +168,10 @@ export default {
       }
 
       await fetch("https://api.mailchannels.net/tx/v1/send", {
+        mode: "cors",
         method: "POST",
         headers: {
+          "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
