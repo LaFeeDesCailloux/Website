@@ -115,6 +115,8 @@
 </template>
 
 <script>
+import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
+
 export default {
   name: "contactView",
   title() {
@@ -167,7 +169,29 @@ export default {
         message = this.message;
       }
 
-      await fetch("https://api.mailchannels.net/tx/v1/send", {
+      return mailChannelsPlugin({
+        personalizations: [
+          {
+            to: [{ email: "mathis.sema@gmail.com", name: "Contact" }],
+          },
+        ],
+        from: {
+          email: this.email,
+          name: this.name,
+        },
+        subject: object,
+        content: [
+          {
+            type: "text/plain",
+            value: message,
+          },
+        ],
+        respondWith: (response) => {
+          console.log(response);
+        },
+      });
+
+      /*await fetch("https://api.mailchannels.net/tx/v1/send", {
         mode: "no-cors",
         method: "POST",
         headers: {
@@ -197,7 +221,7 @@ export default {
       }).then((response) => {
         console.log(response.status, response.statusText);
         console.log(response.json());
-      });
+      });*/
     },
   },
 };
