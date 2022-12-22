@@ -8,7 +8,9 @@
         N'hésitez pas à me contacter par téléphone, mail ou avec le formulaire
         disponible sur la page de contact.
       </p>
-      <router-link :to="{ name: 'contact' }">Contacter</router-link>
+      <router-link class="button" :to="{ name: 'contact' }">
+        Contacter
+      </router-link>
       <img src="@/assets/svg/cristaux.svg" alt="Cristaux" />
     </section>
   </article>
@@ -23,6 +25,7 @@ export default {
 <style scoped lang="scss">
 article {
   background-color: var(--secondary-bg-color);
+  overflow: hidden;
 
   section {
     position: relative;
@@ -32,7 +35,6 @@ article {
     flex-flow: column nowrap;
     align-items: center;
     gap: 2.2rem;
-    overflow: hidden;
 
     h2 {
       z-index: 1;
@@ -45,33 +47,18 @@ article {
       font-size: 1.1em;
     }
 
-    a {
-      z-index: 1;
-      display: block;
-      text-align: center;
-      padding: 0.8rem 2rem;
-      border: 2px solid black;
-      border-radius: var(--border-radius);
-      color: black;
-      background-color: var(--secondary-bg-color);
-      text-decoration: none;
-      font-weight: bold;
-      transform: scale(1.005);
-      transition: transform 400ms;
-
-      &:hover {
-        transform: scale(1.04);
-      }
-    }
-
     img {
+      height: 136%;
       opacity: 0.6;
       position: absolute;
-      left: 4rem;
-      bottom: -260px;
+      top: 2em;
+      left: -20px;
       transform: rotate(14deg);
       mix-blend-mode: screen;
-      height: 620px;
+
+      @media (max-width: 500px) {
+        left: -100px;
+      }
     }
   }
 }

@@ -21,16 +21,21 @@ export default {
 
 <style scoped lang="scss">
 footer {
-  padding: 1.5rem 2rem;
-  display: flex;
-  flex-flow: row wrap;
+  opacity: 0.8;
   width: min(100%, var(--content-max-width));
+  padding: 1.5rem 2rem;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 0.6rem 2rem;
   font-size: 0.8em;
-  opacity: 0.9;
-  gap: 0.5rem 2rem;
+  text-align: center;
+
+  @media (min-width: 580px) {
+    flex-direction: row;
+  }
 
   a {
     text-decoration: none;

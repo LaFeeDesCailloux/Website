@@ -44,23 +44,16 @@ export default {
 <style scoped lang="scss">
 article {
   position: relative;
+  margin-top: calc(var(--content-margin) / 3);
 
   section {
-    display: grid;
-    grid-template-columns: 0.65fr 1.35fr;
-    align-items: center;
-    gap: 5rem;
-
     img {
-      border-radius: 71% 29% 27% 73% / 69% 56% 44% 31%;
-      height: 400px;
-      width: 100%;
-      object-fit: cover;
+      display: none;
     }
 
     div p {
       font-size: 1.1em;
-      text-align: justify;
+      text-align: center;
       margin-bottom: 1rem;
 
       span {
@@ -70,6 +63,25 @@ article {
       &:last-of-type {
         margin-top: 3rem;
         margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 900px) {
+      display: grid;
+      grid-template-columns: 0.65fr 1.35fr;
+      align-items: center;
+      gap: 5rem;
+
+      img {
+        display: unset;
+        border-radius: 71% 29% 27% 73% / 69% 56% 44% 31%;
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      div p {
+        text-align: justify;
       }
     }
   }

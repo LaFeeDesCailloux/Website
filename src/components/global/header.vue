@@ -1,101 +1,133 @@
 <template>
+  <!-- Header -->
   <header>
     <article>
+      <!-- Logo -->
       <router-link :to="{ name: 'home' }">
         <img alt="Logo La Fée des Cailloux" src="@/assets/img/logo.webp" />
         <img alt="La Fée des Cailloux" src="@/assets/svg/logo-title.svg" />
       </router-link>
+
+      <!-- Navigation -->
       <nav>
-        <a
-          @click.prevent="go('home')"
-          :class="$route.name === 'home' ? 'current' : ''"
+        <!-- Show links button for mobile -->
+        <font-awesome-icon
+          @click.prevent="toggleNav"
+          id="bars"
+          icon="fa-solid fa-bars"
+        />
+
+        <!-- Links -->
+        <section :class="show_nav ? 'show' : ''" @mouseleave="show_nav = false">
+          <a
+            @click.prevent="go('home')"
+            :class="$route.name === 'home' ? 'current' : ''"
+          >
+            Accueil
+          </a>
+          <a
+            id="realisations"
+            :class="$route.path.startsWith('/realisations/') ? 'current' : ''"
+            @click="
+              show_realisations = !show_realisations;
+              show_nav = false;
+            "
+          >
+            Mes réalisations
+            <font-awesome-icon icon="fa-solid fa-sort-down" />
+          </a>
+          <a
+            @click.prevent="go('entretenir-ses-pierres')"
+            :class="$route.name === 'entretenir-ses-pierres' ? 'current' : ''"
+          >
+            Entretenir ses pierres
+          </a>
+          <a
+            @click.prevent="go('contact')"
+            :class="$route.name === 'contact' ? 'current' : ''"
+          >
+            Me contacter
+          </a>
+        </section>
+
+        <!-- Realisations -->
+        <section
+          :class="show_realisations ? 'show' : ''"
+          @mouseleave="show_realisations = false"
         >
-          Accueil
-        </a>
-        <a
-          id="realisations"
-          :class="$route.path.startsWith('/realisations/') ? 'current' : ''"
-        >
-          Mes réalisations
-          <font-awesome-icon icon="fa-solid fa-sort-down" />
-          <div>
-            <a
-              @click.prevent="go('chemins-de-vie')"
-              :class="
-                $route.path.startsWith('/realisations/chemins-de-vie')
-                  ? 'current'
-                  : ''
-              "
-            >
-              Chemins de vie
-            </a>
-            <a
-              @click.prevent="go('bracelets-therapeutiques')"
-              :class="
-                $route.path.startsWith('/realisations/bracelets-therapeutiques')
-                  ? 'current'
-                  : ''
-              "
-            >
-              Bracelets thérapeutiques
-            </a>
-            <a
-              @click.prevent="go('pendules')"
-              :class="
-                $route.path.startsWith('/realisations/pendules')
-                  ? 'current'
-                  : ''
-              "
-            >
-              Pendules
-            </a>
-            <a
-              @click.prevent="go('pendentifs-et-colliers')"
-              :class="
-                $route.path.startsWith('/realisations/pendentifs-et-colliers')
-                  ? 'current'
-                  : ''
-              "
-            >
-              Pendentifs et colliers
-            </a>
-            <a
-              @click.prevent="go('druses-et-geodes')"
-              :class="
-                $route.path.startsWith('/realisations/druses-et-geodes')
-                  ? 'current'
-                  : ''
-              "
-            >
-              Druses et Géodes
-            </a>
-            <a
-              @click.prevent="go('pierres-roulees')"
-              :class="
-                $route.path.startsWith('/realisations/pierres-roulees')
-                  ? 'current'
-                  : ''
-              "
-            >
-              Pierres roulées
-            </a>
-          </div>
-        </a>
-        <a
-          @click.prevent="go('entretenir-ses-pierres')"
-          :class="$route.name === 'entretenir-ses-pierres' ? 'current' : ''"
-        >
-          Entretenir ses pierres
-        </a>
-        <a
-          @click.prevent="go('contact')"
-          :class="$route.name === 'contact' ? 'current' : ''"
-        >
-          Me contacter
-        </a>
+          <a
+            @click.prevent="
+              show_realisations = false;
+              show_nav = true;
+            "
+            id="close_realisations"
+          >
+            <font-awesome-icon icon="fa-solid fa-sort-down" />
+          </a>
+          <a
+            @click.prevent="go('chemins-de-vie')"
+            :class="
+              $route.path.startsWith('/realisations/chemins-de-vie')
+                ? 'current'
+                : ''
+            "
+          >
+            Chemins de vie
+          </a>
+          <a
+            @click.prevent="go('bracelets-therapeutiques')"
+            :class="
+              $route.path.startsWith('/realisations/bracelets-therapeutiques')
+                ? 'current'
+                : ''
+            "
+          >
+            Bracelets thérapeutiques
+          </a>
+          <a
+            @click.prevent="go('pendules')"
+            :class="
+              $route.path.startsWith('/realisations/pendules') ? 'current' : ''
+            "
+          >
+            Pendules
+          </a>
+          <a
+            @click.prevent="go('pendentifs-et-colliers')"
+            :class="
+              $route.path.startsWith('/realisations/pendentifs-et-colliers')
+                ? 'current'
+                : ''
+            "
+          >
+            Pendentifs et colliers
+          </a>
+          <a
+            @click.prevent="go('druses-et-geodes')"
+            :class="
+              $route.path.startsWith('/realisations/druses-et-geodes')
+                ? 'current'
+                : ''
+            "
+          >
+            Druses et Géodes
+          </a>
+          <a
+            @click.prevent="go('pierres-roulees')"
+            :class="
+              $route.path.startsWith('/realisations/pierres-roulees')
+                ? 'current'
+                : ''
+            "
+          >
+            Pierres roulées
+          </a>
+        </section>
       </nav>
     </article>
   </header>
+
+  <!-- Go to top button -->
   <a id="scroll_btn" @click.prevent="scrollToTop">
     <hr />
     <font-awesome-icon icon="fa-solid fa-up-long" />
@@ -109,18 +141,21 @@ export default {
     return {
       header: {},
       scroll_btn: {},
+      show_nav: false,
+      show_realisations: false,
     };
   },
   mounted() {
     this.header = document.getElementsByTagName("header")[0];
     this.scroll_btn = document.getElementById("scroll_btn");
-    document.addEventListener("scroll", this.scrollClassToggler);
+    document.addEventListener("scroll", this.scrollClassToggle);
   },
   beforeUnmount() {
-    document.removeEventListener("scroll", this.scrollClassToggler);
+    document.removeEventListener("scroll", this.scrollClassToggle);
   },
   methods: {
-    scrollClassToggler() {
+    scrollClassToggle() {
+      this.show_nav = this.show_realisations = false;
       if (document.documentElement.scrollTop > 6) {
         this.header.classList.add("scroll");
       } else {
@@ -135,7 +170,15 @@ export default {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
+    toggleNav() {
+      if (!this.show_nav && !this.show_realisations) {
+        this.show_nav = true;
+      } else {
+        this.show_nav = this.show_realisations = false;
+      }
+    },
     go(page) {
+      this.show_nav = this.show_realisations = false;
       if (this.$route.name === page) {
         this.scrollToTop();
       } else {
@@ -170,117 +213,202 @@ header {
     > a {
       display: flex;
       align-items: center;
-      gap: 1.2rem;
+      gap: 1.3rem;
 
       img {
         transition: all 300ms;
-        height: 70px;
+        height: 68px;
 
         &:last-of-type {
           height: 50px;
+
+          @media (max-width: 560px) {
+            display: none;
+          }
         }
       }
     }
 
     > nav {
-      display: flex;
-      align-items: center;
-
-      a {
+      > svg {
         transition: all 300ms;
-        padding: 1.6rem;
-        text-decoration: none;
-        color: var(--global-text-color);
-        position: relative;
+        display: block;
+        padding: 1.2rem;
+        font-size: 1.6em;
         cursor: pointer;
-
-        &::after {
-          transition: all 300ms;
-          content: "";
-          position: absolute;
-          top: 80%;
-          left: 1.6rem;
-          right: 100%;
-          height: 1px;
-          border-radius: var(--border-radius);
-          background-color: var(--global-text-color);
-        }
-
-        &:hover::after {
-          right: 1.6rem;
-        }
-
-        &.current::after {
-          left: 1.6rem;
-          right: 1.6rem;
-        }
       }
 
-      #realisations {
-        display: inline-flex;
+      > section {
+        transition: all 300ms;
+        transform: translateX(110%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(var(--blur));
+        position: absolute;
+        top: 100%;
+        right: 0;
+        height: calc(100vh - 90px);
+        display: flex;
+        flex-flow: column nowrap;
         align-items: center;
-        gap: 0.6rem;
-        cursor: pointer;
+        overflow-y: auto;
+        overflow-x: hidden;
 
-        svg {
-          font-size: 0.9em;
-          transform: translateY(-1px);
-        }
-
-        &:hover div {
-          opacity: 1;
-          pointer-events: auto;
-          top: 100%;
+        &.show {
+          transition: all 300ms;
+          transform: translateX(0);
 
           a {
-            animation: dropdown-link-appear 150ms;
+            animation: dropdown-link-appear 300ms;
             animation-fill-mode: both;
 
-            &.current {
-              font-weight: bold;
+            @for $i from 1 through 7 {
+              &:nth-child(#{$i}n) {
+                animation-delay: #{$i * 30 + 50}ms;
+              }
             }
-          }
 
-          @for $i from 1 through 6 {
-            a:nth-child(#{$i}n) {
-              animation-delay: #{$i * 30}ms;
+            @keyframes dropdown-link-appear {
+              from {
+                transform: translateX(30px);
+              }
+              to {
+                transform: translateX(0);
+              }
             }
           }
         }
 
-        div {
-          transition: all 250ms;
-          opacity: 0;
-          display: flex;
-          position: absolute;
-          top: 88%;
+        a {
+          transition: all 300ms;
+          padding: 1.6rem;
+          text-align: center;
+          text-decoration: none;
+          color: var(--global-text-color);
+          position: relative;
+          cursor: pointer;
+
+          &::after {
+            transition: all 300ms;
+            content: "";
+            position: absolute;
+            top: 80%;
+            left: 1.6rem;
+            right: 100%;
+            height: 1px;
+            border-radius: var(--border-radius);
+            background-color: var(--global-text-color);
+          }
+
+          &:hover::after {
+            right: 1.6rem;
+          }
+
+          &.current::after {
+            left: 1.6rem;
+            right: 1.6rem;
+          }
+        }
+
+        #realisations {
+          display: inline-flex;
+          gap: 0.4rem;
+
+          @media (max-width: 1159px) {
+            svg {
+              transform: rotate(-90deg) translateX(-4px);
+            }
+          }
+        }
+
+        #close_realisations {
+          line-height: 0;
+          font-size: 1.4em;
+          transform: rotate(90deg) translateY(-4px) translateX(5px) !important;
+
+          &::after {
+            content: unset;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1160px) {
+      > nav {
+        > svg {
+          display: none;
+        }
+
+        > section {
+          transition: font-size 300ms;
+          transform: translateX(0);
+          box-shadow: none;
+          background-color: transparent;
+          backdrop-filter: none;
+          position: relative;
+          top: 0;
           right: 0;
-          width: max-content;
-          flex-flow: column nowrap;
-          background-color: #dcdcdc;
-          border-radius: calc(var(--border-radius) / 2);
-          padding: 0.8rem;
-          pointer-events: none;
-          box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-            rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+          height: max-content !important;
+          flex-direction: row;
 
-          a {
-            padding: 0.5rem;
+          &:last-of-type {
+            transition: all 300ms;
+            position: absolute;
+            top: 90%;
+            right: 358px;
+            flex-direction: column;
+            background-color: #e5e5e5;
+            border-radius: calc(var(--border-radius) / 2);
+            padding: 0.8rem;
+            pointer-events: none;
+            box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
+              rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+            transform: translateY(-2%);
+            opacity: 0;
 
-            &::after {
-              content: none;
+            > a {
+              padding: 0.5em;
+
+              &::after {
+                content: none;
+              }
+
+              &.current {
+                font-weight: bold;
+              }
+            }
+
+            &.show {
+              opacity: 1;
+              transform: translateY(0);
+              pointer-events: auto;
+
+              a {
+                animation: dropdown-link-appear 150ms;
+                animation-fill-mode: both;
+
+                @for $i from 1 through 7 {
+                  &:nth-child(#{$i}n) {
+                    animation-delay: #{$i * 30}ms;
+                  }
+                }
+
+                @keyframes dropdown-link-appear {
+                  from {
+                    transform: translateX(-10px);
+                    opacity: 0;
+                  }
+                  to {
+                    transform: translateX(0);
+                    opacity: 1;
+                  }
+                }
+              }
             }
           }
-        }
 
-        @keyframes dropdown-link-appear {
-          from {
-            transform: translateX(-10px);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
+          #close_realisations {
+            display: none;
           }
         }
       }
@@ -293,35 +421,45 @@ header {
   height: 60px;
 
   > article {
-    > a {
-      font-size: 1.5em;
+    img {
+      height: 44px;
 
-      img {
-        height: 44px;
-
-        &:last-of-type {
-          height: 34px;
-        }
+      &:last-of-type {
+        height: 34px;
       }
     }
 
     > nav {
-      height: inherit;
+      > svg {
+        padding: 0.6em;
+      }
 
-      a {
-        padding: 1rem 1.2rem;
+      > section {
+        height: calc(100vh - 60px);
 
-        &::after {
-          left: 1.2rem;
-        }
+        @media (min-width: 1159px) {
+          &:first-of-type {
+            a {
+              padding: 1rem 1.2rem;
 
-        &:hover::after {
-          right: 1.2rem;
-        }
+              &::after {
+                left: 1.2rem;
+              }
 
-        &.current::after {
-          left: 1.2rem;
-          right: 1.2rem;
+              &:hover::after {
+                right: 1.2rem;
+              }
+
+              &.current::after {
+                left: 1.2rem;
+                right: 1.2rem;
+              }
+            }
+          }
+
+          &:last-of-type {
+            right: 330px;
+          }
         }
       }
     }
@@ -341,10 +479,10 @@ header {
   border-radius: var(--border-radius);
   width: 56px;
   height: 56px;
-  z-index: 99;
+  z-index: 98;
   position: fixed;
-  bottom: 2.5rem;
-  right: 2.5rem;
+  bottom: 1.6rem;
+  right: 1.6rem;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -353,6 +491,11 @@ header {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(var(--blur));
   gap: 3px;
+
+  @media (min-width: 500px) {
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
 
   hr {
     border-radius: var(--border-radius);

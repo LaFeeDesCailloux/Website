@@ -1,5 +1,5 @@
 <template>
-  <article class="wrapper">
+  <article>
     <section class="content">
       <div>
         <h1>Me contacter</h1>
@@ -62,21 +62,46 @@
           type="text"
           name="custom-object"
           id="custom-object"
+          v-model="custom_object"
           required
         />
 
         <div v-if="object === 'chemin-de-vie'">
           <label for="cdv-prenoms">Vos prénoms</label>
-          <input type="text" name="cdv-prenoms" id="cdv-prenoms" required />
+          <input
+            type="text"
+            name="cdv-prenoms"
+            id="cdv-prenoms"
+            v-model="cdv.names"
+            required
+          />
 
           <label for="cdv-pere">Nom du père</label>
-          <input type="text" name="cdv-pere" id="cdv-pere" required />
+          <input
+            type="text"
+            name="cdv-pere"
+            id="cdv-pere"
+            v-model="cdv.father"
+            required
+          />
 
           <label for="cdv-mere">Nom de jeune fille de la mère</label>
-          <input type="text" name="cdv-mere" id="cdv-mere" required />
+          <input
+            type="text"
+            name="cdv-mere"
+            id="cdv-mere"
+            v-model="cdv.mother"
+            required
+          />
 
           <label for="cdv-naissance">Date de naissance</label>
-          <input type="date" name="cdv-naissance" id="cdv-naissance" required />
+          <input
+            type="date"
+            name="cdv-naissance"
+            id="cdv-naissance"
+            v-model="cdv.birthdate"
+            required
+          />
         </div>
 
         <label for="message">Message</label>
@@ -90,6 +115,8 @@
 </template>
 
 <script>
+import mailChannelsPlugin from "@cloudflare/pages-plugin-mailchannels";
+
 export default {
   name: "contactView",
   title() {
@@ -100,13 +127,101 @@ export default {
       name: "",
       email: "",
       object: "",
+      cdv: {
+        names: "",
+        father: "",
+        mother: "",
+        birthdate: "",
+      },
+      custom_object: "",
       message: "",
     };
   },
+  mounted() {
+    if (this.$route.query.object === "chemin-de-vie") {
+      this.object = this.$route.query.object;
+      this.cdv.names = this.$route.query.names;
+      this.cdv.father = this.$route.query.name_father;
+      this.cdv.mother = this.$route.query.name_mother;
+      this.cdv.birthdate = this.$route.query.birthdate;
+    }
+  },
   methods: {
-    sendMail() {
-      // TODO: Send email
-      console.log("Email sent");
+    async sendMail() {
+      let select = document.getElementById("object");
+      let object = "";
+      if (this.object === "other") {
+        object = this.custom_object;
+      } else {
+        object = select.option[select.selectedIndex].text;
+      }
+
+      let message = "";
+      if (this.object === "chemin-de-vie") {
+        message =
+          "Information du chemin de vie :\n" +
+          `Prénoms : ${this.cdv.names}\n` +
+          `Nom du père : ${this.cdv.father}\n` +
+          `Nom de la mère : ${this.cdv.mother}\n` +
+          `Date de naissance : ${this.cdv.birthdate}\n\n\n` +
+          this.message;
+      } else {
+        message = this.message;
+      }
+
+      return mailChannelsPlugin({
+        personalizations: [
+          {
+            to: [{ email: "mathis.sema@gmail.com", name: "Contact" }],
+          },
+        ],
+        from: {
+          email: this.email,
+          name: this.name,
+        },
+        subject: object,
+        content: [
+          {
+            type: "text/plain",
+            value: message,
+          },
+        ],
+        respondWith: (response) => {
+          console.log(response);
+        },
+      });
+
+      /*await fetch("https://api.mailchannels.net/tx/v1/send", {
+        mode: "no-cors",
+        method: "POST",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+          "Access-Control-Allow-Headers": "*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          personalizations: [
+            {
+              to: [{ email: "mathis.sema@gmail.com", name: "Contact" }],
+            },
+          ],
+          from: {
+            email: this.email,
+            name: this.name,
+          },
+          subject: object,
+          content: [
+            {
+              type: "text/plain",
+              value: message,
+            },
+          ],
+        }),
+      }).then((response) => {
+        console.log(response.status, response.statusText);
+        console.log(response.json());
+      });*/
     },
   },
 };
@@ -138,25 +253,45 @@ article {
     }
 
     > div:last-of-type {
+      width: 100%;
+      max-width: 1100px;
       background-color: var(--primary-bg-color);
       padding: 1rem;
       border-radius: var(--border-radius);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      gap: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 0.8rem 2rem;
 
       a {
+        flex: 1 1 36%;
         display: inline-flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 0.5rem;
         color: var(--global-text-color);
         text-decoration: none;
         font-size: 1.1em;
         padding: 1rem;
 
+        @media (min-width: 800px) {
+          flex: 1 0 24%;
+        }
+
         svg {
           font-size: 1.6em;
+        }
+      }
+
+      @media (max-width: 380px) {
+        flex-direction: column;
+        padding: 0.6rem;
+
+        a {
+          flex-direction: column;
+          word-break: break-word;
         }
       }
     }
@@ -224,13 +359,24 @@ article {
   img {
     z-index: -1;
     opacity: 0.2;
+    width: 100%;
+    max-width: 600px;
     height: calc(100% - 220px);
     margin-inline: auto;
     position: absolute;
+    top: 100%;
     right: 0;
     left: 0;
-    bottom: -180px;
     filter: saturate(0.6);
+    transform: translateY(-52%);
+
+    @media (min-width: 600px) {
+      transform: translateY(-78%);
+    }
+
+    @media (max-width: 600px) {
+      object-fit: cover;
+    }
   }
 }
 </style>

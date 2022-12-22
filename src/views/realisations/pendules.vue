@@ -126,59 +126,48 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06800.jpg",
+          src: "DSC06800.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06804.jpg",
+          src: "DSC06804.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06814.jpg",
+          src: "DSC06814.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06822.jpg",
+          src: "DSC06822.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06829.jpg",
+          src: "DSC06829.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06834.jpg",
+          src: "DSC06834.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_140940.jpg",
+          src: "IMG_20211024_140940.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_140946.jpg",
+          src: "IMG_20211024_140946.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_140950.jpg",
+          src: "IMG_20211024_140950.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_141245.jpg",
+          src: "IMG_20211024_141245.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_141814.jpg",
+          src: "IMG_20211024_141814.jpg",
+          title: "Description",
         },
       ],
     };
@@ -186,8 +175,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

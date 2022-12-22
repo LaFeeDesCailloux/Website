@@ -34,6 +34,7 @@ article {
   padding-top: 5.6rem;
 
   .content {
+    width: min(100%, var(--content-max-width));
     margin-top: 0;
     position: relative;
     display: flex;
@@ -52,7 +53,7 @@ article {
         margin-inline: auto;
         width: min(100%, 1200px);
         text-align: center;
-        font-size: 8em;
+        font-size: clamp(16px, 11vw, 8em);
         color: var(--global-text-color);
         position: absolute;
         top: 0;
@@ -66,10 +67,10 @@ article {
 
         @keyframes move {
           from {
-            transform: translateY(-5px);
+            transform: translateY(-15px);
           }
           to {
-            transform: translateY(5px);
+            transform: translateY(-5px);
           }
         }
       }
@@ -82,7 +83,7 @@ article {
         p {
           z-index: 1;
           display: unset;
-          -webkit-text-stroke: 1px var(--global-text-color);
+          -webkit-text-stroke: 1.5px var(--global-text-color);
           -webkit-text-fill-color: transparent;
         }
       }
@@ -90,7 +91,10 @@ article {
 
     #product {
       position: relative;
-      max-height: 450px;
+      min-height: 300px;
+      max-height: 420px;
+      width: 100%;
+      object-fit: cover;
     }
 
     #stars {
@@ -100,6 +104,15 @@ article {
       left: 0;
       right: 0;
       width: 100%;
+      min-height: 200px;
+      object-fit: cover;
+    }
+
+    @media (min-width: 1000px) {
+      #product,
+      #stars {
+        object-fit: contain;
+      }
     }
   }
 }

@@ -126,8 +126,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

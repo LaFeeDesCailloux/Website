@@ -13,7 +13,6 @@
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
-                <!--<font-awesome-icon icon="fa-regular fa-star-half-stroke" />-->
               </div>
             </section>
             <p>
@@ -93,7 +92,7 @@
           </SplideSlide>
           <SplideSlide>
             <section>
-              <h3>Laetitia</h3>
+              <h3>Laurence</h3>
               <div>
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
@@ -108,6 +107,84 @@
               que du travail et des conseils de Cathy.
             </p>
           </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Jocelyne</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Je m’appelle Laurence. Il y a eu un moment de ma vie ou une amie
+              m’a recommandé Cathy. J’ai été très bien accueillie. Personne a
+              l’écoute. J’ai fait faire un bracelet. Pierres de très bonnes
+              qualités à un prix correct. Et dès qu’il y avait des questions ou
+              des soucis autres Cathy était toujours là. Cela m'a bien aidé et
+              je l’ai recommandé à plusieurs personnes. Vous pouvez appeler
+              Cathy et avoir besoin de ces services avec confiance. Je vous la
+              recommande.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Laetitia</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              J’ai fait l’achat d’un chemin de vie, ça fait plus d’un an. J’en
+              suis ravie. Je le trouve très joli et il m’est indispensable. Il
+              m'accompagne au quotidien pour gérer les émotions, il m apaise.
+              Catherine est à l’écoute et de très bons conseils. J’ai été
+              surprise de son interprétation qui me correspondait parfaitement.
+              Merci Catherine pour votre bienveillance.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Perrine Q-R</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Je mets 5 étoiles ⭐️ car Catherine est une thérapeute en or, avec
+              humanité, bienveillance elle sera interpréter votre histoire et
+              vous transmettre de magnifiques bracelets ou chemin de vie de
+              qualité et de toutes beautés ! Vous pouvez y aller les yeux fermés
+              et le cœur léger !
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Jean-Noël C.</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
+              </div>
+            </section>
+            <p>
+              Bracelet réalisé avec des pierres de qualité à la bonne taille.<br />
+              Kti m'a conseillé pour le recharger chaque mois. Je vous la
+              conseille.
+            </p>
+          </SplideSlide>
         </SplideTrack>
 
         <div class="splide__arrows">
@@ -118,6 +195,8 @@
             <font-awesome-icon icon="fa-solid fa-caret-right" />
           </button>
         </div>
+
+        <ul class="splide__pagination"></ul>
       </Splide>
     </section>
   </article>
@@ -139,8 +218,14 @@ export default {
         keyboard: true,
         cover: true,
         arrows: true,
-        pagination: false,
+        pagination: true,
         gap: "2.5rem",
+        breakpoints: {
+          899: {
+            perPage: 1,
+            arrows: false,
+          },
+        },
       },
     };
   },
@@ -160,28 +245,29 @@ article {
     margin-top: 0;
 
     .splide {
-      padding: 0 3rem;
+      @media (min-width: 900px) {
+        padding: 0 3rem;
+      }
 
       .splide__slide {
         background-color: white;
         padding: 1.6rem;
         border-radius: var(--border-radius);
         border: 2px solid black;
-        /*box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
-          rgba(0, 0, 0, 0.25) 0 25px 50px -12px;*/
 
         section {
           display: flex;
-          flex-flow: row nowrap;
+          flex-flow: row wrap;
           align-items: baseline;
           justify-content: space-between;
           font-size: 1.4em;
           color: black;
-          margin-bottom: 1.6rem;
+          margin-bottom: 2rem;
+          gap: 0.5rem 1rem;
 
           div {
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             gap: 0.2rem;
             color: var(--stars-color);
           }
@@ -231,6 +317,10 @@ article {
         &.splide__arrow--next {
           right: 0;
         }
+      }
+
+      .splide__pagination {
+        bottom: -2rem;
       }
     }
   }

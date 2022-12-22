@@ -99,4 +99,23 @@ h2 {
   transition: border-radius 15s;
   box-shadow: 28px 28px var(--primary-bg-color);
 }
+
+.button {
+  z-index: 1;
+  display: block;
+  text-align: center;
+  padding: 0.8rem 2rem;
+  border: 2px solid black;
+  border-radius: var(--border-radius);
+  color: black;
+  background-color: var(--secondary-bg-color);
+  text-decoration: none;
+  font-weight: bold;
+  transform: scale(1.005);
+  transition: transform 400ms;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
 </style>
