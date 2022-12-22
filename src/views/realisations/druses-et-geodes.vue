@@ -92,34 +92,28 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "DSC06737.jpg",
+          src: "DSC06737.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211023_174234.jpg",
+          src: "IMG_20211023_174234.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211023_180852.jpg",
+          src: "IMG_20211023_180852.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_150807.jpg",
+          src: "IMG_20211024_150807.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_151152.jpg",
+          src: "IMG_20211024_151152.jpg",
+          title: "Description",
         },
         {
-          titre: "Titre",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_153524.jpg",
+          src: "IMG_20211024_153524.jpg",
+          title: "Description",
         },
       ],
     };
@@ -127,8 +121,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

@@ -85,14 +85,12 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Pierre",
-          description: "Lorem ipsum",
-          chemin: "DSC06714.jpg",
+          src: "DSC06714.jpg",
+          title: "Description",
         },
         {
-          titre: "Pierre",
-          description: "Lorem ipsum",
-          chemin: "DSC06728.jpg",
+          src: "DSC06728.jpg",
+          title: "Description",
         },
       ],
     };
@@ -100,8 +98,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

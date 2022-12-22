@@ -155,19 +155,16 @@ export default {
       interval: null,
       images: [
         {
-          titre: "Chemin de vie",
-          description: "Lorem ipsum",
-          chemin: "DSC03820.jpg",
+          src: "DSC03820.jpg",
+          title: "Description",
         },
         {
-          titre: "Chemin de vie",
-          description: "Lorem ipsum",
-          chemin: "DSC06771.jpg",
+          src: "DSC06771.jpg",
+          title: "Description",
         },
         {
-          titre: "Chemin de vie",
-          description: "Lorem ipsum",
-          chemin: "IMG_20211024_151752.jpg",
+          src: "IMG_20211024_151752.jpg",
+          title: "Description",
         },
       ],
     };
@@ -175,8 +172,10 @@ export default {
   mounted() {
     setTimeout(this.generateBlobs, 200);
     this.interval = setInterval(this.generateBlobs, 12000);
+    window.addEventListener("resize", this.toggleBlobs);
   },
   beforeUnmount() {
+    window.removeEventListener("resize", this.toggleBlobs);
     clearInterval(this.interval);
   },
 };

@@ -14,24 +14,14 @@ export default {
 article {
   display: flex;
   flex-flow: column nowrap;
-  gap: calc(var(--content-padding) / 1.5);
+  gap: var(--content-padding);
   margin-bottom: var(--content-margin);
 
   :slotted(section) {
     width: 100%;
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    height: 600px;
-
-    &:nth-of-type(odd) {
-      flex-direction: row-reverse;
-
-      img {
-        left: 0;
-        border-radius: 40% 60% / 63% 60% 40% 37%;
-      }
-    }
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
 
     div {
       z-index: 1;
@@ -39,7 +29,7 @@ article {
       border-radius: var(--border-radius);
       backdrop-filter: blur(var(--blur));
       padding: 2rem;
-      width: 800px;
+      width: 100%;
       text-align: justify;
       font-size: 1.1em;
       box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
@@ -65,12 +55,41 @@ article {
     }
 
     img {
-      position: absolute;
-      right: 2rem;
       object-fit: cover;
-      width: 760px;
-      height: inherit;
-      border-radius: 61% 39% 58% 42% / 75% 58% 42% 25%;
+      width: 100%;
+      height: 360px;
+      border-radius: var(--border-radius);
+      box-shadow: none;
+    }
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      height: 600px;
+      gap: unset;
+
+      &:nth-of-type(odd) {
+        flex-direction: row-reverse;
+
+        img {
+          left: 0;
+          border-radius: 40% 60% / 63% 60% 40% 37%;
+        }
+      }
+
+      div {
+        width: 56%;
+      }
+
+      img {
+        position: absolute;
+        right: 2rem;
+        width: 56%;
+        height: inherit;
+        border-radius: 61% 39% 58% 42% / 75% 58% 42% 25%;
+        box-shadow: 28px 28px var(--primary-bg-color);
+      }
     }
   }
 }
