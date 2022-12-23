@@ -154,9 +154,9 @@ export default {
         object = select.children[select.selectedIndex].text;
       }
 
-      let message = "";
+      let message = `Nom : ${this.name}, Email : ${this.email}\n\n\n`;
       if (this.object === "chemin-de-vie") {
-        message =
+        message +=
           "Information du chemin de vie :\n" +
           `Prénoms : ${this.cdv.names}\n` +
           `Nom du père : ${this.cdv.father}\n` +
@@ -164,7 +164,7 @@ export default {
           `Date de naissance : ${this.cdv.birthdate}\n\n\n` +
           this.message;
       } else {
-        message = this.message;
+        message += this.message;
       }
 
       await fetch("https://api.mailchannels.net/tx/v1/send", {
