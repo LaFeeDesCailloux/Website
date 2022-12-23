@@ -167,37 +167,23 @@ export default {
         message += this.message;
       }
 
-      await fetch("https://api.mailchannels.net/tx/v1/send", {
-        mode: "no-cors",
+      await fetch("https://api.lafeedescailloux.fr/", {
         method: "POST",
         headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-          "Access-Control-Allow-Headers": "*",
           "Content-Type": "application/json",
+          "X-API-Key": process.env.API_KEY,
         },
         body: JSON.stringify({
-          personalizations: [
-            {
-              to: [{ email: "mathis.sema@gmail.com", name: "Contact" }],
-            },
-          ],
-          from: {
-            email: this.email,
-            name: this.name,
-          },
-          subject: object,
-          content: [
-            {
-              type: "text/plain",
-              value: message,
-            },
-          ],
+          object: object,
+          message: message,
         }),
-      }).then((response) => {
-        console.log(response.status, response.statusText);
-        console.log(response.json());
-      });
+      })
+        .then((response) => {
+          console.log(response.status, response.statusText);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 };
