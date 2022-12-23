@@ -151,7 +151,7 @@ export default {
       if (this.object === "other") {
         object = this.custom_object;
       } else {
-        object = select.option[select.selectedIndex].text;
+        object = select.children[select.selectedIndex].text;
       }
 
       let message = "";
