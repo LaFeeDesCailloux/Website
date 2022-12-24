@@ -8,20 +8,25 @@
     <section>
       <div>
         <p>
-          Le bracelet thérapeutique est différent du chemin de vie.<br />
-          Il est confectionné selon votre demande et, bien entendu, selon vos
-          besoins ou pathologies :
+          Un bracelet thérapeutique est une composition de pierres ou cristaux
+          choisis pour le propriété thérapeutique permettant de répondre à des
+          besoins ou pathologies spécifiques comme, par exemple, des problèmes
+          physiques ou mentaux.
+        </p>
+        <p>
+          Il est confectionné selon votre demande afin de répondre
+          spécifiquement à vos besoins :
         </p>
         <ul>
-          <li>Vous souhaitez arrêter de fumer ;</li>
-          <li>Vous avez de l’eczéma ;</li>
-          <li>Vous avez une épine calcanéenne ;</li>
-          <li>Vous voulez prendre confiance en vous ;</li>
+          <li>Vous souhaitez arrêter de fumer ?</li>
+          <li>Vous avez de l’eczéma ?</li>
+          <li>Vous voulez prendre confiance en vous ?</li>
           <li>
-            Vous désirez vous protéger des énergies négatives d’une personne ;
+            Vous désirez vous protéger des énergies négatives d’une personne ?
           </li>
-          <li>Vous avez du mal à dormir ;</li>
-          <li>Vous avez des bouffées de chaleur ;</li>
+          <li>Vous avez du mal à dormir ?</li>
+          <li>Vous avez des bouffées de chaleur ?</li>
+          <li>Vous avez une épine calcanéenne ?</li>
           <li>Etc.</li>
         </ul>
       </div>
@@ -34,6 +39,10 @@
     </section>
     <section>
       <div>
+        <p>
+          Le bracelet thérapeutique est en mesure de répondre à ces questions en
+          vous apportant les énergies nécessaires.
+        </p>
         <p>
           Beaucoup de pathologies sont déclenchées par l’inconscient, il y a
           toujours une raison cachée. Nous étudierons cela ensemble lors de

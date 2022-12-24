@@ -5,19 +5,26 @@
     <section>
       <div>
         <p>
-          Le pendule est un objet très personnel. Il ne se prête pas car
-          imprégné de vos vibrations. Il doit être purifié et rechargé le plus
+          Le pendule est un objet permettant de purifier vos pierres, obtenir
+          des réponses à des questions et détecter ou mesurer des champs
+          énergétiques.
+          <br />
+          Tout comme le chemin de vie, le pendule ne se prête pas car il est
+          imprégné par vos vibrations. Il doit être purifié et rechargé le plus
           souvent possible.
         </p>
-        <h3>De nombreuses utilisations pour votre pendule.</h3>
+        <h3>
+          Quelques utilisations que vous pouvez effectuer avec votre pendule :
+        </h3>
         <ul>
-          <li>Purifier et recharger les pierres ;</li>
-          <li>La radiesthésie ;</li>
-          <li>La géobiologie ;</li>
+          <li>Purifier et recharger vos pierres ;</li>
+          <li>Pratiquer la radiesthésie ;</li>
+          <li>Pratiquer la géobiologie ;</li>
           <li>Pratiquer des soins ;</li>
           <li>Calculer son taux vibratoire et celui d'une maison ;</li>
           <li>Retrouver un objet perdu ;</li>
-          <li>Connaître le sexe d'un futur bébé.</li>
+          <li>Connaître le sexe d'un futur bébé ;</li>
+          <li>Etc.</li>
         </ul>
       </div>
       <img
@@ -59,15 +66,20 @@
       <div>
         <p>
           Afin de comprendre les réponses du pendules, vous allez devoir établir
-          un code. Ce code restera immuable. Pour cela, demandez lui de vous
-          indiquer un "oui". Le pendule tournera dans un sens. Un "non" tournera
-          inévitablement dans le sens inverse. S'il ne connaît pas la réponse à
-          votre question ou ne souhaite pas y répondre, il se balancera de
-          manière différente. Vous pouvez poser n'importe quelle question à
-          condition que ce soit une question fermée, ce qui implique une réponse
-          qui sera automatiquement oui, non ou je ne sais pas.<br />
-          Une fois ce code établit, vous pouvez utiliser votre pendule.
+          un code. Ce code restera immuable.
         </p>
+        <p>
+          Pour cela, demandez lui de vous indiquer un "oui". Le pendule tournera
+          dans un sens. Un "non" tournera inévitablement dans le sens inverse.
+          S'il ne connaît pas la réponse à votre question ou ne souhaite pas y
+          répondre, il se balancera de manière différente.
+        </p>
+        <p>
+          Vous pouvez poser n'importe quelle question à condition que ce soit
+          une question fermée, ce qui implique une réponse qui sera
+          automatiquement oui, non ou je ne sais pas.
+        </p>
+        <p>Une fois ce code établit, vous pouvez utiliser votre pendule.</p>
       </div>
       <img
         class="blob"
@@ -80,7 +92,9 @@
       <div>
         <p>
           Votre pendule peut servir à purifier et recharger, pour cela placer le
-          au-dessus de votre pierre ou bracelet et demandez lui de purifier.<br />
+          au-dessus de votre pierre ou bracelet et demandez lui de purifier.
+        </p>
+        <p>
           Lorsque le pendule s'arrête de lui-même, demandez-lui alors de
           recharger. Quand le pendule s'arrête à nouveau, c'est que le travail
           est terminé et vous pouvez le remercier.
