@@ -8,29 +8,24 @@
     <section>
       <div>
         <p>
-          Le pendentif apporte autant de bienfaits qu'une pierre roulée tout en
-          étant en permanence à votre contact. Il doit être purifié ou rechargé
-          à la lune ou au soleil en fonction de la pierre.
+          Tout comme la
+          <router-link :to="{ name: 'pierres-roulees' }">
+            pierre roulée,
+          </router-link>
+          le pendentif et le collier sont des bijoux qui vous sont bénéfiques en
+          vous apportant les énergies relatives au minéral choisi. Ils restent
+          cependant plus facile à porter en restant en permanence à votre
+          contact.
+        </p>
+        <p>
+          Tout comme les autres pierres et cristaux, il doit être purifié ou
+          rechargé à la lune ou au soleil en fonction de sa composition.
         </p>
       </div>
       <img
         class="blob"
         src="@/assets/img/pendentifs_et_colliers/description_1.webp"
         alt="Pendentif"
-        loading="lazy"
-      />
-    </section>
-    <section>
-      <div>
-        <p>
-          Je confectionne également des bracelets de cheville, chemins de vie,
-          bracelets thérapeutiques, pierres de votre choix sur simple demande.
-        </p>
-      </div>
-      <img
-        class="blob"
-        src="@/assets/img/pendentifs_et_colliers/description_2.jpg"
-        alt="Collier"
         loading="lazy"
       />
     </section>

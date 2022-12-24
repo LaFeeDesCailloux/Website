@@ -11,6 +11,11 @@
           Vous souhaitez acheter un bracelet ? Pensez à renseigner votre tour de
           poignet lors de votre commande.
         </p>
+        <p>
+          Il est important de rappeler que la lithothérapie n'est pas considérée
+          comme une forme de traitement médical reconnue et qu'elle ne doit pas
+          être utilisée à la place d'un traitement médical conventionnel.
+        </p>
       </div>
       <div>
         <a href="tel:0647861284">
@@ -242,6 +247,10 @@ article {
       h1 {
         font-size: 3em;
         margin-bottom: 0;
+      }
+
+      p {
+        max-width: 900px;
       }
     }
 

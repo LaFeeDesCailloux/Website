@@ -8,23 +8,29 @@
     <section>
       <div>
         <p>
-          Les minéraux sont extrêmement sensibles à l’environnement et à la
-          personne qui les portent. Ils se chargent d’énergies, bonnes ou
-          mauvaises, il est donc très important de purifier vos pierres
-          régulièrement pour éviter qu’elles ne s’épuisent et continues d’agir
-          pour votre bien de façon optimale.
+          Les minéraux utilisés en lithothérapie sont extrêmement sensibles à
+          l’environnement et à la personne qui les portent. Ils se chargent
+          d’énergies, quelles soient bonnes ou mauvaises.
         </p>
-        <p>Plusieurs méthodes de purification sont possibles.</p>
+        <p>
+          Il est donc très important de purifier vos pierres régulièrement pour
+          éviter qu’elles ne s’épuisent et continues d’agir pour votre bien de
+          façon optimale.
+        </p>
+        <h3>Plusieurs méthodes de purification sont possibles :</h3>
         <p>
           La méthode la plus classique est la purification par l’eau, il suffit
           de passer vos pierres quelques secondes sous l’eau du robinet. L’idéal
-          est d’utiliser de l’eau de source.
+          étant d'utiliser de l'eau de source.
         </p>
         <p>
-          En laissant vos pierres sur une géode d’améthyste le temps de la
-          purification.
+          Vous pouvez également laisser vos pierres sur une géode d'améthyste
+          quelques heures afin de les purifier.
         </p>
-        <p>Le pendule peut être également utilisé.</p>
+        <p>
+          Enfin, vous pouvez également utiliser un pendule pour réaliser cette
+          étape.
+        </p>
       </div>
       <img
         class="blob"
@@ -36,8 +42,10 @@
     <section>
       <div>
         <p>
-          Une fois purifié de toutes mauvaises énergies, il faut recharger.<br />
-          Cette étape est essentielle pour que les minéraux retrouvent leur
+          Une fois les minéraux purifiés de toutes les mauvaises énergies, il
+          faut les recharger.
+          <br />
+          Cette étape est essentielle pour qu'ils retrouvent leur pleine
           puissance.
         </p>
         <p>Pour cela plusieurs possibilités s’offrent à vous :</p>
@@ -48,25 +56,32 @@
             Attention, préférez une exposition douce et de préférence le matin.
           </li>
           <li>
-            <strong>La lune et bien sûr la pleine lune : </strong>certaines
-            pierres lui sont favorables, laissez son énergie agir en toute
-            tranquillité pendant toute une nuit.
+            <strong>La lune : </strong>certaines pierres lui sont favorables,
+            laissez son énergie agir en toute tranquillité pendant toute une
+            nuit.
+            <br />
+            La pleine lune est à préférer pour les recharger plus efficacement.
           </li>
           <li>
             <strong>Le pendule : </strong>il sera beaucoup plus rapide pour
             recharger vos minéraux.
           </li>
           <li>
-            <strong>La géode ou la druse : </strong>Déposez-y vos bracelets,
+            <strong>La géode ou la druse : </strong>déposez-y vos bracelets,
             pendentifs, pierres roulées ou autres pendant quelques heures.<br />
-            Attention, celles-ci doivent être également purifiées.
+            Attention, elles doivent être elles-même régulièrement purifiées.
           </li>
           <li>
             <strong>La fleur de vie : </strong>symbole dégageant une énergie
             très puissante peut également recharger vos pierres.
           </li>
         </ul>
-        <p>N'hésitez pas à me demander si vous avez la moindre question.</p>
+        <br />
+        <p>
+          <strong>
+            N'hésitez pas à me soliciter si vous avez la moindre question.
+          </strong>
+        </p>
       </div>
       <img
         class="blob"
@@ -80,14 +95,16 @@
         <p>
           Si vos pierres ternissent, perdent leur éclat, changent de couleur ou
           se cassent, c’est qu’elles ne sont pas suffisamment purifiées et
-          rechargées.<br />
+          rechargées.
+          <br />
           Je préconise de répéter le plus souvent possible ces opérations.
         </p>
         <p>
           Pour optimiser au maximum leurs effets, il est fortement recommandé de
           ne mettre aucun produit en contact avec vos pierres. Aucun parfum,
-          crème, produit vaisselle ou autres.<br />
-          Il est également déconseillé de le garder pour la douche et la
+          crème, produit vaisselle ou autres.
+          <br />
+          Il est également déconseillé de les garder pour la douche et la
           baignade.
         </p>
       </div>
