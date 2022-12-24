@@ -107,7 +107,17 @@
         <label for="message">Message</label>
         <textarea name="message" id="message" v-model="message" required />
 
-        <button class="button" type="submit">Envoyer</button>
+        <button class="button" type="submit" id="send">
+          <span v-if="success">
+            Message envoyé
+            <font-awesome-icon icon="fa-solid fa-check" />
+          </span>
+          <span v-else-if="error">
+            Une erreur s'est produite
+            <font-awesome-icon icon="fa-solid fa-xmark" />
+          </span>
+          <span v-else> Envoyer </span>
+        </button>
       </form>
     </section>
     <img src="@/assets/svg/cristaux.svg" alt="Cristaux" />
@@ -133,6 +143,8 @@ export default {
       },
       custom_subject: "",
       message: "",
+      success: false,
+      error: false,
     };
   },
   mounted() {
@@ -146,6 +158,9 @@ export default {
   },
   methods: {
     async sendMail() {
+      let button = document.getElementById("send");
+      button.disabled = true;
+
       let select = document.getElementById("subject");
       let subject = "";
       if (this.subject === "other") {
@@ -171,7 +186,6 @@ export default {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-API-Key": process.env.API_KEY,
         },
         body: JSON.stringify({
           subject: subject,
@@ -179,11 +193,28 @@ export default {
         }),
       })
         .then((response) => {
-          console.log(response.status, response.statusText);
+          if (response.ok) {
+            button.classList.add("success");
+            this.success = true;
+          } else {
+            button.classList.add("error");
+            this.error = true;
+          }
+          this.resetButton(button);
         })
-        .catch((error) => {
-          console.log(error);
+        .catch(() => {
+          button.classList.add("error");
+          this.error = true;
+          this.resetButton(button);
         });
+    },
+    resetButton(button) {
+      setTimeout(() => {
+        button.classList.remove("success");
+        button.classList.remove("error");
+        this.success = this.error = false;
+        button.disabled = false;
+      }, 2750);
     },
   },
 };
@@ -308,8 +339,12 @@ article {
         text-decoration: none;
         font-weight: bold;
         transform: scale(1.005);
-        transition: transform 400ms;
+        transition: all 400ms;
         cursor: pointer;
+
+        svg {
+          margin-left: 0.4rem;
+        }
 
         &:hover {
           transform: scale(1.04);
@@ -340,5 +375,15 @@ article {
       object-fit: cover;
     }
   }
+}
+
+.success {
+  border: 2px solid green !important;
+  color: green !important;
+}
+
+.error {
+  border: 2px solid red !important;
+  color: red !important;
 }
 </style>
