@@ -440,7 +440,7 @@ export default {
       this.$router.push({
         name: "contact",
         query: {
-          object: "chemin-de-vie",
+          subject: "chemin-de-vie",
           names: this.names,
           name_father: this.last_name_father,
           name_mother: this.last_name_mother,

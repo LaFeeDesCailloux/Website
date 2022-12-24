@@ -47,8 +47,8 @@
           autocomplete="email"
         />
 
-        <label for="object">Objet</label>
-        <select name="object" id="object" v-model="object" required>
+        <label for="subject">Objet</label>
+        <select name="object" id="subject" v-model="subject" required>
           <option value="" selected disabled>Sélectionnez une option</option>
           <option value="chemin-de-vie">Chemin de vie</option>
           <option value="bracelet-therapeutique">Bracelet thérapeutique</option>
@@ -58,15 +58,15 @@
         </select>
 
         <input
-          v-if="object === 'other'"
+          v-if="subject === 'other'"
           type="text"
           name="custom-object"
           id="custom-object"
-          v-model="custom_object"
+          v-model="custom_subject"
           required
         />
 
-        <div v-if="object === 'chemin-de-vie'">
+        <div v-if="subject === 'chemin-de-vie'">
           <label for="cdv-prenoms">Vos prénoms</label>
           <input
             type="text"
@@ -124,20 +124,20 @@ export default {
     return {
       name: "",
       email: "",
-      object: "",
+      subject: "",
       cdv: {
         names: "",
         father: "",
         mother: "",
         birthdate: "",
       },
-      custom_object: "",
+      custom_subject: "",
       message: "",
     };
   },
   mounted() {
-    if (this.$route.query.object === "chemin-de-vie") {
-      this.object = this.$route.query.object;
+    if (this.$route.query.subject === "chemin-de-vie") {
+      this.subject = this.$route.query.subject;
       this.cdv.names = this.$route.query.names;
       this.cdv.father = this.$route.query.name_father;
       this.cdv.mother = this.$route.query.name_mother;
@@ -146,16 +146,16 @@ export default {
   },
   methods: {
     async sendMail() {
-      let select = document.getElementById("object");
-      let object = "";
-      if (this.object === "other") {
-        object = this.custom_object;
+      let select = document.getElementById("subject");
+      let subject = "";
+      if (this.subject === "other") {
+        subject = this.custom_subject;
       } else {
-        object = select.children[select.selectedIndex].text;
+        subject = select.children[select.selectedIndex].text;
       }
 
       let message = `Nom : ${this.name}, Email : ${this.email}\n\n\n`;
-      if (this.object === "chemin-de-vie") {
+      if (this.subject === "chemin-de-vie") {
         message +=
           "Information du chemin de vie :\n" +
           `Prénoms : ${this.cdv.names}\n` +
@@ -174,7 +174,7 @@ export default {
           "X-API-Key": process.env.API_KEY,
         },
         body: JSON.stringify({
-          object: object,
+          subject: subject,
           message: message,
         }),
       })
