@@ -89,175 +89,175 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC03822.jpg",
+          src: "DSC03822.webp",
           title: "Description",
         },
         {
-          src: "DSC03823.jpg",
+          src: "DSC03823.webp",
           title: "Description",
         },
         {
-          src: "DSC03831.jpg",
+          src: "DSC03831.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_175535.jpg",
+          src: "IMG_20211023_175535.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_175812.jpg",
+          src: "IMG_20211023_175812.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_175931.jpg",
+          src: "IMG_20211023_175931.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_180044.jpg",
+          src: "IMG_20211023_180044.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_180601.jpg",
+          src: "IMG_20211023_180601.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_150525.jpg",
+          src: "IMG_20211024_150525.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_152214.jpg",
+          src: "IMG_20211024_152214.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_152600.jpg",
+          src: "IMG_20211024_152600.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_153315.jpg",
+          src: "IMG_20211024_153315.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_153438.jpg",
+          src: "IMG_20211024_153438.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_153821.jpg",
+          src: "IMG_20211024_153821.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154502.jpg",
+          src: "IMG_20211024_154502.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154509.jpg",
+          src: "IMG_20211024_154509.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154515.jpg",
+          src: "IMG_20211024_154515.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154548.jpg",
+          src: "IMG_20211024_154548.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154622.jpg",
+          src: "IMG_20211024_154622.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154715.jpg",
+          src: "IMG_20211024_154715.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154740.jpg",
+          src: "IMG_20211024_154740.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154802.jpg",
+          src: "IMG_20211024_154802.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154833.jpg",
+          src: "IMG_20211024_154833.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154839.jpg",
+          src: "IMG_20211024_154839.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155007.jpg",
+          src: "IMG_20211024_155007.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155020.jpg",
+          src: "IMG_20211024_155020.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155109.jpg",
+          src: "IMG_20211024_155109.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155120.jpg",
+          src: "IMG_20211024_155120.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155131.jpg",
+          src: "IMG_20211024_155131.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155203.jpg",
+          src: "IMG_20211024_155203.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155215.jpg",
+          src: "IMG_20211024_155215.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155302.jpg",
+          src: "IMG_20211024_155302.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155356.jpg",
+          src: "IMG_20211024_155356.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155426.jpg",
+          src: "IMG_20211024_155426.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155439.jpg",
+          src: "IMG_20211024_155439.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155444.jpg",
+          src: "IMG_20211024_155444.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155522.jpg",
+          src: "IMG_20211024_155522.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155530.jpg",
+          src: "IMG_20211024_155530.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155535.jpg",
+          src: "IMG_20211024_155535.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155658.jpg",
+          src: "IMG_20211024_155658.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155702.jpg",
+          src: "IMG_20211024_155702.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155716.jpg",
+          src: "IMG_20211024_155716.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_155727.jpg",
+          src: "IMG_20211024_155727.webp",
           title: "Description",
         },
       ],

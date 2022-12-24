@@ -67,103 +67,103 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC06704.jpg",
+          src: "DSC06704.webp",
           title: "Description",
         },
         {
-          src: "DSC06712.jpg",
+          src: "DSC06712.webp",
           title: "Description",
         },
         {
-          src: "DSC06773.jpg",
+          src: "DSC06773.webp",
           title: "Description",
         },
         {
-          src: "DSC06788.jpg",
+          src: "DSC06788.webp",
           title: "Description",
         },
         {
-          src: "DSC06789.jpg",
+          src: "DSC06789.webp",
           title: "Description",
         },
         {
-          src: "DSC06790.jpg",
+          src: "DSC06790.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_134130.jpg",
+          src: "IMG_20211024_134130.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_152913.jpg",
+          src: "IMG_20211024_152913.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_152952.jpg",
+          src: "IMG_20211024_152952.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154153.jpg",
+          src: "IMG_20211024_154153.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154209.jpg",
+          src: "IMG_20211024_154209.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154219.jpg",
+          src: "IMG_20211024_154219.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154227.jpg",
+          src: "IMG_20211024_154227.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154324.jpg",
+          src: "IMG_20211024_154324.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154404.jpg",
+          src: "IMG_20211024_154404.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_154422.jpg",
+          src: "IMG_20211024_154422.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_094249.jpg",
+          src: "IMG_20220226_094249.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_112526.jpg",
+          src: "IMG_20220226_112526.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_112540.jpg",
+          src: "IMG_20220226_112540.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_112554.jpg",
+          src: "IMG_20220226_112554.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_112607.jpg",
+          src: "IMG_20220226_112607.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_112740.jpg",
+          src: "IMG_20220226_112740.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_113003.jpg",
+          src: "IMG_20220226_113003.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220226_113413.jpg",
+          src: "IMG_20220226_113413.webp",
           title: "Description",
         },
         {
-          src: "IMG_20220331_190046.jpg",
+          src: "IMG_20220331_190046.webp",
           title: "Description",
         },
       ],

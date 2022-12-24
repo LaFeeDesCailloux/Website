@@ -85,11 +85,11 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC06714.jpg",
+          src: "DSC06714.webp",
           title: "Description",
         },
         {
-          src: "DSC06728.jpg",
+          src: "DSC06728.webp",
           title: "Description",
         },
       ],
