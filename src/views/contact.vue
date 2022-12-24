@@ -76,6 +76,16 @@
           required
         />
 
+        <div
+          v-if="
+            subject === 'bracelets-therapeutiques' ||
+            subject === 'chemin-de-vie'
+          "
+        >
+          <label for="size">Tour de poignet</label>
+          <input type="number" name="size" id="size" v-model="size" required />
+        </div>
+
         <div v-if="subject === 'chemin-de-vie'">
           <label for="cdv-prenoms">Vos prénoms</label>
           <input
@@ -152,6 +162,7 @@ export default {
         birthdate: "",
       },
       custom_subject: "",
+      size: "",
       message: "",
       success: false,
       error: false,
@@ -188,6 +199,8 @@ export default {
           `Nom de la mère : ${this.cdv.mother}\n` +
           `Date de naissance : ${this.cdv.birthdate}\n\n\n` +
           this.message;
+      } else if (this.subject === "bracelets-therapeutiques") {
+        message += `Tour de poignet : ${this.size}\n\n\n` + this.message;
       } else {
         message += this.message;
       }
