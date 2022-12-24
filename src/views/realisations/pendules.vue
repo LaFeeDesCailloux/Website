@@ -71,7 +71,7 @@
       </div>
       <img
         class="blob"
-        src="@/assets/img/pendules/description_3.jpg"
+        src="@/assets/img/pendules/description_3.webp"
         alt="Pendule"
         loading="lazy"
       />
@@ -88,7 +88,7 @@
       </div>
       <img
         class="blob"
-        src="@/assets/img/pendules/description_4.jpg"
+        src="@/assets/img/pendules/description_4.webp"
         alt="Pendule"
         loading="lazy"
       />
@@ -126,47 +126,47 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC06800.jpg",
+          src: "DSC06800.webp",
           title: "Description",
         },
         {
-          src: "DSC06804.jpg",
+          src: "DSC06804.webp",
           title: "Description",
         },
         {
-          src: "DSC06814.jpg",
+          src: "DSC06814.webp",
           title: "Description",
         },
         {
-          src: "DSC06822.jpg",
+          src: "DSC06822.webp",
           title: "Description",
         },
         {
-          src: "DSC06829.jpg",
+          src: "DSC06829.webp",
           title: "Description",
         },
         {
-          src: "DSC06834.jpg",
+          src: "DSC06834.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_140940.jpg",
+          src: "IMG_20211024_140940.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_140946.jpg",
+          src: "IMG_20211024_140946.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_140950.jpg",
+          src: "IMG_20211024_140950.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_141245.jpg",
+          src: "IMG_20211024_141245.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_141814.jpg",
+          src: "IMG_20211024_141814.webp",
           title: "Description",
         },
       ],

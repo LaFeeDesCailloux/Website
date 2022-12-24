@@ -92,27 +92,27 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC06737.jpg",
+          src: "DSC06737.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_174234.jpg",
+          src: "IMG_20211023_174234.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211023_180852.jpg",
+          src: "IMG_20211023_180852.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_150807.jpg",
+          src: "IMG_20211024_150807.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_151152.jpg",
+          src: "IMG_20211024_151152.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_153524.jpg",
+          src: "IMG_20211024_153524.webp",
           title: "Description",
         },
       ],

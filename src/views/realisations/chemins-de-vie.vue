@@ -155,15 +155,15 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC03820.jpg",
+          src: "DSC03820.webp",
           title: "Description",
         },
         {
-          src: "DSC06771.jpg",
+          src: "DSC06771.webp",
           title: "Description",
         },
         {
-          src: "IMG_20211024_151752.jpg",
+          src: "IMG_20211024_151752.webp",
           title: "Description",
         },
       ],

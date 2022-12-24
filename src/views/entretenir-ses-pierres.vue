@@ -1,7 +1,7 @@
 <template>
   <Banniere
     titre="Entretenir ses pierres"
-    image="entretenir_ses_pierres/banner.jpg"
+    image="entretenir_ses_pierres/banner.webp"
   />
 
   <Description>
@@ -93,7 +93,7 @@
       </div>
       <img
         class="blob"
-        src="@/assets/img/entretenir_ses_pierres/description_3.jpg"
+        src="@/assets/img/entretenir_ses_pierres/description_3.webp"
         alt="Pierre"
         loading="lazy"
       />
