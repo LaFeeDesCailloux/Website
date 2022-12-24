@@ -56,8 +56,13 @@
         <select name="object" id="subject" v-model="subject" required>
           <option value="" selected disabled>Sélectionnez une option</option>
           <option value="chemin-de-vie">Chemin de vie</option>
-          <option value="bracelet-therapeutique">Bracelet thérapeutique</option>
-          <option value="pierres">Pierres</option>
+          <option value="bracelets-therapeutiques">
+            Bracelets thérapeutiques
+          </option>
+          <option value="pendules">Pendules</option>
+          <option value="pendentifs-colliers">Pendentifs et Colliers</option>
+          <option value="druses-geodes">Druses et Géodes</option>
+          <option value="pierres-roulees">Pierres roulées</option>
           <option value="info">Demande de renseignements</option>
           <option value="other">Autre</option>
         </select>
