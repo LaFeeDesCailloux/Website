@@ -11,8 +11,8 @@
         <div>
           <h3>Chemins de vie</h3>
           <p>
-            A partir de 38€<br />
-            jusqu'à 62€
+            A partir de 40€<br />
+            jusqu'à 64€
           </p>
         </div>
       </router-link>

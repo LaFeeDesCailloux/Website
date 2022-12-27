@@ -432,7 +432,6 @@ export default {
       voeux_id: [0, 0],
       reduce: [0, 0],
       toggle: false,
-      price: 40,
     };
   },
   methods: {
@@ -670,6 +669,40 @@ export default {
     },
   },
   computed: {
+    price() {
+      let emeraude = false;
+      let topaze = false;
+      if (
+        this.stone_base === "Émeraude" ||
+        this.stone_sommet === "Émeraude" ||
+        this.stone_vie === "Émeraude" ||
+        this.stone_appel === "Émeraude" ||
+        this.stone_personnalite === "Émeraude" ||
+        this.stone_expression === "Émeraude" ||
+        this.stone_touche === "Émeraude" ||
+        this.stone_voeux === "Émeraude"
+      ) {
+        emeraude = true;
+      }
+      if (
+        this.stone_base === "Topaze" ||
+        this.stone_sommet === "Topaze" ||
+        this.stone_vie === "Topaze" ||
+        this.stone_appel === "Topaze" ||
+        this.stone_personnalite === "Topaze" ||
+        this.stone_expression === "Topaze" ||
+        this.stone_touche === "Topaze" ||
+        this.stone_voeux === "Topaze"
+      ) {
+        topaze = true;
+      }
+      if (emeraude && topaze) {
+        return 40 + 12 + 12;
+      } else if (emeraude || topaze) {
+        return 40 + 12;
+      }
+      return 40;
+    },
     first_names() {
       return this.parseArray(this.names.split(","));
     },

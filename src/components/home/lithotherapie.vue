@@ -10,20 +10,31 @@
       />
       <div>
         <p>
-          Lithothérapie vient du Grec "<span>Lithos</span>" qui signifie Pierre
-          et "<span>Thérapeia</span>" thérapie ou cure ; thérapie par les
-          pierres.<br />
-          De nombreuses civilisations très anciennes utilisaient les pierres
-          pour leurs nombreuses vertues.
+          La lithothérapie est une pratique qui utilise des pierres et des
+          cristaux pour promouvoir la santé et le bien-être physique et
+          émotionnel. Il est important de rappeler que cette pratique n'est pas
+          considérée comme une forme de traitement médical reconnue et qu'elle
+          ne doit pas être utilisée à la place d'un traitement médical
+          conventionnel. Il semble indéniable que chaque pierre possède des
+          propriétés curatives uniques et que leur utilisation peut aider à
+          rééquilibrer l'énergie du corps et de l'esprit. Beaucoup de
+          civilisations très anciennes les utilisaient déjà pour leurs
+          nombreuses vertues.
         </p>
         <p>
-          Ces pierres et cristaux agissent sur nos organismes par les vibrations
-          qu'elles dégagent. Elles agissent tant sur le plan physique, mental,
-          émotionnel ou encore spirituel.<br />
+          Il existe de nombreuses manières d'utiliser les pierres en
+          lithothérapie. Certaines personnes portent des bijoux en pierres
+          précieuses ou semi-précieuses, tandis que d'autres placent des pierres
+          sur leur corps ou leur environnement pour profiter de leurs bienfaits.
+          <br />
+          Certains utilisent également des pierres en méditation ou les posent
+          sur des points précis du corps lors d'une séance de massage. Elles
+          agissent sur nos organismes par les vibrations qu'elles dégagent, tant
+          sur le plan physique, mental, émotionnel ou encore spirituel.
+        </p>
+        <p>
           Tout est question de rééquilibrage et d'harmonisation des énergies
-          vibratoires.<br />
-          Chaque minéral a ses propres caractéristiques en fonction de sa
-          composition.
+          vibratoires.
         </p>
         <p>
           Peu importe vos croyances en leurs vertus, les pierres vous

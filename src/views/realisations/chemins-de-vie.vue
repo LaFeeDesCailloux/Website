@@ -5,13 +5,18 @@
     <section>
       <div>
         <p>
-          Un chemin de vie est un bracelet constitué de pierres semi-précieuses.
-          Il vous est propre car personnalisé et ne doit en aucun cas être prêté
-          ou donné.
+          Le chemin de vie est un bracelet capable de renforcer vos qualités
+          positives en s'harmonisant avec les traits de votre personnalité et
+          vos besoins énergétiques. Il vous permet d'atténuer vos faiblesses,
+          tout en vous aidant à atteindre vos objectifs et à réaliser vos
+          aspirations.
+          <br />
+          Le bracelet vous est propre ce qui signifie qu'il ne doit en aucun cas
+          être prêté ou donné.
         </p>
         <p>
           Il est composé de 8 pierres parmi 33, définit en fonction de critères
-          prédéterminés principalement par votre état civil :
+          prédéterminés :
         </p>
         <ul>
           <li><strong>La pierre de base</strong> représente vos racines ;</li>
@@ -55,15 +60,15 @@
     <section>
       <div>
         <p>
-          Les 8 pierres déterminent votre personnalité. Elles permettent des
+          Ces 8 pierres déterminent votre personnalité. Elles permettent des
           améliorations sur le plan physique, mental et spirituel en vous
           apportant tout au long de votre vie une aide précieuse.
         </p>
         <p>
-          Chaque pierre composée d’oligo-éléments possède des propriétés
-          énergétiques. Les changements se font en douceur, en profondeur et
-          dans la durée. Vous remarquerez petit à petit une évolution efficace
-          sur tous les plans.
+          Chacune des pierres possèdes des propriétés énergétiques spécifiques.
+          Les changements se font en douceur, en profondeur et dans la durée.
+          Vous remarquerez petit à petit une évolution efficace sur tous les
+          plans.
         </p>
         <p>
           Monté sur un fil élastique, il vous est facile de le porter et le
@@ -95,10 +100,6 @@
           <li>De votre date de naissance.</li>
         </ul>
         <p>Il peut faire l’objet d’un cadeau personnalisé, puisque unique.</p>
-        <p>
-          Votre chemin de vie vous sera adressé par voie postale ou remis en
-          main propre, purifié, rechargé et ajusté à votre tour de poignet.
-        </p>
         <p>
           Afin de compléter l’expérience de votre chemin de vie, je vous
           communiquerai oralement son interprétation, ce qu’il vous apporte,
@@ -156,15 +157,12 @@ export default {
       images: [
         {
           src: "DSC03820.webp",
-          title: "Description",
         },
         {
           src: "DSC06771.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_151752.webp",
-          title: "Description",
         },
       ],
     };

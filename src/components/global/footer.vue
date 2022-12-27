@@ -4,7 +4,9 @@
       © {{ current_year }} - Tous droits réservés &nbsp;|&nbsp;
       <router-link :to="{ name: 'home' }">LaFeeDesCailloux.fr</router-link>
     </p>
-    <p>Site Web réalisé par <a href="https://github.com/Minarox">Mathis</a>.</p>
+    <p>
+      Site Web réalisé par <a href="https://github.com/Minarox">Mathis SM</a>.
+    </p>
   </footer>
 </template>
 
