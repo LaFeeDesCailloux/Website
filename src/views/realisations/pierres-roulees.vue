@@ -90,11 +90,11 @@ export default {
       images: [
         {
           src: "DSC06714.webp",
-          title: "Description",
+          title: "Topazes",
         },
         {
           src: "DSC06728.webp",
-          title: "Description",
+          title: "Pyrite",
         },
       ],
     };
