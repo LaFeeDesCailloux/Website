@@ -141,47 +141,45 @@ export default {
       images: [
         {
           src: "DSC06800.webp",
-          title: "Description",
         },
         {
           src: "DSC06804.webp",
-          title: "Description",
+          title: "Quartz rose",
         },
         {
           src: "DSC06814.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "DSC06822.webp",
-          title: "Description",
+          title: "Opale",
         },
         {
           src: "DSC06829.webp",
-          title: "Description",
+          title: "Œil de taureau",
         },
         {
           src: "DSC06834.webp",
-          title: "Description",
+          title: "Obsidienne œil céleste",
         },
         {
           src: "IMG_20211024_140940.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211024_140946.webp",
-          title: "Description",
+          title: "Jaspe rouge",
         },
         {
           src: "IMG_20211024_140950.webp",
-          title: "Description",
+          title: "Lapis lazuli",
         },
         {
           src: "IMG_20211024_141245.webp",
-          title: "Description",
+          title: "Lapis lazuli",
         },
         {
           src: "IMG_20211024_141814.webp",
-          title: "Description",
         },
       ],
     };

@@ -90,27 +90,27 @@ export default {
       images: [
         {
           src: "DSC06737.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211023_174234.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20211023_180852.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211024_150807.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20211024_151152.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211024_153524.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
       ],
     };
