@@ -8,20 +8,25 @@
     <section>
       <div>
         <p>
-          Le bracelet thérapeutique est différent du chemin de vie.<br />
-          Il est confectionné selon votre demande et, bien entendu, selon vos
-          besoins ou pathologies :
+          Un bracelet thérapeutique est une composition de pierres ou cristaux
+          choisis pour leur propriété thérapeutique permettant de répondre à des
+          besoins ou pathologies spécifiques comme, par exemple, des problèmes
+          physiques ou émotionnels.
+        </p>
+        <p>
+          Il est confectionné selon votre demande afin de répondre
+          spécifiquement à vos besoins :
         </p>
         <ul>
-          <li>Vous souhaitez arrêter de fumer ;</li>
-          <li>Vous avez de l’eczéma ;</li>
-          <li>Vous avez une épine calcanéenne ;</li>
-          <li>Vous voulez prendre confiance en vous ;</li>
+          <li>Vous souhaitez arrêter de fumer ?</li>
+          <li>Vous avez de l’eczéma ?</li>
+          <li>Vous voulez prendre confiance en vous ?</li>
           <li>
-            Vous désirez vous protéger des énergies négatives d’une personne ;
+            Vous désirez vous protéger des énergies négatives d’une personne ?
           </li>
-          <li>Vous avez du mal à dormir ;</li>
-          <li>Vous avez des bouffées de chaleur ;</li>
+          <li>Vous avez du mal à dormir ?</li>
+          <li>Vous avez des bouffées de chaleur ?</li>
+          <li>Vous avez une épine calcanéenne ?</li>
           <li>Etc.</li>
         </ul>
       </div>
@@ -34,6 +39,10 @@
     </section>
     <section>
       <div>
+        <p>
+          Le bracelet thérapeutique est en mesure de répondre à ces questions en
+          vous apportant les énergies nécessaires.
+        </p>
         <p>
           Beaucoup de pathologies sont déclenchées par l’inconscient, il y a
           toujours une raison cachée. Nous étudierons cela ensemble lors de
@@ -89,176 +98,98 @@ export default {
       interval: null,
       images: [
         {
-          src: "DSC03822.webp",
-          title: "Description",
-        },
-        {
-          src: "DSC03823.webp",
-          title: "Description",
-        },
-        {
-          src: "DSC03831.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211023_175535.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211023_175812.webp",
-          title: "Description",
-        },
-        {
           src: "IMG_20211023_175931.webp",
-          title: "Description",
+          title: "Fortifie les reins",
         },
         {
           src: "IMG_20211023_180044.webp",
-          title: "Description",
+          title: "Bracelet pour la mémoire",
         },
         {
           src: "IMG_20211023_180601.webp",
-          title: "Description",
+          title: "Bracelet contre les rhumatismes",
         },
         {
           src: "IMG_20211024_150525.webp",
-          title: "Description",
+          title:
+            "Bracelet pour la circulations du sang et contre les hémorroïdes",
         },
         {
           src: "IMG_20211024_152214.webp",
-          title: "Description",
+          title: "Bracelets contre les addictions",
         },
         {
           src: "IMG_20211024_152600.webp",
-          title: "Description",
+          title: "Bracelet du pardon",
         },
         {
           src: "IMG_20211024_153315.webp",
-          title: "Description",
+          title: "Bracelet confiance, joie de vivre et abondance",
         },
         {
           src: "IMG_20211024_153438.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_153821.webp",
-          title: "Description",
+          title: "Bracelets étudiants",
         },
         {
           src: "IMG_20211024_154502.webp",
-          title: "Description",
+          title: "Bracelet contre les blessures émotionnelles",
         },
         {
           src: "IMG_20211024_154509.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_154515.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_154548.webp",
-          title: "Description",
+          title: "Bracelet contre les phlébites",
         },
         {
           src: "IMG_20211024_154622.webp",
-          title: "Description",
+          title: "Bracelet contre les épines calcanéennes",
         },
         {
           src: "IMG_20211024_154715.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_154740.webp",
-          title: "Description",
+          title: "Bracelet de vitalité masculine",
         },
         {
           src: "IMG_20211024_154802.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_154833.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_154839.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155007.webp",
-          title: "Description",
+          title: "Bracelet de confiance en soi",
         },
         {
           src: "IMG_20211024_155020.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155109.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155120.webp",
-          title: "Description",
+          title: "Bracelet contre les bouffées de chaleur",
         },
         {
           src: "IMG_20211024_155131.webp",
-          title: "Description",
+          title: "Bracelet apaisant",
         },
         {
           src: "IMG_20211024_155203.webp",
-          title: "Description",
+          title: "Bracelet anti-stress",
         },
         {
           src: "IMG_20211024_155215.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155302.webp",
-          title: "Description",
+          title: "Bracelet contre les allergies",
         },
         {
           src: "IMG_20211024_155356.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155426.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155439.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_155444.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155522.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155530.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155535.webp",
-          title: "Description",
-        },
-        {
-          src: "IMG_20211024_155658.webp",
-          title: "Description",
+          title: "Bracelet d'introspection",
         },
         {
           src: "IMG_20211024_155702.webp",
-          title: "Description",
+          title: "Ancrage et protection",
         },
         {
           src: "IMG_20211024_155716.webp",
-          title: "Description",
+          title: "Renforce la mémoire",
         },
         {
-          src: "IMG_20211024_155727.webp",
-          title: "Description",
+          src: "IMG_20221226_150443.webp",
+          title: "Bracelet de protection",
         },
       ],
     };

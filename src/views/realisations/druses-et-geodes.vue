@@ -9,10 +9,8 @@
           utiles.
         </p>
         <p>
-          Elles vous permettent de recharger en quelques heures vos pierres
-          quelques soient leur forme :
+          Elles vous permettent de recharger en quelques heures vos pierres :
         </p>
-        <!-- quelques soient leur : Présentation, usage, forme,  -->
         <ul>
           <li>Bracelets ;</li>
           <li>Pierres roulées ;</li>
@@ -20,7 +18,7 @@
           <li>Pendentifs ;</li>
           <li>Etc.</li>
         </ul>
-        <p>Il suffit d’y déposer vos minéraux.</p>
+        <p>Il suffit d’y déposer vos minéraux à l'intérieur.</p>
       </div>
       <img
         class="blob"
@@ -32,11 +30,12 @@
     <section>
       <div>
         <p>
-          Les Géodes sont creuses et peuvent recevoir vos bracelets et pierres
+          Les Géodes sont creuses et peuvent recevoir vos bracelets et pierres,
           tout comme les druses.<br />
-          Cependant, ces dernières sont tapissées de cristaux sur leur dessus.
+          Cependant, ces dernières sont tapissées de cristaux sur leur dessus
+          permettant d'autres types d'utilisations.
         </p>
-        <p>Quelques exemples :</p>
+        <h3>Quelques exemples :</h3>
         <ul>
           <li>
             Une druse en améthyste permet d’apporter de la sérénité à la pièce
@@ -46,9 +45,7 @@
             Les géodes en cristal de roche peuvent purifier et recharger vos
             différentes pierres ;
           </li>
-          <li>
-            Les géodes en cristal de roche peuvent également purifier un lieu ;
-          </li>
+          <li>Les géodes en cristal de roche peuvent purifier un lieu ;</li>
           <li>Etc.</li>
         </ul>
       </div>
@@ -93,27 +90,27 @@ export default {
       images: [
         {
           src: "DSC06737.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211023_174234.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20211023_180852.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211024_150807.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20211024_151152.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
         {
           src: "IMG_20211024_153524.webp",
-          title: "Description",
+          title: "Cristal de roche",
         },
       ],
     };

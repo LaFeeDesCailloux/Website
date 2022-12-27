@@ -8,29 +8,24 @@
     <section>
       <div>
         <p>
-          Le pendentif apporte autant de bienfaits qu'une pierre roulée tout en
-          étant en permanence à votre contact. Il doit être purifié ou rechargé
-          à la lune ou au soleil en fonction de la pierre.
+          Tout comme la
+          <router-link :to="{ name: 'pierres-roulees' }">
+            pierre roulée,
+          </router-link>
+          le pendentif et le collier sont des bijoux qui vous sont bénéfiques en
+          vous apportant les énergies relatives au minéral choisi. Ils restent
+          cependant plus facile à porter en restant en permanence à votre
+          contact.
+        </p>
+        <p>
+          Tout comme les autres pierres et cristaux, il doit être purifié ou
+          rechargé à la lune ou au soleil en fonction de sa composition.
         </p>
       </div>
       <img
         class="blob"
         src="@/assets/img/pendentifs_et_colliers/description_1.webp"
         alt="Pendentif"
-        loading="lazy"
-      />
-    </section>
-    <section>
-      <div>
-        <p>
-          Je confectionne également des bracelets de cheville, chemins de vie,
-          bracelets thérapeutiques, pierres de votre choix sur simple demande.
-        </p>
-      </div>
-      <img
-        class="blob"
-        src="@/assets/img/pendentifs_et_colliers/description_2.jpg"
-        alt="Collier"
         loading="lazy"
       />
     </section>
@@ -68,103 +63,99 @@ export default {
       images: [
         {
           src: "DSC06704.webp",
-          title: "Description",
+          title: "Agate",
         },
         {
           src: "DSC06712.webp",
-          title: "Description",
+          title: "Agate",
         },
         {
           src: "DSC06773.webp",
-          title: "Description",
+          title: "Émeraude",
         },
         {
           src: "DSC06788.webp",
-          title: "Description",
+          title: "Rhodonite",
         },
         {
           src: "DSC06789.webp",
-          title: "Description",
+          title: "Quartz roze",
         },
         {
           src: "DSC06790.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20211024_134130.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_152913.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_152952.webp",
-          title: "Description",
+          title: "Améthyste chevron",
         },
         {
           src: "IMG_20211024_154153.webp",
-          title: "Description",
+          title: "Tourmaline",
         },
         {
           src: "IMG_20211024_154209.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20211024_154219.webp",
-          title: "Description",
+          title: "Œil de tigre",
         },
         {
           src: "IMG_20211024_154227.webp",
-          title: "Description",
+          title: "Chrysocolle",
         },
         {
           src: "IMG_20211024_154324.webp",
-          title: "Description",
         },
         {
           src: "IMG_20211024_154404.webp",
-          title: "Description",
+          title: "Larimar",
         },
         {
           src: "IMG_20211024_154422.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20220226_094249.webp",
-          title: "Description",
         },
         {
           src: "IMG_20220226_112526.webp",
-          title: "Description",
+          title: "Œil de tigre",
         },
         {
           src: "IMG_20220226_112540.webp",
-          title: "Description",
+          title: "Améthyste",
         },
         {
           src: "IMG_20220226_112554.webp",
-          title: "Description",
+          title: "Aventurine",
         },
         {
           src: "IMG_20220226_112607.webp",
-          title: "Description",
+          title: "Quartz roze",
         },
         {
           src: "IMG_20220226_112740.webp",
-          title: "Description",
+          title: "Labradorite",
         },
         {
           src: "IMG_20220226_113003.webp",
-          title: "Description",
+          title: "Œil de tigre",
         },
         {
           src: "IMG_20220226_113413.webp",
-          title: "Description",
+          title: "Arbre de vie",
         },
         {
-          src: "IMG_20220331_190046.webp",
-          title: "Description",
+          src: "IMG_20211024_154116.webp",
+          title: "Jaspe dalmatien",
         },
       ],
     };

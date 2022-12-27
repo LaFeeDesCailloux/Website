@@ -35,9 +35,10 @@ article {
       box-shadow: rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0,
         rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
 
-      h2 {
+      h3 {
         font-size: 1.1em;
         margin-top: 1.6rem;
+        margin-bottom: 0.6rem;
       }
 
       p {
@@ -48,9 +49,20 @@ article {
         }
       }
 
+      a {
+        display: inline-block;
+        color: var(--global-text-color);
+        font-weight: bold;
+        text-decoration: none;
+      }
+
       li {
         text-align: start;
         margin: 0.4rem 0 0.4rem 1rem;
+      }
+
+      & > *:first-child {
+        margin-top: 0;
       }
     }
 

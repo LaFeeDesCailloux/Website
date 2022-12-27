@@ -20,14 +20,14 @@
           </p>
           <p>
             Je confectionne les chemins de vie et les bracelets thérapeutiques,
-            avec tout mon cœur et amour, en portant particulièrement attention à
-            la place de chaque pierre dans le bracelet car, détail très
-            important, elles ne sont pas toutes compatibles entre elles et
-            peuvent même se neutraliser.
+            avec tout mon cœur et amour, dans le but de soulager le stress,
+            l'anxiété, les dépression et de nombreux autres maux physiques et
+            émotionnels grâce aux propriétés thérapeutiques des pierres et
+            cristaux.
           </p>
           <p>
             Si toutefois vous souhaitez posséder une création personnalisée,
-            n’hésitez pas... prenez contact avec moi.
+            n’hésitez pas... Prenez contact avec moi.
           </p>
           <p>
             <strong>Alors ?... Prêt pour l’aventure ?</strong>

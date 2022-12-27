@@ -11,6 +11,11 @@
           Vous souhaitez acheter un bracelet ? Pensez à renseigner votre tour de
           poignet lors de votre commande.
         </p>
+        <p>
+          Il est important de rappeler que la lithothérapie n'est pas considérée
+          comme une forme de traitement médical reconnue et qu'elle ne doit pas
+          être utilisée à la place d'un traitement médical conventionnel.
+        </p>
       </div>
       <div>
         <a href="tel:0647861284">
@@ -51,8 +56,13 @@
         <select name="object" id="subject" v-model="subject" required>
           <option value="" selected disabled>Sélectionnez une option</option>
           <option value="chemin-de-vie">Chemin de vie</option>
-          <option value="bracelet-therapeutique">Bracelet thérapeutique</option>
-          <option value="pierres">Pierres</option>
+          <option value="bracelets-therapeutiques">
+            Bracelets thérapeutiques
+          </option>
+          <option value="pendules">Pendules</option>
+          <option value="pendentifs-colliers">Pendentifs et Colliers</option>
+          <option value="druses-geodes">Druses et Géodes</option>
+          <option value="pierres-roulees">Pierres roulées</option>
           <option value="info">Demande de renseignements</option>
           <option value="other">Autre</option>
         </select>
@@ -65,6 +75,16 @@
           v-model="custom_subject"
           required
         />
+
+        <div
+          v-if="
+            subject === 'bracelets-therapeutiques' ||
+            subject === 'chemin-de-vie'
+          "
+        >
+          <label for="size">Tour de poignet</label>
+          <input type="number" name="size" id="size" v-model="size" required />
+        </div>
 
         <div v-if="subject === 'chemin-de-vie'">
           <label for="cdv-prenoms">Vos prénoms</label>
@@ -142,6 +162,7 @@ export default {
         birthdate: "",
       },
       custom_subject: "",
+      size: "",
       message: "",
       success: false,
       error: false,
@@ -178,6 +199,8 @@ export default {
           `Nom de la mère : ${this.cdv.mother}\n` +
           `Date de naissance : ${this.cdv.birthdate}\n\n\n` +
           this.message;
+      } else if (this.subject === "bracelets-therapeutiques") {
+        message += `Tour de poignet : ${this.size}\n\n\n` + this.message;
       } else {
         message += this.message;
       }
@@ -242,6 +265,10 @@ article {
       h1 {
         font-size: 3em;
         margin-bottom: 0;
+      }
+
+      p {
+        max-width: 900px;
       }
     }
 

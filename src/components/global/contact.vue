@@ -3,8 +3,10 @@
     <section class="content">
       <h2>Me contacter</h2>
       <p>
-        Vous avez envie d'acheter l'une de mes créations ou besoins de
-        renseignements ?<br />
+        Vous souhaitez acheter des bracelets et pierres de lithothérapie pour
+        améliorer votre bien-être et votre équilibre émotionnel ou avez
+        simplement besoins de renseignements supplémentaires ?
+        <br />
         N'hésitez pas à me contacter par téléphone, mail ou avec le formulaire
         disponible sur la page de contact.
       </p>
@@ -45,6 +47,7 @@ article {
       z-index: 1;
       text-align: center;
       font-size: 1.1em;
+      max-width: 900px;
     }
 
     img {

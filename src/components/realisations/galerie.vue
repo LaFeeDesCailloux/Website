@@ -9,7 +9,7 @@
           @click="() => showLightbox(index)"
         >
           <img :src="image.src" :alt="image.title" :title="image.title" />
-          <div>
+          <div v-if="image.title">
             <h3>{{ image.title }}</h3>
             <font-awesome-icon icon="fa-solid fa-info" />
           </div>

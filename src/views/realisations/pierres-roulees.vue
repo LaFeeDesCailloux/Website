@@ -5,12 +5,16 @@
     <section>
       <div>
         <p>
-          Tout aussi efficaces qu’un pendentif elles vous apportent tous les
-          bienfaits énergétiques que peut vous délivrer le minéral choisi.
+          La pierre roulée est la forme la plus primaire de la pierre,
+          c'est-à-dire qu'elle n'a pas été taillé pour pouvoir être utilisé dans
+          un collier ou un pendentif. De ce fait, les pierres roulées sont
+          destiné à être glissé dans votre poche ou placé à un endroit de votre
+          choix.
         </p>
         <p>
-          Les pierres sont à glisser dans sa poche ou à placer dans votre entrée
-          pour protéger votre maison.
+          Tout comme les autres formes, la pierre vous apporte ses bienfaits
+          afin d'influencer positivement vos énergies ou l'environment autour
+          d'elle.
         </p>
         <p>
           Faites-vous confiance pour le choix. Si une pierre vous attire, elle
@@ -28,7 +32,7 @@
     </section>
     <section>
       <div>
-        <p>Quelques exemples de leurs utilisations :</p>
+        <h3>Quelques exemples de leurs utilisations :</h3>
         <ul>
           <li>
             Protéger votre maison en plaçant un œil de tigre au-dessus de votre
@@ -86,11 +90,11 @@ export default {
       images: [
         {
           src: "DSC06714.webp",
-          title: "Description",
+          title: "Topazes",
         },
         {
           src: "DSC06728.webp",
-          title: "Description",
+          title: "Pyrite",
         },
       ],
     };
