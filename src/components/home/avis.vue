@@ -92,7 +92,7 @@
           </SplideSlide>
           <SplideSlide>
             <section>
-              <h3>Laurence</h3>
+              <h3>Jocelyne</h3>
               <div>
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
@@ -109,7 +109,7 @@
           </SplideSlide>
           <SplideSlide>
             <section>
-              <h3>Jocelyne</h3>
+              <h3>Laurence</h3>
               <div>
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
@@ -119,14 +119,13 @@
               </div>
             </section>
             <p>
-              Je m’appelle Laurence. Il y a eu un moment de ma vie ou une amie
-              m’a recommandé Cathy. J’ai été très bien accueillie. Personne a
-              l’écoute. J’ai fait faire un bracelet. Pierres de très bonnes
-              qualités à un prix correct. Et dès qu’il y avait des questions ou
-              des soucis autres Cathy était toujours là. Cela m'a bien aidé et
-              je l’ai recommandé à plusieurs personnes. Vous pouvez appeler
-              Cathy et avoir besoin de ces services avec confiance. Je vous la
-              recommande.
+              Il y a eu un moment de ma vie ou une amie m’a recommandé Cathy.
+              J’ai été très bien accueillie. Personne a l’écoute. J’ai fait
+              faire un bracelet. Pierres de très bonnes qualités à un prix
+              correct. Et dès qu’il y avait des questions ou des soucis autres
+              Cathy était toujours là. Cela m'a bien aidé et je l’ai recommandé
+              à plusieurs personnes. Vous pouvez appeler Cathy et avoir besoin
+              de ces services avec confiance. Je vous la recommande.
             </p>
           </SplideSlide>
           <SplideSlide>
@@ -181,7 +180,7 @@
             </section>
             <p>
               Bracelet réalisé avec des pierres de qualité à la bonne taille.<br />
-              Kti m'a conseillé pour le recharger chaque mois. Je vous la
+              Cathy m'a conseillé pour le recharger chaque mois. Je vous la
               conseille.
             </p>
           </SplideSlide>

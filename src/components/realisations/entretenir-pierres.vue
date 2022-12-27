@@ -7,8 +7,8 @@
     <section class="content">
       <h2>Entretenir ses pierres</h2>
       <p>
-        Chaque pierre demande une attention particulière, certaines contraintes
-        sont à respecter. Vous retrouverez sur cette page quelques conseils pour
+        Chaque pierre demande une attention particulière, certaines règles sont
+        à respecter. Vous retrouverez sur cette page quelques conseils pour
         obtenir le meilleur de vos pierres.
       </p>
       <router-link :to="{ name: 'entretenir-ses-pierres' }">

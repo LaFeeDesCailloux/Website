@@ -11,8 +11,8 @@
           tout en vous aidant à atteindre vos objectifs et à réaliser vos
           aspirations.
           <br />
-          Le bracelet correspond à vous seulement ce qui signifie qu'il ne doit
-          en aucun cas être prêté ou donné.
+          Le bracelet vous est propre ce qui signifie qu'il ne doit en aucun cas
+          être prêté ou donné.
         </p>
         <p>
           Il est composé de 8 pierres parmi 33, définit en fonction de critères

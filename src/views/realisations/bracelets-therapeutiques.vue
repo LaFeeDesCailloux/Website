@@ -9,9 +9,9 @@
       <div>
         <p>
           Un bracelet thérapeutique est une composition de pierres ou cristaux
-          choisis pour le propriété thérapeutique permettant de répondre à des
+          choisis pour leur propriété thérapeutique permettant de répondre à des
           besoins ou pathologies spécifiques comme, par exemple, des problèmes
-          physiques ou mentaux.
+          physiques ou émotionnels.
         </p>
         <p>
           Il est confectionné selon votre demande afin de répondre
