@@ -12,10 +12,14 @@
         <p>
           La lithothérapie est une pratique qui utilise des pierres et des
           cristaux pour promouvoir la santé et le bien-être physique et
-          émotionnel. On pense que chaque pierre a des propriétés curatives
-          uniques et que leur utilisation peut aider à rééquilibrer l'énergie du
-          corps et de l'esprit. Beaucoup civilisations très anciennes les
-          utilisaient déjà pour leurs nombreuses vertues.
+          émotionnel. Il est important de rappeler que cette pratique n'est pas
+          considérée comme une forme de traitement médical reconnue et qu'elle
+          ne doit pas être utilisée à la place d'un traitement médical
+          conventionnel. Il semble indéniable que chaque pierre possède des
+          propriétés curatives uniques et que leur utilisation peut aider à
+          rééquilibrer l'énergie du corps et de l'esprit. Beaucoup de
+          civilisations très anciennes les utilisaient déjà pour leurs
+          nombreuses vertues.
         </p>
         <p>
           Il existe de nombreuses manières d'utiliser les pierres en
