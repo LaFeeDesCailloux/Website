@@ -179,9 +179,31 @@
               </div>
             </section>
             <p>
-              Bracelet réalisé avec des pierres de qualité à la bonne taille.<br />
+              Bracelet réalisé avec des pierres de qualité à la bonne taille.
               Cathy m'a conseillé pour le recharger chaque mois. Je vous la
               conseille.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Delphine</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
+              </div>
+            </section>
+            <p>
+              Catherine vous accueille avec beaucoup de professionnalisme. Une
+              explication sur le choix des pierres qui composent votre bracelet
+              chemin de vie est donnée pour chaque pierre choisie. Elle vous
+              explique pourquoi telle ou telle pierre est bonne pour vous et ce
+              qu’elle va vous apporter. Le résultat est bluffant car il
+              correspond vraiment à nos traits de personnalité et à nos points
+              sensibles. Je recommande vivement les bracelets de Catherine, que
+              ce soit les chemins de vie ou les bracelets thérapeutiques.
             </p>
           </SplideSlide>
         </SplideTrack>
