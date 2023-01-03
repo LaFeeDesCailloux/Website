@@ -190,7 +190,7 @@ export default {
         subject = select.children[select.selectedIndex].text;
       }
 
-      let message = `Nom : ${this.name}, Email : ${this.email}\n\n\n`;
+      let message = "";
       if (this.subject === "chemin-de-vie") {
         message +=
           "Information du chemin de vie :\n" +
@@ -211,6 +211,8 @@ export default {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          name: this.name,
+          email: this.email,
           subject: subject,
           message: message,
         }),
