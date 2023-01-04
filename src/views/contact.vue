@@ -18,9 +18,9 @@
         </p>
       </div>
       <div>
-        <a href="tel:0647861284">
+        <a href="tel:0000000000">
           <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
-          06 47 86 12 84
+          00 00 00 00 00
         </a>
         <a href="mailto:contact@lafeedescailloux.fr">
           <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
