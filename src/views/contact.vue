@@ -128,6 +128,17 @@
         <label for="message">Message</label>
         <textarea name="message" id="message" v-model="message" required />
 
+        <div id="rgpd-wrapper">
+          <label for="rgpd">
+            J'accepte la
+            <router-link :to="{ name: 'politique-de-confidentialite' }">
+              politique de confidentialité
+            </router-link>
+            et déclare avoir plus de 15 ans.
+          </label>
+          <input type="checkbox" name="rgpd" id="rgpd" required />
+        </div>
+
         <button class="button" type="submit" id="send">
           <span v-if="success">
             Message envoyé
@@ -415,5 +426,22 @@ article {
 .error {
   border: 2px solid red !important;
   color: red !important;
+}
+
+#rgpd-wrapper {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+
+  input {
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    color: var(--global-text-color);
+  }
 }
 </style>
