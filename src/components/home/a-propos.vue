@@ -39,6 +39,7 @@
             <a href="mailto:contact@lafeedescailloux.fr">
               <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
             </a>
+            <!-- TODO: Phone number -->
             <a href="tel:0000000000">
               <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
             </a>

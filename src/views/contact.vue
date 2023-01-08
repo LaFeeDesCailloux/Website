@@ -18,6 +18,7 @@
         </p>
       </div>
       <div>
+        <!-- TODO: Phone number -->
         <a href="tel:0000000000">
           <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
           00 00 00 00 00
