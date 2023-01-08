@@ -185,9 +185,9 @@
 
 <script>
 export default {
-  name: "mentionsLegalesView",
+  name: "conditionsGeneraleUtilisationView",
   title() {
-    return "Mentions légales";
+    return "Conditions générales d'utilisation";
   },
   data() {
     return {

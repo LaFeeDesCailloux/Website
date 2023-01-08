@@ -401,9 +401,9 @@
 
 <script>
 export default {
-  name: "mentionsLegalesView",
+  name: "politiqueConfidentialiteView",
   title() {
-    return "Mentions légales";
+    return "Politique de confidentialité";
   },
   data() {
     return {
