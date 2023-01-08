@@ -69,6 +69,27 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "contact" */ "../views/contact.vue"),
   },
+  {
+    path: "/mentions-legales",
+    name: "mentions-legales",
+    component: () =>
+      import(
+        /* webpackChunkName: "mentions-legales" */ "../views/mentions-legales.vue"
+      ),
+  },
+  {
+    path: "/politique-de-confidentialite",
+    name: "politique-de-confidentialite",
+    component: () =>
+      import(
+        /* webpackChunkName: "politique-de-confidentialite" */ "../views/politique-de-confidentialite.vue"
+      ),
+  },
+  {
+    path: "/cgu",
+    name: "cgu",
+    component: () => import(/* webpackChunkName: "cgu" */ "../views/cgu.vue"),
+  },
 ];
 
 const router = createRouter({
