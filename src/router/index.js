@@ -70,6 +70,14 @@ const routes = [
       import(/* webpackChunkName: "contact" */ "../views/contact.vue"),
   },
   {
+    path: "/plan-du-site",
+    name: "plan-du-site",
+    component: () =>
+      import(
+        /* webpackChunkName: "plan-du-site" */ "../views/plan-du-site.vue"
+      ),
+  },
+  {
     path: "/mentions-legales",
     name: "mentions-legales",
     component: () =>
@@ -78,17 +86,17 @@ const routes = [
       ),
   },
   {
+    path: "/cgu",
+    name: "cgu",
+    component: () => import(/* webpackChunkName: "cgu" */ "../views/cgu.vue"),
+  },
+  {
     path: "/politique-de-confidentialite",
     name: "politique-de-confidentialite",
     component: () =>
       import(
         /* webpackChunkName: "politique-de-confidentialite" */ "../views/politique-de-confidentialite.vue"
       ),
-  },
-  {
-    path: "/cgu",
-    name: "cgu",
-    component: () => import(/* webpackChunkName: "cgu" */ "../views/cgu.vue"),
   },
 ];
 
