@@ -85,6 +85,89 @@ body {
   margin-inline: auto;
 }
 
+.legal-text {
+  margin-top: 0;
+  padding-top: calc(var(--content-margin) + 1rem);
+
+  h1 {
+    font-size: 2.4em;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    margin-top: 3.5rem;
+    text-align: left;
+
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 0.8rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+
+      &:first-of-type {
+        margin-top: 0.4rem;
+      }
+    }
+
+    h4 {
+      margin-top: 0.8rem;
+    }
+
+    a {
+      display: inline-block;
+      color: var(--global-text-color);
+    }
+
+    p,
+    ul,
+    li {
+      margin-top: 0.4rem;
+    }
+
+    li:first-of-type {
+      margin-top: 0;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+  }
+
+  @media (min-width: 500px) {
+    padding-top: calc(var(--content-margin) + 2rem);
+
+    h1 {
+      font-size: 2.6em;
+    }
+
+    section {
+      p {
+        margin-left: 1.5rem;
+      }
+
+      ul {
+        margin-left: 4rem;
+      }
+
+      span {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    a {
+      line-break: anywhere;
+    }
+  }
+}
+
 h1,
 h2 {
   font-family: var(--title-font);
