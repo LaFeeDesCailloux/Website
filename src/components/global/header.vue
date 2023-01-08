@@ -203,6 +203,7 @@ header {
 
   > article {
     width: min(100% - 3rem, 100%);
+    max-width: 2100px;
     margin-inline: auto;
     height: inherit;
     display: flex;
