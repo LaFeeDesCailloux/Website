@@ -45,7 +45,7 @@
             permettant d’ouvrir des portes ;
           </li>
           <li>
-            <strong>La pierre de vœux</strong> représente votre sensibilité
+            <strong>La pierre de vœux</strong> représente la sensibilité
             intérieure de l’être.
           </li>
         </ul>
