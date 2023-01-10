@@ -47,6 +47,18 @@ article {
       left: 0;
       right: 0;
 
+      @media (max-width: 700px) {
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        h1,
+        p {
+          top: 20% !important;
+        }
+      }
+
       h1 {
         text-shadow: 0 0 24px black;
       }
@@ -57,7 +69,7 @@ article {
         margin-inline: auto;
         width: min(100%, 1200px);
         text-align: center;
-        font-size: clamp(16px, 11vw, 8em);
+        font-size: clamp(2.4em, 11vw, 8em);
         color: white;
         position: absolute;
         top: 0;
@@ -116,6 +128,7 @@ article {
       #product,
       #stars {
         object-fit: contain;
+        object-position: top;
       }
     }
   }
