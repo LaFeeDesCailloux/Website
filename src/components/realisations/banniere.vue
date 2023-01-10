@@ -47,6 +47,10 @@ article {
       left: 0;
       right: 0;
 
+      h1 {
+        text-shadow: 0 0 24px black;
+      }
+
       h1,
       p {
         z-index: 0;
@@ -54,7 +58,7 @@ article {
         width: min(100%, 1200px);
         text-align: center;
         font-size: clamp(16px, 11vw, 8em);
-        color: var(--global-text-color);
+        color: white;
         position: absolute;
         top: 0;
         left: 0;
@@ -79,11 +83,11 @@ article {
         display: none;
       }
 
-      @supports (-webkit-text-stroke: 1px var(--global-text-color)) {
+      @supports (-webkit-text-stroke: 1px white) {
         p {
           z-index: 1;
           display: unset;
-          -webkit-text-stroke: 1.5px var(--global-text-color);
+          -webkit-text-stroke: 1.5px white;
           -webkit-text-fill-color: transparent;
         }
       }
