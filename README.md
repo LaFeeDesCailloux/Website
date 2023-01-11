@@ -3,7 +3,7 @@
 
 <div align="center">
 <a href="https://github.com/LaFeeDesCailloux/Website">
-    <img src="src/assets/logo.webp" alt="Logo" width="auto" height="80">
+    <img src="src/assets/img/logo.webp" alt="Logo" width="auto" height="80">
 </a>
 
 <h3 align="center">Website</h3>
@@ -11,7 +11,7 @@
 ![GitHub deployments](https://img.shields.io/github/deployments/LaFeeDesCailloux/Website/github-pages?label=Deployment)&nbsp;
 ![Website version](https://img.shields.io/github/package-json/v/LaFeeDesCailloux/Website?label=Version)&nbsp;
 ![Project License](https://img.shields.io/github/license/LaFeeDesCailloux/website?label=License)&nbsp;
-![Website build size](https://img.shields.io/badge/Build%20size-1.28%20MB-blue)
+![Website build size](https://img.shields.io/badge/Build%20size-47.5%20MB-blue)
 
   <p align="center">
     Website of La Fée des Cailloux entreprise.
@@ -61,6 +61,9 @@ Website of La Fée Des Cailloux entreprise presenting all products made by the e
 - [VueJS 3](https://vuejs.org/)
 - [Sass](https://sass-lang.com/)
 - [Vue-router](https://router.vuejs.org/)
+- [SplideJS](https://splidejs.com/)
+- [Fontawesome](https://fontawesome.com/)
+- [vue-easy-lightbox](https://xiongamao.github.io/vue-easy-lightbox/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -113,7 +116,17 @@ A new `dist` folder will appear containing the entire compiled website.
 ## Roadmap
 
 - [x] Create VueJS project
-- [ ] Add template
+- [x] Add homepage
+- [x] Add my work pages
+  - [x] "Chemins de vie"
+  - [x] "Bracelets thérapeutiques"
+  - [x] "Pendules"
+  - [x] "Pendentifs et Colliers"
+  - [x] "Druses et Géodes"
+  - [x] "Pierres roulées"
+- [x] Add "Entretenir ses pierres"
+- [x] Add contact page
+- [x] Deploy on [Cloudflare](https://www.cloudflare.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
