@@ -8,8 +8,8 @@
           La pierre roulée est la forme la plus primaire de la pierre,
           c'est-à-dire qu'elle n'a pas été taillé pour pouvoir être utilisé dans
           un collier ou un pendentif. De ce fait, les pierres roulées sont
-          destiné à être glissé dans votre poche ou placé à un endroit de votre
-          choix.
+          destinées à être glissé dans votre poche ou placées à un endroit de
+          votre choix.
         </p>
         <p>
           Tout comme les autres formes, la pierre vous apporte ses bienfaits
