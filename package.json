@@ -1,6 +1,6 @@
 {
-  "name": "website",
-  "description": "Site Web vitrine présentant l'activité et les produits de l'entreprise avec possibilité de la contacter",
+  "name": "lafeedescailloux",
+  "description": "Site Web vitrine de l'entreprise La Fée Des Cailloux décrivant ses activités, créations et produits.",
   "author": {
     "url": "https://github.com/Minarox",
     "name": "Mathis SERRIERES MANIECKI",
@@ -46,7 +46,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vue": "^9.8.0",
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^13.2.0"
