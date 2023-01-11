@@ -24,8 +24,8 @@
         <p>
           Il existe de nombreuses manières d'utiliser les pierres en
           lithothérapie. Certaines personnes portent des bijoux en pierres
-          précieuses ou semi-précieuses, d'autres placent des pierres sur leur
-          corps ou leur environnement pour profiter de leurs bienfaits.
+          précieuses ou semi-précieuses, d'autres les placent dans leur
+          environnement et profitent de leurs bienfaits.
           <br />
           Certains utilisent également des pierres en méditation ou les posent
           sur des points précis du corps pour rééquilibrer les chakras. Elles
