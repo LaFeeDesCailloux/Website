@@ -11,7 +11,7 @@
 ![GitHub deployments](https://img.shields.io/github/deployments/LaFeeDesCailloux/Website/github-pages?label=Deployment)&nbsp;
 ![Website version](https://img.shields.io/github/package-json/v/LaFeeDesCailloux/Website?label=Version)&nbsp;
 ![Project License](https://img.shields.io/github/license/LaFeeDesCailloux/website?label=License)&nbsp;
-![Website build size](https://img.shields.io/badge/Build%20size-47.5%20MB-blue)
+![Website build size](https://img.shields.io/badge/Build%20size-43.7%20MB-blue)
 
   <p align="center">
     Website of La Fée des Cailloux entreprise.
