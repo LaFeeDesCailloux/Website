@@ -3,7 +3,7 @@
   "description": "Site Web vitrine de l'entreprise La Fée Des Cailloux décrivant ses activités, créations et produits.",
   "author": {
     "url": "https://github.com/Minarox",
-    "name": "Mathis SERRIERES MANIECKI",
+    "name": "Mathis Serrieres Maniecki",
     "email": "contact@minarox.fr"
   },
   "homepage": "https://lafeedescailloux.fr/",
@@ -16,7 +16,7 @@
     "url": "https://github.com/LaFeeDesCailloux/Website/issues",
     "email": "contact@minarox.fr"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "LGPL-3.0-only",
   "private": true,
   "scripts": {
