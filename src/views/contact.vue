@@ -18,10 +18,9 @@
         </p>
       </div>
       <div>
-        <!-- TODO: Phone number -->
-        <a href="tel:0000000000">
+        <a href="tel:+33620495045">
           <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
-          00 00 00 00 00
+          06 20 49 50 45
         </a>
         <a href="mailto:contact@lafeedescailloux.fr">
           <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />

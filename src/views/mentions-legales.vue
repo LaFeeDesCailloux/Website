@@ -16,8 +16,7 @@
       </p>
       <p>
         Téléphone : <br />
-        <!-- TODO: Phone number -->
-        <span><a href="tel:+33000000000"></a>00 00 00 00 00</span>
+        <span><a href="tel:+33620495045"></a>06 20 49 50 45</span>
       </p>
       <p>
         E-mail : <br />
