@@ -1,19 +1,19 @@
 <template>
-  <Header />
+  <Top />
 
   <router-view />
 
-  <Footer />
+  <Bottom />
 </template>
 
 <script>
-import Header from "@/components/global/header";
-import Footer from "@/components/global/footer";
+import Top from "@/components/global/header";
+import Bottom from "@/components/global/footer";
 
 export default {
   components: {
-    Header,
-    Footer,
+    Top,
+    Bottom,
   },
 };
 </script>
