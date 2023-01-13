@@ -192,7 +192,7 @@
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
                 <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
+                <font-awesome-icon icon="fa-solid fa-star" />
               </div>
             </section>
             <p>
@@ -204,6 +204,22 @@
               correspond vraiment à nos traits de personnalité et à nos points
               sensibles. Je recommande vivement les bracelets de Catherine, que
               ce soit les chemins de vie ou les bracelets thérapeutiques.
+            </p>
+          </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Mireille G.</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Je porte les bracelets de Catherine depuis de nombreux mois. Je ne
+              les quittes pas, c'est un signe !!
             </p>
           </SplideSlide>
         </SplideTrack>
