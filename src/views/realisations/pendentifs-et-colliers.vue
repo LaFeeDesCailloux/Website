@@ -79,7 +79,7 @@ export default {
         },
         {
           src: "DSC06789.webp",
-          title: "Quartz roze",
+          title: "Quartz rose",
         },
         {
           src: "DSC06790.webp",
@@ -139,7 +139,7 @@ export default {
         },
         {
           src: "IMG_20220226_112607.webp",
-          title: "Quartz roze",
+          title: "Quartz rose",
         },
         {
           src: "IMG_20220226_112740.webp",

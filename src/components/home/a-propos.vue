@@ -21,7 +21,7 @@
           <p>
             Je confectionne les chemins de vie et les bracelets thérapeutiques,
             avec tout mon cœur et amour, dans le but de soulager le stress,
-            l'anxiété, les dépression et de nombreux autres maux physiques et
+            l'anxiété, les dépressions et de nombreux autres maux physiques et
             émotionnels grâce aux propriétés thérapeutiques des pierres et
             cristaux.
           </p>

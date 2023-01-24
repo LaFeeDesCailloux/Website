@@ -65,7 +65,7 @@
     <section>
       <div>
         <p>
-          Afin de comprendre les réponses du pendules, vous allez devoir établir
+          Afin de comprendre les réponses du pendule, vous allez devoir établir
           un code. Ce code restera immuable.
         </p>
         <p>
@@ -79,7 +79,7 @@
           une question fermée, ce qui implique une réponse qui sera
           automatiquement oui, non ou je ne sais pas.
         </p>
-        <p>Une fois ce code établit, vous pouvez utiliser votre pendule.</p>
+        <p>Une fois ce code établi, vous pouvez utiliser votre pendule.</p>
       </div>
       <img
         class="blob"
@@ -91,7 +91,7 @@
     <section>
       <div>
         <p>
-          Votre pendule peut servir à purifier et recharger, pour cela placer le
+          Votre pendule peut servir à purifier et recharger, pour cela placez le
           au-dessus de votre pierre ou bracelet et demandez lui de purifier.
         </p>
         <p>

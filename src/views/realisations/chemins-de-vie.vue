@@ -65,7 +65,7 @@
           apportant tout au long de votre vie une aide précieuse.
         </p>
         <p>
-          Chacune des pierres possèdes des propriétés énergétiques spécifiques.
+          Chacune des pierres possède des propriétés énergétiques spécifiques.
           Les changements se font en douceur, en profondeur et dans la durée.
           Vous remarquerez petit à petit une évolution efficace sur tous les
           plans.
