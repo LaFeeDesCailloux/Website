@@ -14,7 +14,7 @@
         </p>
         <p>
           Il est donc très important de purifier vos pierres régulièrement pour
-          éviter qu’elles ne s’épuisent et continues d’agir pour votre bien de
+          éviter qu’elles ne s’épuisent et continuent d’agir pour votre bien de
           façon optimale.
         </p>
         <h3>Plusieurs méthodes de purification sont possibles :</h3>
