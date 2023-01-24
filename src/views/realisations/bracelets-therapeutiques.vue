@@ -112,7 +112,7 @@ export default {
         {
           src: "IMG_20211024_150525.webp",
           title:
-            "Bracelet pour la circulations du sang et contre les hémorroïdes",
+            "Bracelet pour la circulation du sang et contre les hémorroïdes",
         },
         {
           src: "IMG_20211024_152214.webp",
