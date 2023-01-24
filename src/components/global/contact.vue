@@ -5,7 +5,7 @@
       <p>
         Vous souhaitez acheter des bracelets et pierres de lithothérapie pour
         améliorer votre bien-être et votre équilibre émotionnel ou avez
-        simplement besoins de renseignements supplémentaires ?
+        simplement besoin de renseignements supplémentaires ?
         <br />
         N'hésitez pas à me contacter par téléphone, mail ou avec le formulaire
         disponible sur la page de contact.
