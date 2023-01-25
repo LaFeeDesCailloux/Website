@@ -10,10 +10,42 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		
+
+		<!-- Global -->
+		<meta name="title" content="La Fée Des Cailloux" />
+		<meta name="description" content="Créateurs de bracelets du bien-être." />
+		<meta name="keywords" content="Fée, cailloux, pierres, bracelets, chemin, vie, lithothérapie, gemmes, bijoux, bien-être, énergie, minéral, minéraux, beauté" />
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="French" />
+		<meta name="author" content="Mathis Serrieres Maniecki" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://lafeedescailloux.fr/" />
+		<meta property="og:title" content="La Fée Des Cailloux" />
+		<meta property="og:description" content="Créateurs de bracelets du bien-être." />
+		<meta property="og:image" content="/favicon/banner.webp" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://lafeedescailloux.fr/" />
+		<meta property="twitter:title" content="La Fée Des Cailloux" />
+		<meta property="twitter:description" content="Créateurs de bracelets du bien-être." />
+		<meta property="twitter:image" content="/favicon/banner.webp" />
+
+		<link rel="icon" href="/favicon/favicon.ico" />
+		<link rel="icon" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
+		<link rel="icon" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/favicon/site.webmanifest" />
 	</head>
 	<body>
 		<slot />
