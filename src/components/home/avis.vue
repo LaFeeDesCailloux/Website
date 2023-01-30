@@ -222,6 +222,25 @@
               les quittes pas, c'est un signe !!
             </p>
           </SplideSlide>
+          <SplideSlide>
+            <section>
+              <h3>Martine</h3>
+              <div>
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+                <font-awesome-icon icon="fa-solid fa-star" />
+              </div>
+            </section>
+            <p>
+              Catherine écoute avec attention et explique avec simplicité et
+              sérénité le choix des pierres. J'ai ressenti très rapidement comme
+              une force sereine. Je recommande vivement car les bienfaits ne se
+              font pas attendre et pour ne rien gâcher votre poignet est
+              joliment embelli de couleurs chatoyantes. 🙏
+            </p>
+          </SplideSlide>
         </SplideTrack>
 
         <div class="splide__arrows">
@@ -326,11 +345,13 @@ article {
             line-height: 0;
             font-family: var(--title-font);
           }
+
           &::before {
             content: "\201C";
             top: 1.4rem;
             left: -0.2rem;
           }
+
           &::after {
             content: "\201D";
             bottom: -1rem;
