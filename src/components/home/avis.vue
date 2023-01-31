@@ -5,16 +5,7 @@
       <Splide :options="avis" :has-track="false" aria-label="Avis">
         <SplideTrack>
           <SplideSlide>
-            <section>
-              <h3>Nathalie B.</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Nathalie B.</h3>
             <p>
               Je porte un bracelet et une pierre en collier, depuis plusieurs
               mois, et ceci font preuve d'une grande efficacité et en plus, sont
@@ -23,16 +14,7 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Nathalie J.</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Nathalie J.</h3>
             <p>
               J'ai commandé deux bracelets pour différentes utilisations. J'ai
               été contente des produits et des explications de Cathy qui est à
@@ -41,29 +23,11 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Isabelle</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Isabelle</h3>
             <p>Personne agréable et à l'écoute.</p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Marie A.</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Marie A.</h3>
             <p>
               Ravie de mon chemin de vie, que je porte tous les jours.
               Confection rapide et sur mesure. Cathy est quelqu'un qui est à
@@ -74,16 +38,7 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Marie B.</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Marie B.</h3>
             <p>
               Cathy est à l écoute, bienveillante. Les pierres et les
               réalisations des bracelets sont de qualité. Les bienfaits sont
@@ -91,16 +46,7 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Jocelyne</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Jocelyne</h3>
             <p>
               Bonjour, ayant acheté à plusieurs reprises des bijoux, j'ai
               toujours été satisfaite des pierres de très bonne qualité ainsi
@@ -108,16 +54,7 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Laurence</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Laurence</h3>
             <p>
               Il y a eu un moment de ma vie ou une amie m’a recommandé Cathy.
               J’ai été très bien accueillie. Personne a l’écoute. J’ai fait
@@ -129,16 +66,7 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Laetitia</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Laetitia</h3>
             <p>
               J’ai fait l’achat d’un chemin de vie, ça fait plus d’un an. J’en
               suis ravie. Je le trouve très joli et il m’est indispensable. Il
@@ -149,35 +77,16 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Perrine Q-R</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Perrine Q-R</h3>
             <p>
-              Je mets 5 étoiles ⭐️ car Catherine est une thérapeute en or, avec
-              humanité, bienveillance elle sera interpréter votre histoire et
-              vous transmettre de magnifiques bracelets ou chemin de vie de
-              qualité et de toutes beautés ! Vous pouvez y aller les yeux fermés
-              et le cœur léger !
+              Catherine est une thérapeute en or, avec humanité, bienveillance
+              elle sera interpréter votre histoire et vous transmettre de
+              magnifiques bracelets ou chemin de vie de qualité et de toutes
+              beautés ! Vous pouvez y aller les yeux fermés et le cœur léger !
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Jean-Noël C.</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-regular fa-star-half-stroke" />
-              </div>
-            </section>
+            <h3>Jean-Noël C.</h3>
             <p>
               Bracelet réalisé avec des pierres de qualité à la bonne taille.
               Cathy m'a conseillé pour le recharger chaque mois. Je vous la
@@ -185,16 +94,7 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Delphine</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Delphine</h3>
             <p>
               Catherine vous accueille avec beaucoup de professionnalisme. Une
               explication sur le choix des pierres qui composent votre bracelet
@@ -207,32 +107,14 @@
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Mireille G.</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Mireille G.</h3>
             <p>
               Je porte les bracelets de Catherine depuis de nombreux mois. Je ne
               les quittes pas, c'est un signe !!
             </p>
           </SplideSlide>
           <SplideSlide>
-            <section>
-              <h3>Martine</h3>
-              <div>
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-                <font-awesome-icon icon="fa-solid fa-star" />
-              </div>
-            </section>
+            <h3>Martine</h3>
             <p>
               Catherine écoute avec attention et explique avec simplicité et
               sérénité le choix des pierres. J'ai ressenti très rapidement comme
@@ -311,22 +193,10 @@ article {
         border-radius: var(--border-radius);
         border: 2px solid black;
 
-        section {
-          display: flex;
-          flex-flow: row wrap;
-          align-items: baseline;
-          justify-content: space-between;
+        h3 {
           font-size: 1.4em;
           color: black;
           margin-bottom: 2rem;
-          gap: 0.5rem 1rem;
-
-          div {
-            display: flex;
-            flex-flow: row wrap;
-            gap: 0.2rem;
-            color: var(--stars-color);
-          }
         }
 
         p {
