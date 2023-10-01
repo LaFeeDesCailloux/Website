@@ -123,6 +123,16 @@
               joliment embelli de couleurs chatoyantes. 🙏
             </p>
           </SplideSlide>
+          <SplideSlide>
+            <h3>M.C.</h3>
+            <p>
+              Bracelet thérapeutique très efficace tellement bien et joli que je
+              viens d'en commander un second. Personne très agréable et
+              compétente, à l'écoute. Délai de confection de l'article très
+              rapide. Personne vivement recommandable et de confiance. Merci
+              Catherine !
+            </p>
+          </SplideSlide>
         </SplideTrack>
 
         <div class="splide__arrows">
