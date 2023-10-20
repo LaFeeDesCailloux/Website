@@ -697,11 +697,11 @@ export default {
         topaze = true;
       }
       if (emeraude && topaze) {
-        return 40 + 12 + 12;
+        return 60;
       } else if (emeraude || topaze) {
-        return 40 + 12;
+        return 50;
       }
-      return 40;
+      return 45;
     },
     first_names() {
       return this.parseArray(this.names.split(","));
