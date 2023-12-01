@@ -133,6 +133,18 @@
               Catherine !
             </p>
           </SplideSlide>
+          <SplideSlide>
+            <h3>Perrine B.</h3>
+            <p>
+              Je vous recommande vivement Cathy pour la confection de vos
+              bracelets. Mon chemin de vie m’accompagne depuis plus de 2 ans. Je
+              ne peux pas m’en séparer, il m’apporte beaucoup... <br />
+              Plusieurs autres bracelets confectionnés par Cathy pour différents
+              maux ont apporté l'effet attendu. Vous pouvez lui faire confiance
+              les yeux fermés. <br />
+              Merci Cathy ❤
+            </p>
+          </SplideSlide>
         </SplideTrack>
 
         <div class="splide__arrows">
