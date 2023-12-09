@@ -138,8 +138,13 @@
           <input id="rgpd" name="rgpd" required type="checkbox" />
         </div>
 
-        <button id="send" class="button" type="submit">
-          <span v-if="success">
+        <button id="send" :disabled="loading" class="button" type="submit">
+          <font-awesome-icon
+            v-if="loading"
+            icon="fa-solid fa-spinner"
+            spin-pulse
+          />
+          <span v-else-if="success">
             Message envoyé
             <font-awesome-icon icon="fa-solid fa-check" />
           </span>
@@ -179,6 +184,7 @@ export default {
       message: "",
       success: false,
       error: false,
+      loading: false,
     };
   },
   mounted() {
@@ -193,7 +199,9 @@ export default {
   methods: {
     async sendMail() {
       let button = document.getElementById("send");
-      button.disabled = true;
+      this.resetButton(button);
+
+      this.loading = true;
 
       let select = document.getElementById("subject");
       let subject = "";
@@ -239,16 +247,16 @@ export default {
           this.error = true;
         })
         .finally(() => {
-          this.resetButton(button);
+          this.loading = false;
+          setTimeout(() => {
+            this.resetButton(button);
+          }, 3000);
         });
     },
     resetButton(button) {
-      setTimeout(() => {
-        button.classList.remove("success");
-        button.classList.remove("error");
-        this.success = this.error = false;
-        button.disabled = false;
-      }, 3000);
+      button.classList.remove("success");
+      button.classList.remove("error");
+      this.loading = this.success = this.error = false;
     },
   },
 };
