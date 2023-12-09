@@ -19,42 +19,42 @@
       </div>
       <div>
         <a href="tel:+33620495045">
-          <font-awesome-icon icon="fa-solid fa-phone" fixed-width />
+          <font-awesome-icon fixed-width icon="fa-solid fa-phone" />
           06 20 49 50 45
         </a>
         <a href="mailto:contact@lafeedescailloux.fr">
-          <font-awesome-icon icon="fa-solid fa-envelope" fixed-width />
+          <font-awesome-icon fixed-width icon="fa-solid fa-envelope" />
           contact@lafeedescailloux.fr
         </a>
         <a href="https://instagram.com/lafeedescailloux">
-          <font-awesome-icon icon="fa-brands fa-instagram" fixed-width />
+          <font-awesome-icon fixed-width icon="fa-brands fa-instagram" />
           @LaFeeDesCailloux
         </a>
       </div>
       <form @submit.prevent="sendMail">
         <label for="name">Votre nom</label>
         <input
-          type="text"
-          name="name"
           id="name"
           v-model="name"
-          required
           autocomplete="name"
+          name="name"
+          required
+          type="text"
         />
 
         <label for="email custom-object">Email</label>
         <input
-          type="email"
-          name="email"
           id="email"
           v-model="email"
-          required
           autocomplete="email"
+          name="email"
+          required
+          type="email"
         />
 
         <label for="subject">Objet</label>
-        <select name="object" id="subject" v-model="subject" required>
-          <option value="" selected disabled>Sélectionnez une option</option>
+        <select id="subject" v-model="subject" name="object" required>
+          <option disabled selected value="">Sélectionnez une option</option>
           <option value="chemin-de-vie">Chemin de vie</option>
           <option value="bracelets-therapeutiques">
             Bracelets thérapeutiques
@@ -69,11 +69,11 @@
 
         <input
           v-if="subject === 'other'"
-          type="text"
-          name="custom-object"
           id="custom-object"
           v-model="custom_subject"
+          name="custom-object"
           required
+          type="text"
         />
 
         <div
@@ -83,49 +83,49 @@
           "
         >
           <label for="size">Tour de poignet</label>
-          <input type="number" name="size" id="size" v-model="size" required />
+          <input id="size" v-model="size" name="size" required type="number" />
         </div>
 
         <div v-if="subject === 'chemin-de-vie'">
           <label for="cdv-prenoms">Vos prénoms</label>
           <input
-            type="text"
-            name="cdv-prenoms"
             id="cdv-prenoms"
             v-model="cdv.names"
+            name="cdv-prenoms"
             required
+            type="text"
           />
 
           <label for="cdv-pere">Nom du père</label>
           <input
-            type="text"
-            name="cdv-pere"
             id="cdv-pere"
             v-model="cdv.father"
+            name="cdv-pere"
             required
+            type="text"
           />
 
           <label for="cdv-mere">Nom de jeune fille de la mère</label>
           <input
-            type="text"
-            name="cdv-mere"
             id="cdv-mere"
             v-model="cdv.mother"
+            name="cdv-mere"
             required
+            type="text"
           />
 
           <label for="cdv-naissance">Date de naissance</label>
           <input
-            type="date"
-            name="cdv-naissance"
             id="cdv-naissance"
             v-model="cdv.birthdate"
+            name="cdv-naissance"
             required
+            type="date"
           />
         </div>
 
         <label for="message">Message</label>
-        <textarea name="message" id="message" v-model="message" required />
+        <textarea id="message" v-model="message" name="message" required />
 
         <div id="rgpd-wrapper">
           <label for="rgpd">
@@ -135,10 +135,10 @@
             </router-link>
             et déclare avoir plus de 15 ans.
           </label>
-          <input type="checkbox" name="rgpd" id="rgpd" required />
+          <input id="rgpd" name="rgpd" required type="checkbox" />
         </div>
 
-        <button class="button" type="submit" id="send">
+        <button id="send" class="button" type="submit">
           <span v-if="success">
             Message envoyé
             <font-awesome-icon icon="fa-solid fa-check" />
@@ -151,11 +151,13 @@
         </button>
       </form>
     </section>
-    <img src="@/assets/svg/cristaux.svg" alt="Cristaux" />
+    <img alt="Cristaux" src="@/assets/svg/cristaux.svg" />
   </article>
 </template>
 
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "contactView",
   title() {
@@ -216,31 +218,27 @@ export default {
         message += this.message;
       }
 
-      await fetch("https://api.lafeedescailloux.fr/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: this.name,
-          email: this.email,
-          subject: subject,
-          message: message,
-        }),
-      })
-        .then((response) => {
-          if (response.ok) {
-            button.classList.add("success");
-            this.success = true;
-          } else {
-            button.classList.add("error");
-            this.error = true;
-          }
-          this.resetButton(button);
+      emailjs
+        .send(
+          process.env.VUE_APP_SERVICE_ID,
+          process.env.VUE_APP_TEMPLATE_ID,
+          {
+            from_name: this.name,
+            reply_to: this.email,
+            subject: subject,
+            content: message,
+          },
+          process.env.VUE_APP_USER_ID
+        )
+        .then(() => {
+          button.classList.add("success");
+          this.success = true;
         })
         .catch(() => {
           button.classList.add("error");
           this.error = true;
+        })
+        .finally(() => {
           this.resetButton(button);
         });
     },
@@ -250,30 +248,30 @@ export default {
         button.classList.remove("error");
         this.success = this.error = false;
         button.disabled = false;
-      }, 2750);
+      }, 3000);
     },
   },
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 article {
+  overflow: hidden;
   padding-top: var(--content-margin);
   position: relative;
-  overflow: hidden;
 
   .content {
-    margin: 2rem auto;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2.4rem;
+    margin: 2rem auto;
 
     > div:first-of-type {
       display: flex;
       flex-direction: column;
-      text-align: center;
       gap: 0.8rem;
+      text-align: center;
 
       h1 {
         font-size: 3em;
@@ -286,28 +284,28 @@ article {
     }
 
     > div:last-of-type {
-      width: 100%;
-      max-width: 1100px;
+      align-items: center;
       background-color: var(--primary-bg-color);
-      padding: 1rem;
       border-radius: var(--border-radius);
       display: flex;
-      align-items: center;
-      justify-content: space-evenly;
       flex-wrap: wrap;
       gap: 0.8rem 2rem;
+      justify-content: space-evenly;
+      max-width: 1100px;
+      padding: 1rem;
+      width: 100%;
 
       a {
-        flex: 1 1 36%;
-        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 0.5rem;
         color: var(--global-text-color);
-        text-decoration: none;
+        display: inline-flex;
+        flex: 1 1 36%;
         font-size: 1.1em;
+        gap: 0.5rem;
+        justify-content: center;
         padding: 1rem;
+        text-align: center;
+        text-decoration: none;
 
         @media (min-width: 800px) {
           flex: 1 0 24%;
@@ -340,24 +338,24 @@ article {
       }
 
       label {
-        margin: 0 0 8px 8px;
         font-weight: bold;
+        margin: 0 0 8px 8px;
       }
 
       input,
       select,
       textarea {
-        margin-bottom: 1.6rem;
-        padding: 0.5rem 0.6rem;
-        font-size: 0.94em;
+        background-color: var(--global-bg-color);
         border: 2px solid black;
         border-radius: 6px;
         font-family: "Arial", sans-serif;
-        resize: vertical;
+        font-size: 0.94em;
+        margin-bottom: 1.6rem;
         outline: none;
+        padding: 0.5rem 0.6rem;
         position: relative;
+        resize: vertical;
         transition: border 250ms;
-        background-color: var(--global-bg-color);
       }
 
       textarea {
@@ -365,22 +363,22 @@ article {
       }
 
       button {
-        font-family: var(--global-font);
-        font-size: 1em;
-        margin-inline: auto;
-        z-index: 1;
-        display: block;
-        text-align: center;
-        padding: 0.6rem 2rem;
+        background-color: var(--global-bg-color);
         border: 2px solid black;
         border-radius: var(--border-radius);
         color: black;
-        background-color: var(--global-bg-color);
-        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        font-family: var(--global-font);
+        font-size: 1em;
         font-weight: bold;
+        margin-inline: auto;
+        padding: 0.6rem 2rem;
+        text-align: center;
+        text-decoration: none;
         transform: scale(1.005);
         transition: all 400ms;
-        cursor: pointer;
+        z-index: 1;
 
         svg {
           margin-left: 0.4rem;
@@ -394,18 +392,18 @@ article {
   }
 
   img {
-    z-index: -1;
-    opacity: 0.2;
-    width: 100%;
-    max-width: 600px;
-    height: calc(100% - 220px);
-    margin-inline: auto;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
     filter: saturate(0.6);
+    height: calc(100% - 220px);
+    left: 0;
+    margin-inline: auto;
+    max-width: 600px;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 100%;
     transform: translateY(-52%);
+    width: 100%;
+    z-index: -1;
 
     @media (min-width: 600px) {
       transform: translateY(-78%);
@@ -428,9 +426,9 @@ article {
 }
 
 #rgpd-wrapper {
+  align-items: baseline;
   display: inline-flex;
   flex-direction: row-reverse;
-  align-items: baseline;
   justify-content: center;
   margin-bottom: 1.6rem;
 
@@ -439,8 +437,8 @@ article {
   }
 
   a {
-    display: inline-block;
     color: var(--global-text-color);
+    display: inline-block;
   }
 }
 </style>

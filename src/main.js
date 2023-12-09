@@ -16,6 +16,7 @@ import {
   faInfo,
   faUpLong,
   faBars,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
 
@@ -30,7 +31,8 @@ library.add(
   faCaretRight,
   faInfo,
   faUpLong,
-  faBars
+  faBars,
+  faXmark
 );
 
 createApp(App)
