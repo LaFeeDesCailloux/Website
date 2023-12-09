@@ -7,15 +7,16 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {
-  faPhone,
-  faEnvelope,
-  faStar,
-  faWandMagicSparkles,
-  faSortDown,
-  faCaretRight,
-  faInfo,
-  faUpLong,
   faBars,
+  faCaretRight,
+  faEnvelope,
+  faInfo,
+  faPhone,
+  faSortDown,
+  faSpinner,
+  faStar,
+  faUpLong,
+  faWandMagicSparkles,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faStarHalfStroke } from "@fortawesome/free-regular-svg-icons";
@@ -32,7 +33,8 @@ library.add(
   faInfo,
   faUpLong,
   faBars,
-  faXmark
+  faXmark,
+  faSpinner
 );
 
 createApp(App)
