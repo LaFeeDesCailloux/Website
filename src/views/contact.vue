@@ -218,10 +218,13 @@ export default {
           `Prénoms : ${this.cdv.names}\n` +
           `Nom du père : ${this.cdv.father}\n` +
           `Nom de la mère : ${this.cdv.mother}\n` +
-          `Date de naissance : ${this.cdv.birthdate}\n\n\n` +
+          `Date de naissance : ${new Date(
+            this.cdv.birthdate
+          ).toLocaleDateString("fr-FR")}\n` +
+          `Tour de poignet : ${this.size}\n\n\n` +
           this.message;
       } else if (this.subject === "bracelets-therapeutiques") {
-        message += `Tour de poignet : ${this.size}\n\n\n` + this.message;
+        message += `Tour de poignet : ${this.size} cm\n\n\n` + this.message;
       } else {
         message += this.message;
       }
