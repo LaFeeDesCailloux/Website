@@ -1,0 +1,451 @@
+---
+import { Image } from "astro:assets"
+import Cristaux from "@assets/svg/cristaux.svg"
+---
+
+<article>
+    <section class="content">
+        <div>
+            <h1>Me contacter</h1>
+            <p>
+                Concernant les contacts téléphoniques, merci de bien vouloir me
+                joindre de préférence en semaine.
+            </p>
+            <p>
+                Vous souhaitez acheter un bracelet ? Pensez à renseigner votre tour de
+                poignet lors de votre commande.
+            </p>
+            <p>
+                Il est important de rappeler que la lithothérapie n'est pas considérée
+                comme une forme de traitement médical reconnue et qu'elle ne doit pas
+                être utilisée à la place d'un traitement médical conventionnel.
+            </p>
+        </div>
+        <div>
+            <a href="tel:+33620495045">
+                <font-awesome-icon fixed-width icon="fa-solid fa-phone" />
+                06 20 49 50 45
+            </a>
+            <a href="mailto:contact@lafeedescailloux.fr">
+                <font-awesome-icon fixed-width icon="fa-solid fa-envelope" />
+                contact@lafeedescailloux.fr
+            </a>
+            <a href="https://instagram.com/lafeedescailloux">
+                <font-awesome-icon fixed-width icon="fa-brands fa-instagram" />
+                @LaFeeDesCailloux
+            </a>
+        </div>
+
+        <form id="contact-form">
+            <label for="name">Votre nom</label>
+            <input id="name" type="text" autocomplete="name" name="name" required />
+
+            <label for="email custom-object">Email</label>
+            <input id="email" type="email" autocomplete="email" name="email" required />
+
+            <label for="subject">Objet</label>
+            <select id="subject" name="object" required>
+                <option disabled selected value="">Sélectionnez une option</option>
+                <option value="chemin-de-vie">Chemin de vie</option>
+                <option value="bracelets-therapeutiques">Bracelets thérapeutiques</option>
+                <option value="pendules">Pendules</option>
+                <option value="pendentifs-colliers">Pendentifs et Colliers</option>
+                <option value="druses-geodes">Druses et Géodes</option>
+                <option value="pierres-roulees">Pierres roulées</option>
+                <option value="info">Demande de renseignements</option>
+                <option value="other">Autre</option>
+            </select>
+
+            <input v-if="subject === 'other'" id="custom-object" name="custom-object" required type="text" />
+
+            <div v-if="['bracelets-therapeutiques', 'chemin-de-vie'].includes(subject)">
+                <label for="size">Tour de poignet</label>
+                <input id="size" type="number" name="size" required />
+            </div>
+
+            <div v-if="subject === 'chemin-de-vie'">
+                <label for="cdv-prenoms">Vos prénoms</label>
+                <input id="cdv-prenoms" type="text" name="cdv-prenoms" required />
+
+                <label for="cdv-pere">Nom du père</label>
+                <input id="cdv-pere" type="text" name="cdv-pere" required />
+
+                <label for="cdv-mere">Nom de jeune fille de la mère</label>
+                <input id="cdv-mere" type="text" name="cdv-mere" required />
+
+                <label for="cdv-naissance">Date de naissance</label>
+                <input id="cdv-naissance" type="date" name="cdv-naissance" required />
+            </div>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required />
+
+            <div id="rgpd-wrapper">
+                <label for="rgpd">
+                    J'accepte la
+                    <a href="/politique-de-confidentialite">
+                        politique de confidentialité
+                    </a>
+                    et déclare avoir plus de 15 ans.
+                </label>
+                <input id="rgpd" type="checkbox" name="rgpd" required />
+            </div>
+
+            <button id="send" class="button" type="submit">
+                <font-awesome-icon id="loading-icon" class="hidden" icon="fa-solid fa-spinner" spin-pulse />
+                <span id="success-message" class="hidden">
+                    Message envoyé
+                    <font-awesome-icon icon="fa-solid fa-check" />
+                </span>
+                <span id="error-message" class="hidden">
+                    Une erreur s'est produite
+                    <font-awesome-icon icon="fa-solid fa-xmark" />
+                </span>
+                <span id="default-message"> Envoyer </span>
+            </button>
+        </form>
+    </section>
+
+    <Image src={Cristaux} alt="Cristaux" />
+</article>
+
+<script>
+	import { actions } from "astro:actions"
+    import { ContactButtonState } from "@types"
+
+    const form = document.getElementById("contact-form")! as HTMLFormElement
+    const name = document.getElementById("name")! as HTMLInputElement
+    const email = document.getElementById("email")! as HTMLInputElement
+    const subject = document.getElementById("subject")! as unknown as HTMLSelectElement
+    const customSubject = document.getElementById("custom-object")! as HTMLInputElement
+    const size = document.getElementById("size")! as HTMLInputElement
+    const cdvNames = document.getElementById("cdv-prenoms")! as HTMLInputElement
+    const cdvFather = document.getElementById("cdv-pere")! as HTMLInputElement
+    const cdvMother = document.getElementById("cdv-mere")! as HTMLInputElement
+    const cdvBirthdate = document.getElementById("cdv-naissance")! as HTMLInputElement
+    const message = document.getElementById("message")! as HTMLTextAreaElement
+    const rgpd = document.getElementById("rgpd")! as HTMLInputElement
+    const button = document.getElementById("send")! as HTMLButtonElement
+    const loadingIcon = document.getElementById("loading-icon")! as HTMLElement
+    const successMessage = document.getElementById("success-message")! as HTMLElement
+    const errorMessage = document.getElementById("error-message")! as HTMLElement
+    const defaultMessage = document.getElementById("default-message")! as HTMLElement
+    let isLoading = false
+
+    function setButtonState(state: ContactButtonState) {
+        loadingIcon.classList.add("hidden")
+        successMessage.classList.add("hidden")
+        errorMessage.classList.add("hidden")
+        defaultMessage.classList.add("hidden")
+        button.classList.remove("success")
+		button.classList.remove("error")
+
+        if (state === ContactButtonState.LOADING) {
+            loadingIcon.classList.remove("hidden")
+        } else if (state === ContactButtonState.SUCCESS) {
+            button.classList.add("success")
+            successMessage.classList.remove("hidden")
+        } else if (state === ContactButtonState.ERROR) {
+            button.classList.add("error")
+            errorMessage.classList.remove("hidden")
+        } else {
+            defaultMessage.classList.remove("hidden")
+            isLoading = false
+        }
+    }
+
+    subject.addEventListener("change", () => {
+        if (subject.value === "other") {
+            customSubject.style.display = "block"
+            customSubject.required = true
+        } else {
+            customSubject.style.display = "none"
+            customSubject.required = false
+        }
+
+        if (["bracelets-therapeutiques", "chemin-de-vie"].includes(subject.value)) {
+            size.style.display = "block"
+            size.required = true
+        } else {
+            size.style.display = "none"
+            size.required = false
+        }
+
+        if (subject.value === "chemin-de-vie") {
+            cdvNames.style.display = "block"
+            cdvNames.required = true
+            cdvFather.style.display = "block"
+            cdvFather.required = true
+            cdvMother.style.display = "block"
+            cdvMother.required = true
+            cdvBirthdate.style.display = "block"
+            cdvBirthdate.required = true
+        } else {
+            cdvNames.style.display = "none"
+            cdvNames.required = false
+            cdvFather.style.display = "none"
+            cdvFather.required = false
+            cdvMother.style.display = "none"
+            cdvMother.required = false
+            cdvBirthdate.style.display = "none"
+            cdvBirthdate.required = false
+        }
+    })
+
+    form.addEventListener("submit", async (event: Event) => {
+        event.preventDefault()
+
+        if (isLoading || rgpd.checked === false) {
+            return
+        }
+        setButtonState(ContactButtonState.DEFAULT)
+        isLoading = true
+
+        let selectedSubject = subject.value
+        if (selectedSubject === "other") {
+            selectedSubject = customSubject.value
+        } else {
+            selectedSubject = subject.children[subject.selectedIndex]!.textContent
+        }
+
+        let fullMessage = ''
+        if (subject.value === "chemin-de-vie") {
+            fullMessage +=
+				"Information du chemin de vie :\n" +
+				`Prénoms : ${cdvNames.value}\n` +
+				`Nom du père : ${cdvFather.value}\n` +
+				`Nom de la mère : ${cdvMother.value}\n` +
+				`Date de naissance : ${new Date(cdvBirthdate.value).toLocaleDateString("fr-FR")}\n` +
+				`Tour de poignet : ${size.value}\n\n\n` +
+				message.value
+		} else if (subject.value === "bracelets-therapeutiques") {
+			fullMessage += `Tour de poignet : ${size.value} cm\n\n\n` + message.value
+		} else {
+			fullMessage += message.value
+		}
+
+        const { error } = await actions.sendEmail({
+            name: name.value,
+            email: email.value,
+            subject: selectedSubject,
+            message: fullMessage
+        })
+
+        if (error) {
+            setButtonState(ContactButtonState.ERROR)
+        } else {
+            setButtonState(ContactButtonState.SUCCESS)
+            name.value = ''
+            email.value = ''
+            subject.value = ''
+            customSubject.value = ''
+            size.value = ''
+            cdvNames.value = ''
+            cdvFather.value = ''
+            cdvMother.value = ''
+            cdvBirthdate.value = ''
+            message.value = ''
+            rgpd.checked = false
+        }
+
+        setTimeout(() => setButtonState(ContactButtonState.DEFAULT), 3000)
+    })
+
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get("subject") === "chemin-de-vie") {
+        subject.value = urlParams.get("subject") || ''
+        cdvNames.value = urlParams.get("names") || ''
+        cdvFather.value = urlParams.get("name_father") || ''
+        cdvMother.value = urlParams.get("name_mother") || ''
+        cdvBirthdate.value = urlParams.get("birthdate") || ''
+    }
+</script>
+
+<style>
+    article {
+        overflow: hidden;
+        padding-top: var(--content-margin);
+        position: relative;
+
+        .content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            margin: 2rem auto;
+
+            > div:first-of-type {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 3em;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    max-width: 900px;
+                }
+            }
+
+            > div:last-of-type {
+                align-items: center;
+                background-color: var(--primary-bg-color);
+                border-radius: var(--border-radius);
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.8rem 2rem;
+                justify-content: space-evenly;
+                max-width: 1100px;
+                padding: 1rem;
+                width: 100%;
+
+                a {
+                    align-items: center;
+                    color: var(--global-text-color);
+                    display: inline-flex;
+                    flex: 1 1 36%;
+                    font-size: 1.1em;
+                    gap: 0.5rem;
+                    justify-content: center;
+                    padding: 1rem;
+                    text-align: center;
+                    text-decoration: none;
+
+                    @media (min-width: 800px) {
+                        flex: 1 0 24%;
+                    }
+
+                    svg {
+                        font-size: 1.6em;
+                    }
+                }
+
+                @media (max-width: 380px) {
+                    flex-direction: column;
+                    padding: 0.6rem;
+
+                    a {
+                        flex-direction: column;
+                        word-break: break-word;
+                    }
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: min(100%, var(--form-max-width));
+
+                > div {
+                    display: inherit;
+                    flex-direction: inherit;
+                }
+
+                label {
+                    font-weight: bold;
+                    margin: 0 0 8px 8px;
+                }
+
+                input,
+                select,
+                textarea {
+                    background-color: var(--global-bg-color);
+                    border: 2px solid black;
+                    border-radius: 6px;
+                    font-family: "Arial", sans-serif;
+                    font-size: 0.94em;
+                    margin-bottom: 1.6rem;
+                    outline: none;
+                    padding: 0.5rem 0.6rem;
+                    position: relative;
+                    resize: vertical;
+                    transition: border 250ms;
+                }
+
+                textarea {
+                    min-height: 206px;
+                }
+
+                button {
+                    background-color: var(--global-bg-color);
+                    border: 2px solid black;
+                    border-radius: var(--border-radius);
+                    color: black;
+                    cursor: pointer;
+                    display: block;
+                    font-family: var(--global-font);
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin-inline: auto;
+                    padding: 0.6rem 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    transform: scale(1.005);
+                    transition: all 400ms;
+                    z-index: 1;
+
+                    svg {
+                        margin-left: 0.4rem;
+                    }
+
+                    &:hover {
+                        transform: scale(1.04);
+                    }
+                }
+            }
+        }
+
+        img {
+            filter: saturate(0.6);
+            height: calc(100% - 220px);
+            left: 0;
+            margin-inline: auto;
+            max-width: 600px;
+            opacity: 0.2;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            transform: translateY(-52%);
+            width: 100%;
+            z-index: -1;
+
+            @media (min-width: 600px) {
+                transform: translateY(-78%);
+            }
+
+            @media (max-width: 600px) {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .success {
+		border: 2px solid green !important;
+		color: green !important;
+	}
+
+	.error {
+		border: 2px solid red !important;
+		color: red !important;
+	}
+
+	#rgpd-wrapper {
+		align-items: baseline;
+		display: inline-flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin-bottom: 1.6rem;
+
+		input {
+			margin: 0;
+		}
+
+		a {
+			color: var(--global-text-color);
+			display: inline-block;
+		}
+	}
+</style>

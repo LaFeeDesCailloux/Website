@@ -2,9 +2,7 @@
    "name": "lafeedescailloux-website",
    "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
    "features": {
-      "ghcr.io/devcontainers-extra/features/pnpm:2": {
-         "version": "10.17.0"
-      },
+      "ghcr.io/devcontainers-extra/features/pnpm:2": {},
       "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
         "packages": "gnupg2"
     }
@@ -19,24 +17,8 @@
       "vscode": {
          "extensions": [
             "astro-build.astro-vscode",
-            "github.vscode-github-actions",
-            "ecmel.vscode-html-css",
-            "vivaxy.vscode-conventional-commits",
-            "dbaeumer.vscode-eslint",
-            "vitest.explorer",
-            "usernamehw.errorlens",
-            "esbenp.prettier-vscode",
-            "rvest.vs-code-prettier-eslint",
-            "GitHub.copilot",
-            "GitHub.copilot-chat",
-            "DavidAnson.vscode-markdownlint"
-         ],
-         "settings": {
-            "markdownlint.config": {
-               "no-inline-html": false,
-               "first-line-h1": false
-            }
-         }
+            "github.vscode-github-actions"
+         ]
       }
    }
 }

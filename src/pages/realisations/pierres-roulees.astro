@@ -1,0 +1,87 @@
+---
+import { Image } from "astro:assets"
+import Banniere from "@components/Banniere.astro"
+import Banner from "@assets/img/pierres_roulees/banner.webp"
+import Description from "@components/Description.astro"
+import Pierre1 from "@assets/img/pierres_roulees/description_1.webp"
+import Pierre2 from "@assets/img/pierres_roulees/description_2.webp"
+import EntretenirPierres from "@components/EntretenirPierres.astro"
+import Galerie from "@components/Galerie.vue"
+import Contact from "@components/Contact.astro"
+import type { GalleryImage } from "src/types"
+
+const images: GalleryImage[] = [
+    {
+        src: "DSC06714.webp",
+        title: "Topazes"
+    },
+    {
+        src: "DSC06728.webp",
+        title: "Pyrite"
+    }
+]
+---
+
+<Banniere titre="Pierres roulées" image={Banner} />
+
+<Description>
+    <section>
+        <div>
+            <p>
+                La pierre roulée est la forme la plus primaire de la pierre,
+                c'est-à-dire qu'elle n'a pas été taillée pour pouvoir être utilisée
+                dans un collier ou un pendentif. De ce fait, les pierres roulées sont
+                destinées à être glissées dans votre poche ou placées à un endroit de
+                votre choix.
+            </p>
+            <p>
+                Tout comme les autres formes, la pierre vous apporte ses bienfaits
+                afin d'influencer positivement vos énergies ou l'environment autour
+                d'elle.
+            </p>
+            <p>
+                Faites-vous confiance pour le choix. Si une pierre vous attire, elle
+                est pour vous, sinon demandez conseil pour orienter votre choix. Il va
+                de soit que plus la pierre est volumineuse, plus elle est chargée
+                énergétiquement.
+            </p>
+        </div>
+        <Image class="blob" src={Pierre1} alt="Pierre roulée" />
+    </section>
+
+    <section>
+        <div>
+            <h3>Quelques exemples de leurs utilisations :</h3>
+            <ul>
+                <li>
+                    Protéger votre maison en plaçant un œil de tigre au-dessus de votre
+                    porte d’entrée ;
+                </li>
+                <li>
+                    Vous avez des hémorroïdes, glissez une hématite dans la poche
+                    arrière de votre pantalon ;
+                </li>
+                <li>
+                    Vous manquez d’argent, attirez l’abondance en glissant une citrine
+                    dans votre porte-monnaie ;
+                </li>
+                <li>Etc.</li>
+            </ul>
+        </div>
+        <Image class="blob" src={Pierre2} alt="Pierre roulée" />
+    </section>
+</Description>
+
+<EntretenirPierres />
+
+<Galerie client:idle dossier="pierres_roulees/galerie/" images={images} />
+
+<Contact />
+
+<script>
+    import { generateBlobs, toggleBlobs } from "@assets/blobGenerator"
+
+    setTimeout(generateBlobs, 200)
+    setInterval(generateBlobs, 12000)
+    window.addEventListener("resize", toggleBlobs)
+</script>
